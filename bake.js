@@ -122,12 +122,30 @@ if (patched === template) {
   process.exit(1);
 }
 
-fs.writeFileSync(OUT_PATH, patched);
+// Tea Planner mirror: meals.json (written by the daily routine from the
+// planner) replaces the WEEK_MEAL_PLAN block, recipes included.
+const meals = readJSON('meals.json', null);
+let out = patched;
+let mealCount = 'skipped';
+if (meals && typeof meals === 'object') {
+  const mealsJs = 'var WEEK_MEAL_PLAN = ' +
+    JSON.stringify(meals, null, 2).replace(/</g, '\\u003c').replace(/\n/g, '\n  ') + ';';
+  const withMeals = patched.replace(/var WEEK_MEAL_PLAN = \{[\s\S]*?\n {2}\};/, function () { return mealsJs; });
+  if (withMeals === patched) {
+    console.error('template drifted: WEEK_MEAL_PLAN block not found in ' + TEMPLATE_PATH);
+    process.exit(1);
+  }
+  out = withMeals;
+  mealCount = Object.keys(meals).length;
+}
+
+fs.writeFileSync(OUT_PATH, out);
 console.log(
   'alex-mission-control: today ' + todayYMD + ' / tomorrow ' + tomorrowYMD +
   ' | alexStatus=' + alexStatus +
   ' | alexToday=' + alexToday.length + ' alexTomorrow=' + alexTomorrow.length +
   ' | francisToday=' + francisToday.length + ' francisTomorrow=' + francisTomorrow.length +
   ' | mathildaToday=' + mathildaToday.length + ' mathildaTomorrow=' + mathildaTomorrow.length +
-  ' | mumUnusual=' + (snapshot.mumUnusual ? 'yes' : 'no')
+  ' | mumUnusual=' + (snapshot.mumUnusual ? 'yes' : 'no') +
+  ' | meals=' + mealCount
 );

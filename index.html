@@ -292,6 +292,68 @@
   .wk-meal{ font-size:.86rem; color:var(--ink-dim); }
   .wk-row.is-today .wk-meal{ color:var(--ink); font-weight:500; }
   .wk-meal.wk-empty{ color:var(--ink-faint); font-style:italic; }
+  button.wk-row{
+    width:100%; text-align:left; font:inherit; color:inherit;
+    background:transparent; border:1px solid transparent; cursor:pointer;
+    grid-template-columns:38px 1fr auto;
+  }
+  button.wk-row:disabled{ cursor:default; }
+  .wk-row.is-open{ border-color:var(--copper); }
+  .wk-go{ font-family:var(--f-mono); font-size:.62rem; color:var(--copper); }
+
+  /* ---------- Tonight's recipe (tap the meal) ---------- */
+  .tea-btn{
+    display:block; width:100%; text-align:left;
+    background:none; border:0; padding:0; margin:0;
+    color:inherit; cursor:pointer;
+  }
+  .tea-btn:disabled{ cursor:default; }
+  .tea-meta{
+    display:flex; flex-wrap:wrap; gap:4px 12px; margin-top:7px;
+    font-family:var(--f-mono); font-size:.64rem; letter-spacing:.04em;
+    text-transform:uppercase; color:var(--ink-faint);
+  }
+  .tea-meta .go{ color:var(--copper); font-weight:600; }
+  .recipe{
+    margin-top:12px; padding:13px 13px 12px;
+    background:var(--sunk); border:1px solid var(--line-strong); border-radius:10px;
+  }
+  .recipe-head{ display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px; }
+  .recipe-title{ font-weight:600; font-size:.98rem; line-height:1.3; }
+  .recipe-facts{ font-family:var(--f-mono); font-size:.62rem; color:var(--ink-faint); margin-top:3px; letter-spacing:.03em; }
+  .recipe-close{
+    flex:none; background:none; border:1px solid var(--line-strong); border-radius:999px;
+    color:var(--ink-dim); font-family:var(--f-mono); font-size:.6rem; letter-spacing:.08em;
+    text-transform:uppercase; padding:4px 9px; cursor:pointer;
+  }
+  .rk-units{ display:flex; width:max-content; margin:0 0 4px auto; border:1px solid var(--line-strong); border-radius:999px; overflow:hidden; }
+  .rk-units button{ background:none; border:0; font-family:var(--f-mono); font-size:.58rem; letter-spacing:.08em; text-transform:uppercase; padding:5px 10px; color:var(--ink-dim); cursor:pointer; }
+  .rk-units button[aria-pressed="true"]{ background:var(--copper); color:var(--header); font-weight:600; }
+  .rk-label{
+    font-family:var(--f-mono); font-size:.58rem; font-weight:600; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--copper); margin:10px 0 5px;
+  }
+  .rk-ing, .rk-steps{ margin:0; padding-left:1.15rem; display:flex; flex-direction:column; gap:4px; font-size:.88rem; color:var(--ink-dim); line-height:1.42; }
+  .rk-steps{ gap:9px; }
+  .rk-steps li{ color:var(--ink); }
+  .rk-steps li span{ display:block; }
+  .rk-start{
+    margin-top:5px; font-family:var(--f-mono); font-size:.66rem; font-weight:600; letter-spacing:.04em;
+    background:rgba(217,138,75,.12); color:var(--copper); border:1px solid rgba(217,138,75,.4);
+    border-radius:999px; padding:4px 10px; cursor:pointer;
+  }
+  .rk-start.rk-started{ background:var(--copper); color:var(--header); }
+  .rk-tip{ font-size:.82rem; color:var(--ink-dim); margin-top:11px; padding:8px 10px; background:var(--surface-2); border-radius:8px; border-left:2px solid var(--copper); }
+  .rk-timers{ position:fixed; left:50%; transform:translateX(-50%); bottom:calc(12px + env(safe-area-inset-bottom,0px)); z-index:50; display:flex; flex-direction:column; gap:6px; width:min(420px, calc(100% - 24px)); }
+  .rk-timer{ display:flex; align-items:center; gap:10px; background:var(--header); border:1px solid var(--copper); color:var(--ink); border-radius:12px; padding:9px 12px; box-shadow:0 8px 24px rgba(0,0,0,.45); }
+  .rk-t-label{ flex:1; font-size:.78rem; color:var(--ink-dim); min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .rk-t-time{ font-family:var(--f-mono); font-variant-numeric:tabular-nums; font-size:1.1rem; font-weight:600; color:var(--copper); }
+  .rk-t-stop{ background:none; border:1px solid var(--line-strong); color:var(--ink); border-radius:999px; font-family:var(--f-mono); font-size:.62rem; text-transform:uppercase; letter-spacing:.06em; padding:4px 10px; cursor:pointer; }
+  .rk-timer.rk-done{ background:var(--copper); color:var(--header); animation:rkpulse 1s ease-in-out infinite; }
+  .rk-timer.rk-done .rk-t-time, .rk-timer.rk-done .rk-t-label{ color:var(--header); }
+  .rk-timer.rk-done .rk-t-stop{ color:var(--header); border-color:var(--header); }
+  @keyframes rkpulse{ 50%{ transform:scale(1.02); } }
+  @media (prefers-reduced-motion:reduce){ .rk-timer.rk-done{ animation:none; } }
 
   /* ---------- Shopping list ---------- */
   .shop{ border-color:rgba(217,138,75,.28); }
@@ -490,8 +552,10 @@
       <span class="eyebrow">&#9670; What&rsquo;s For Dinner</span>
       <span class="tag" id="teaTag">Tonight</span>
     </div>
-    <div class="big" id="teaMain">&mdash;</div>
+    <button type="button" class="big tea-btn" id="teaMain" aria-expanded="false" aria-controls="teaRecipe" disabled>&mdash;</button>
+    <div class="tea-meta" id="teaMeta" hidden></div>
     <div class="note" id="teaNote" hidden></div>
+    <div class="recipe" id="teaRecipe" hidden></div>
     <div class="weekstrip" id="weekStrip"></div>
   </section>
 
@@ -510,6 +574,191 @@
   </div>
 </div>
 
+<script>
+/* RecipeKit — ml ↔ cups & spoons switch and step timers for recipe text.
+   Weights (g/kg) and oven temperatures (°C) are always left as written.
+   Works on plain recipe strings (no special data format needed). */
+var RecipeKit = (function(){
+  var UNIT_KEY = 'recipe-units';
+  var units = 'metric';
+  try { units = localStorage.getItem(UNIT_KEY) === 'cups' ? 'cups' : 'metric'; } catch (e) {}
+
+  function getUnits(){ return units; }
+  function setUnits(u){
+    units = u === 'cups' ? 'cups' : 'metric';
+    try { localStorage.setItem(UNIT_KEY, units); } catch (e) {}
+  }
+
+  function nice(n){
+    if (n >= 10) return String(Math.round(n));
+    var whole = Math.floor(n), rest = n - whole;   // nearest quarter or third
+    var opts = [[0, ''], [0.25, '¼'], [1/3, '⅓'], [0.5, '½'], [2/3, '⅔'], [0.75, '¾'], [1, '']];
+    var best = opts[0];
+    opts.forEach(function(o){ if (Math.abs(rest - o[0]) < Math.abs(rest - best[0])) best = o; });
+    if (best[0] === 1) whole += 1;
+    var f = best[1];
+    if (!whole && !f) return String(Math.round(n * 10) / 10);
+    return (whole ? String(whole) : '') + f;
+  }
+  function volume(ml){
+    if (ml >= 60) {
+      var cups = ml / 240;
+      var txt = nice(cups);
+      return txt + (/^(1|[¼⅓½⅔¾])$/.test(txt) ? ' cup' : ' cups');
+    }
+    if (ml >= 15) return nice(ml / 15) + ' tbsp';
+    return nice(ml / 5) + ' tsp';
+  }
+
+  // "250ml", "1.2 litres", "300 ml" — liquids only
+  // (a packaged size like "400ml tin" is left alone — that's what's on the label)
+  var AMOUNT = /(\d+(?:\.\d+)?)\s?(ml|millilitres?|milliliters?|l|litres?|liters?)(?![a-z])(?!\s*(?:tins?|cans?|jars?|pots?|cartons?|bottles?|pouch|pack)\b)/gi;
+
+  function convertText(text){
+    var s = String(text == null ? '' : text);
+    if (units !== 'cups') return s;
+    return s.replace(AMOUNT, function(m, num, unit){
+      var n = parseFloat(num), u = unit.toLowerCase();
+      return volume(u === 'ml' || u.indexOf('milli') === 0 ? n : n * 1000);
+    });
+  }
+
+  // First duration in a step: "15 minutes", "12–15 mins", "6 hours", "1 hr 30 min"
+  var DUR = /(\d+(?:\.\d+)?)(?:\s*(?:–|-|to)\s*(\d+(?:\.\d+)?))?\s*(hours?|hrs?|hr|h|minutes?|mins?|min|m)\b(?:\s*(?:and\s*)?(\d+)\s*(?:minutes?|mins?|min)\b)?/i;
+  function findDuration(text){
+    var m = DUR.exec(String(text || ''));
+    if (!m) return null;
+    var n = parseFloat(m[1]);
+    var unit = m[3].toLowerCase();
+    var isHour = unit.charAt(0) === 'h';
+    var secs = isHour ? n * 3600 : n * 60;
+    if (isHour && m[4]) secs += parseInt(m[4], 10) * 60;
+    if (secs < 30 || secs > 12 * 3600) return null;
+    var label = m[2] ? (m[1] + '–' + m[2] + (isHour ? ' hr' : ' min')) : (isHour ? (m[4] ? n + ' hr ' + m[4] + ' min' : n + ' hr') : n + ' min');
+    return { seconds: Math.round(secs), label: label };
+  }
+
+  /* ---- Timers ---- */
+  var timers = [];
+  var tickHandle = null;
+  var audioCtx = null;
+  var bar = null;
+  var wakeLock = null;
+
+  function fmt(secs){
+    secs = Math.max(0, Math.ceil(secs));
+    var h = Math.floor(secs / 3600), m = Math.floor((secs % 3600) / 60), s = secs % 60;
+    var mm = (h ? String(m).padStart(2, '0') : String(m)), ss = String(s).padStart(2, '0');
+    return (h ? h + ':' : '') + mm + ':' + ss;
+  }
+  function beep(){
+    try {
+      audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+      var t0 = audioCtx.currentTime;
+      for (var i = 0; i < 6; i++) {
+        var o = audioCtx.createOscillator(), g = audioCtx.createGain();
+        o.type = 'sine'; o.frequency.value = i % 2 ? 660 : 880;
+        g.gain.setValueAtTime(0.0001, t0 + i * 0.35);
+        g.gain.exponentialRampToValueAtTime(0.35, t0 + i * 0.35 + 0.02);
+        g.gain.exponentialRampToValueAtTime(0.0001, t0 + i * 0.35 + 0.3);
+        o.connect(g); g.connect(audioCtx.destination);
+        o.start(t0 + i * 0.35); o.stop(t0 + i * 0.35 + 0.32);
+      }
+    } catch (e) {}
+    try { if (navigator.vibrate) navigator.vibrate([300, 150, 300, 150, 300]); } catch (e) {}
+  }
+  function ensureBar(){
+    if (bar) return bar;
+    bar = document.createElement('div');
+    bar.className = 'rk-timers';
+    bar.setAttribute('role', 'status');
+    bar.setAttribute('aria-live', 'polite');
+    bar.addEventListener('click', function(ev){
+      var b = ev.target.closest ? ev.target.closest('[data-rk-stop]') : null;
+      if (!b) return;
+      var id = b.getAttribute('data-rk-stop');
+      timers = timers.filter(function(t){ return String(t.id) !== id; });
+      render();
+    });
+    document.body.appendChild(bar);
+    return bar;
+  }
+  function keepAwake(on){
+    try {
+      if (on && !wakeLock && navigator.wakeLock) {
+        navigator.wakeLock.request('screen').then(function(l){ wakeLock = l; }).catch(function(){});
+      } else if (!on && wakeLock) { wakeLock.release(); wakeLock = null; }
+    } catch (e) {}
+  }
+  function render(){
+    ensureBar();
+    var now = Date.now();
+    bar.hidden = !timers.length;
+    bar.innerHTML = timers.map(function(t){
+      var left = (t.end - now) / 1000, done = left <= 0;
+      return '<div class="rk-timer' + (done ? ' rk-done' : '') + '">' +
+        '<span class="rk-t-label"></span>' +
+        '<span class="rk-t-time">' + (done ? 'Done!' : fmt(left)) + '</span>' +
+        '<button type="button" class="rk-t-stop" data-rk-stop="' + t.id + '">' + (done ? 'OK' : 'Stop') + '</button></div>';
+    }).join('');
+    var labels = bar.querySelectorAll('.rk-t-label');
+    for (var i = 0; i < labels.length; i++) labels[i].textContent = timers[i].label;
+    if (!timers.length) { clearInterval(tickHandle); tickHandle = null; keepAwake(false); }
+  }
+  function tick(){
+    var now = Date.now();
+    timers.forEach(function(t){ if (!t.fired && t.end <= now) { t.fired = true; beep(); } });
+    render();
+  }
+  function start(seconds, label){
+    // unlock audio inside the tap so the end beep is allowed to play
+    try { audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)(); if (audioCtx.resume) audioCtx.resume(); } catch (e) {}
+    timers.push({ id: Date.now() + Math.random().toString(36).slice(2, 6), end: Date.now() + seconds * 1000, label: label, fired: false });
+    keepAwake(true);
+    if (!tickHandle) tickHandle = setInterval(tick, 500);
+    render();
+  }
+
+  /* Build the ingredients + method HTML for a recipe object.
+     esc: the page's HTML-escape function. */
+  function bodyHtml(r, esc, mealName){
+    var h = '<div class="rk-units" role="group" aria-label="Measurements">' +
+      '<button type="button" data-rk-units="metric" aria-pressed="' + (units === 'metric') + '">ml</button>' +
+      '<button type="button" data-rk-units="cups" aria-pressed="' + (units === 'cups') + '">Cups &amp; spoons</button></div>';
+    if (r.ingredients && r.ingredients.length) {
+      h += '<div class="rk-label">You need</div><ul class="rk-ing">' +
+        r.ingredients.map(function(i){ return '<li>' + esc(convertText(i)) + '</li>'; }).join('') + '</ul>';
+    }
+    if (r.steps && r.steps.length) {
+      h += '<div class="rk-label">Method</div><ol class="rk-steps">' + r.steps.map(function(s, i){
+        var d = findDuration(s);
+        var btn = d ? '<button type="button" class="rk-start" data-rk-secs="' + d.seconds + '" data-rk-label="' +
+          esc((mealName ? mealName + ' · ' : '') + 'Step ' + (i + 1) + ' (' + d.label + ')') + '">⏱ ' + esc(d.label) + '</button>' : '';
+        return '<li><span>' + esc(convertText(s)) + '</span>' + btn + '</li>';
+      }).join('') + '</ol>';
+    }
+    if (r.tip) h += '<div class="rk-tip">' + esc(convertText(r.tip)) + '</div>';
+    return h;
+  }
+
+  /* One delegated click handler per container. rerender() redraws the recipe. */
+  function bind(container, rerender){
+    if (!container || container.__rkBound) return;
+    container.__rkBound = true;
+    container.addEventListener('click', function(ev){
+      var t = ev.target.closest ? ev.target.closest('[data-rk-units],[data-rk-secs]') : null;
+      if (!t) return;
+      if (t.hasAttribute('data-rk-units')) { setUnits(t.getAttribute('data-rk-units')); rerender(); return; }
+      start(parseInt(t.getAttribute('data-rk-secs'), 10), t.getAttribute('data-rk-label'));
+      t.classList.add('rk-started');
+      setTimeout(function(){ t.classList.remove('rk-started'); }, 900);
+    });
+  }
+
+  return { getUnits: getUnits, setUnits: setUnits, convertText: convertText, findDuration: findDuration,
+           start: start, bodyHtml: bodyHtml, bind: bind };
+})();
+</script>
 <script>
 (function(){
   "use strict";
@@ -534,7 +783,7 @@
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-09-25T20:27:56.146Z",
+    "updatedISO": "2026-09-25T20:32:58.510Z",
     "forDate": "2026-09-25",
     "alexStatus": "leave",
     "alexToday": [],
@@ -565,22 +814,203 @@
     "mathildaTomorrow": []
 };
 
-  /* ---- Meal plan — mirror of the kitchen board ("Langley Departures").
-         That board is source of truth; the Thursday routine copies it here.
+  /* ---- Meal plan — mirror of the Tea Planner (the family's source of truth).
+         bake.js overwrites this block from meals.json, which the daily routine
+         writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    '2026-08-30': { meal: 'Baked Salmon & New Potatoes', note: '' },
-    '2026-08-31': { meal: 'Tuna Pasta Salad', note: '' },
-    '2026-09-01': { meal: 'Eating out', note: '' },
-    '2026-09-02': { meal: 'Veggie Bean Chilli', note: '' },
-    '2026-09-03': { meal: 'Pasta Bake', note: "Francis's first day of Year 7 at QEHS" },
-    '2026-09-04': { meal: 'Veggie fajitas', note: '' },
-    '2026-09-05': { meal: 'Veggie pizza night', note: 'Kids build their own' },
-    '2026-09-06': { meal: 'Slow-cooker chicken casserole', note: 'The one meat night — start it ~9am before Francis’s hockey camp' },
-    '2026-09-07': { meal: 'Frozen fishcakes with mash & peas', note: '' },
-    '2026-09-08': { meal: 'Veggie chickpea & spinach curry with rice', note: '' },
-    '2026-09-09': { meal: 'Lentil bolognese with spaghetti', note: 'Double batch, freezing extra' },
-    '2026-09-10': { meal: 'Jacket potatoes, tuna mayo or cheese & beans', note: '' }
+    "2026-09-25": {
+      "meal": "Salmon",
+      "note": "Swapped in for the prawn stir-fry",
+      "kind": "fish",
+      "method": "oven",
+      "time": "5 min prep · 20 min",
+      "recipe": {
+        "ingredients": [
+          "4 salmon fillets",
+          "500g new potatoes, halved",
+          "200g green beans or tenderstem",
+          "1 lemon",
+          "1 tbsp olive oil",
+          "Small knob of butter",
+          "Salt and pepper"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Heat the oven to 200°C (180°C fan). Boil the new potatoes for 15 minutes until tender.",
+          "Put the salmon skin-side down on a lined tray. Drizzle with oil, squeeze over half the lemon and season.",
+          "Bake for 12–15 minutes, until it flakes easily.",
+          "Steam or boil the green beans for the last 4 minutes of the potatoes.",
+          "Drain the potatoes and toss with the butter. Serve with lemon wedges."
+        ],
+        "tip": "Air fryer instead: 180°C for 10–12 minutes. Flake Mathilda's portion and check for bones."
+      }
+    },
+    "2026-09-26": {
+      "meal": "Burritos",
+      "note": "This week's one meat night. Everything's already in",
+      "kind": "meat",
+      "method": "hob",
+      "time": "10 min prep · 25 min",
+      "recipe": {
+        "ingredients": [
+          "500g beef mince (or chicken, if that's what's in)",
+          "1 onion, chopped",
+          "1 red pepper, sliced",
+          "400g tin black or kidney beans, drained",
+          "1 tbsp fajita or burrito seasoning",
+          "250g microwave rice",
+          "6–8 large tortillas",
+          "100g grated cheddar",
+          "To serve: salsa, soured cream or yoghurt, lettuce, avocado"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Fry the onion and pepper in a little oil for 5 minutes until soft.",
+          "Add the mince and brown for 6–8 minutes, breaking it up. Drain off any excess fat.",
+          "Stir in the beans and 2 tbsp water. Take out Mathilda's portion now, then add the seasoning to the rest and simmer for 5 minutes.",
+          "Heat the rice. Warm the tortillas in a dry pan or the microwave for 20 seconds.",
+          "Fill each tortilla with rice, the filling, cheese and toppings, then fold the sides in and roll.",
+          "For a crisp finish, toast them seam-side down in a dry pan for 1–2 minutes, or 3 minutes in the air fryer at 190°C."
+        ],
+        "tip": "Leftover filling freezes well once fully cooled. It would be next week's meat portion for the meal drawer."
+      }
+    },
+    "2026-09-27": {
+      "meal": "Big-batch veggie ratatouille with crusty bread & a fried egg",
+      "note": "No aubergine this week: extra courgette and peppers. Save portions for Wednesday",
+      "kind": "veg",
+      "method": "batch",
+      "time": "15 min prep · 45 min",
+      "recipe": {
+        "ingredients": [
+          "2 tbsp olive oil",
+          "2 onions, chopped",
+          "3 garlic cloves, crushed",
+          "4 courgettes, chunked (extra instead of aubergine)",
+          "3 peppers, mixed colours, chunked",
+          "2 × 400g tins chopped tomatoes",
+          "1 tbsp tomato purée",
+          "1 tsp dried mixed herbs",
+          "1 tsp sugar",
+          "Crusty bread and 4 eggs to serve"
+        ],
+        "serves": "4 tonight + 4 portions for Wednesday",
+        "steps": [
+          "Soften the onions in the oil in a large pan for 8 minutes, then add the garlic for 1 minute.",
+          "Add the courgettes and peppers and cook for 10 minutes, stirring now and then, until starting to colour.",
+          "Stir in the tomatoes, purée, herbs and sugar. Season, cover and simmer for 25 minutes, then uncover for 5 more if it's watery.",
+          "Fry the eggs. Serve the ratatouille in bowls with an egg on top and crusty bread.",
+          "Cool the leftover half within an hour, then fridge it in a covered tub for Wednesday. It keeps 3 days."
+        ],
+        "tip": "Slow cooker option: do step 1 in a pan, then everything goes in on low for 6 hours. Blitz some of Mathilda's portion if she's fussy about chunks."
+      }
+    },
+    "2026-09-28": {
+      "meal": "Baked cod with lemon & herb crumb, new potatoes & green beans",
+      "note": "",
+      "kind": "fish",
+      "method": "oven",
+      "time": "10 min prep · 25 min",
+      "recipe": {
+        "ingredients": [
+          "4 cod fillets",
+          "50g breadcrumbs (panko or blitzed stale bread)",
+          "Zest of 1 lemon, plus wedges",
+          "Small handful fresh parsley, chopped (or 1 tsp dried)",
+          "25g butter, melted",
+          "500g new potatoes, halved",
+          "200g green beans"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Heat the oven to 200°C (180°C fan). Boil the potatoes for 15 minutes.",
+          "Mix the breadcrumbs, lemon zest, parsley, melted butter and a pinch of salt.",
+          "Put the cod on a lined tray and press the crumb on top.",
+          "Bake for 12–15 minutes, until the crumb is golden and the fish flakes.",
+          "Cook the beans for the last 4 minutes of the potatoes. Serve with lemon wedges."
+        ],
+        "tip": "Air fryer: 180°C for 10–12 minutes. Great with frozen cod: add 5 minutes and check it's piping hot in the middle."
+      }
+    },
+    "2026-09-29": {
+      "meal": "Cheesy veggie quesadillas with side salad",
+      "note": "Fits around Francis's guitar lesson (6–7pm)",
+      "kind": "veg",
+      "method": "hob",
+      "time": "10 min prep · 20 min",
+      "recipe": {
+        "ingredients": [
+          "8 flour tortillas",
+          "150g grated cheddar",
+          "1 red pepper, finely diced",
+          "198g tin sweetcorn, drained",
+          "400g tin black beans, drained and lightly mashed",
+          "2 spring onions, sliced (optional)",
+          "½ tsp smoked paprika",
+          "Salad and salsa to serve"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Mix the beans, pepper, sweetcorn, spring onions and paprika.",
+          "Spread the mix over 4 tortillas, top with cheese, and lay the other 4 tortillas on top.",
+          "Cook each one in a dry frying pan over a medium heat for 2–3 minutes a side, pressing down, until golden and the cheese melts.",
+          "Or air fry two at a time at 190°C for 6 minutes, turning halfway (a rack on top stops the lid flying).",
+          "Cut into wedges and serve with salad and salsa."
+        ],
+        "tip": "Make them before the 6pm guitar lesson and keep them warm in a low oven. Leave paprika out of Mathilda's."
+      }
+    },
+    "2026-09-30": {
+      "meal": "Sunday's ratatouille, reheated, with bread or rice",
+      "note": "Open afternoon 4–5pm, then Hockey Academy 6:15–7:45pm",
+      "kind": "veg",
+      "method": "reheat",
+      "time": "10 min",
+      "recipe": {
+        "ingredients": [
+          "Sunday's ratatouille (4 portions)",
+          "Crusty bread, or 250g microwave rice",
+          "Grated cheese to top (optional)"
+        ],
+        "serves": "4",
+        "steps": [
+          "Tip the ratatouille into a pan with a splash of water.",
+          "Heat gently, stirring, until it bubbles and is piping hot all the way through (about 8 minutes).",
+          "Or microwave in a covered bowl for 4–5 minutes, stirring halfway.",
+          "Serve with bread or rice, and a sprinkle of cheese if you like."
+        ],
+        "tip": "Only reheat it once. Anyone eating after hockey can have their portion microwaved separately."
+      }
+    },
+    "2026-10-01": {
+      "meal": "Creamy mushroom & leek risotto",
+      "note": "",
+      "kind": "veg",
+      "method": "hob",
+      "time": "10 min prep · 30 min",
+      "recipe": {
+        "ingredients": [
+          "1 tbsp olive oil + knob of butter",
+          "2 leeks, washed and sliced",
+          "250g mushrooms, sliced",
+          "2 garlic cloves, crushed",
+          "300g risotto rice",
+          "1.2 litres hot veg stock",
+          "50g parmesan or vegetarian hard cheese, grated",
+          "2 tbsp crème fraîche (optional)"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Soften the leeks in the oil and butter for 5 minutes. Add the mushrooms and garlic and cook for 5 more.",
+          "Stir in the rice for 1 minute until coated.",
+          "Add the stock a ladle at a time, stirring, letting each one soak in before the next. It takes about 20 minutes.",
+          "When the rice is tender but still has a little bite, take it off the heat.",
+          "Stir in the cheese and crème fraîche, season, cover and rest for 2 minutes before serving."
+        ],
+        "tip": "Oven shortcut: after step 2, add all the stock, cover and bake at 180°C for 25 minutes, then stir in the cheese."
+      }
+    }
   };
 
   /* ---- Shopping list auto-generation ------------------------------------
@@ -781,37 +1211,113 @@
   }
 
   /* ============ DINNER ============ */
+  var METHOD_LABEL = { 'slow-cooker':'Slow cooker', 'air-fryer':'Air fryer', 'batch':'Batch cook', 'reheat':'Reheat', 'oven':'Oven', 'hob':'Hob', 'no-cook':'No cook' };
+  var teaOpenKey = null;
+  var teaBound = false;
+
+  function hasRecipe(e){
+    return !!(e && e.recipe && ((e.recipe.steps && e.recipe.steps.length) || (e.recipe.ingredients && e.recipe.ingredients.length)));
+  }
+  function mealFacts(e){
+    var f = [];
+    if (e.method) f.push(METHOD_LABEL[e.method] || e.method);
+    if (e.time) f.push(e.time);
+    return f;
+  }
+  function recipeHtml(key, e){
+    var r = e.recipe || {};
+    var d = new Date(key + 'T12:00:00');
+    var dayLabel = key === ymd(new Date()) ? 'Tonight' : d.toLocaleDateString('en-GB', { weekday:'long' });
+    var facts = mealFacts(e);
+    if (r.serves) facts.push('Serves ' + r.serves);
+    var h = '<div class="recipe-head"><div><div class="recipe-title">' + esc(dayLabel) + ': ' + esc(e.meal) + '</div>' +
+      (facts.length ? '<div class="recipe-facts">' + esc(facts.join(' · ')) + '</div>' : '') +
+      '</div><button type="button" class="recipe-close" data-close="1">Close</button></div>';
+    h += RecipeKit.bodyHtml({
+      ingredients: (r.ingredients || []).map(String),
+      steps: (r.steps || []).map(String),
+      tip: r.tip ? String(r.tip) : ''
+    }, esc, e.meal);
+    return h;
+  }
+  function toggleRecipe(key){
+    teaOpenKey = teaOpenKey === key ? null : key;
+    renderTea();
+    if (teaOpenKey){
+      var box = document.getElementById('teaRecipe');
+      if (box && box.scrollIntoView) box.scrollIntoView({ block:'nearest', behavior:'smooth' });
+    }
+  }
+
   function renderTea(){
     var today = new Date();
-    var entry = WEEK_MEAL_PLAN[ymd(today)];
+    var todayKey = ymd(today);
+    var entry = WEEK_MEAL_PLAN[todayKey];
     var mainEl = document.getElementById('teaMain');
+    var metaEl = document.getElementById('teaMeta');
     var noteEl = document.getElementById('teaNote');
     var tagEl = document.getElementById('teaTag');
-    if (!entry || !entry.meal){
-      mainEl.className = 'big dim';
-      mainEl.textContent = 'Nothing planned yet';
-      noteEl.hidden = true;
-      tagEl.textContent = 'Tonight';
-    } else {
-      mainEl.className = 'big';
-      mainEl.textContent = entry.meal;
-      if (entry.note){ noteEl.hidden = false; noteEl.textContent = entry.note; }
-      else noteEl.hidden = true;
-      tagEl.textContent = 'Tonight';
+    var boxEl = document.getElementById('teaRecipe');
+    var stripEl = document.getElementById('weekStrip');
+
+    if (!teaBound){
+      teaBound = true;
+      mainEl.addEventListener('click', function(){ toggleRecipe(ymd(new Date())); });
+      stripEl.addEventListener('click', function(ev){
+        var b = ev.target.closest ? ev.target.closest('[data-key]') : null;
+        if (b && !b.disabled) toggleRecipe(b.getAttribute('data-key'));
+      });
+      boxEl.addEventListener('click', function(ev){
+        if (ev.target.closest && ev.target.closest('[data-close]')){ teaOpenKey = null; renderTea(); }
+      });
+      RecipeKit.bind(boxEl, renderTea);
     }
 
-    var stripEl = document.getElementById('weekStrip');
+    tagEl.textContent = 'Tonight';
+    if (!entry || !entry.meal){
+      mainEl.className = 'big dim tea-btn';
+      mainEl.textContent = 'Nothing planned yet';
+      mainEl.disabled = true;
+      metaEl.hidden = true;
+      noteEl.hidden = true;
+    } else {
+      mainEl.className = 'big tea-btn';
+      mainEl.textContent = entry.meal;
+      mainEl.disabled = !hasRecipe(entry);
+      var facts = mealFacts(entry);
+      if (facts.length || hasRecipe(entry)){
+        metaEl.hidden = false;
+        metaEl.innerHTML = facts.map(function(f){ return '<span>' + esc(f) + '</span>'; }).join('') +
+          (hasRecipe(entry) ? '<span class="go">' + (teaOpenKey === todayKey ? 'Hide recipe ▴' : 'Tap for recipe ▾') + '</span>' : '');
+      } else metaEl.hidden = true;
+      if (entry.note){ noteEl.hidden = false; noteEl.textContent = entry.note; }
+      else noteEl.hidden = true;
+    }
+    mainEl.setAttribute('aria-expanded', teaOpenKey === todayKey ? 'true' : 'false');
+
+    var open = teaOpenKey ? WEEK_MEAL_PLAN[teaOpenKey] : null;
+    if (open && hasRecipe(open)){
+      boxEl.innerHTML = recipeHtml(teaOpenKey, open);
+      boxEl.hidden = false;
+    } else {
+      teaOpenKey = null;
+      boxEl.hidden = true;
+      boxEl.innerHTML = '';
+    }
+
     var rows = [];
     for (var i = 0; i < 7; i++){
       var d = addDays(today, i);
       var key = ymd(d);
       var e = WEEK_MEAL_PLAN[key];
       var label = i === 0 ? 'TODAY' : d.toLocaleDateString('en-GB', { weekday:'short' }).toUpperCase();
+      var can = hasRecipe(e);
       rows.push(
-        '<div class="wk-row' + (i === 0 ? ' is-today' : '') + '">' +
+        '<button type="button" class="wk-row' + (i === 0 ? ' is-today' : '') + (teaOpenKey === key ? ' is-open' : '') + '" data-key="' + key + '"' + (can ? '' : ' disabled') + '>' +
           '<span class="wk-day">' + label + '</span>' +
           '<span class="wk-meal' + (e && e.meal ? '' : ' wk-empty') + '">' + esc(e && e.meal ? e.meal : 'Not planned yet') + '</span>' +
-        '</div>'
+          '<span class="wk-go">' + (can ? (teaOpenKey === key ? '▴' : 'Recipe ›') : '') + '</span>' +
+        '</button>'
       );
     }
     stripEl.innerHTML = rows.join('');
