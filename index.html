@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Alex Mission Control</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mission Control">
+<meta name="theme-color" content="#0B1526">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+  :root{
+    color-scheme: dark;
+    --base:#132342;          /* deep navy — the page ground */
+    --header:#0A1530;         /* near-black navy header band */
+    --surface:#1C2E54;        /* card sitting on the navy */
+    --surface-2:#16244A;      /* nested rows / tiles */
+    --sunk:#0F1938;           /* deepest — shopping list / quiet states */
+    --slate:#2C4174;
+    --slate-lift:#3E5A96;
+    --copper:#D98A4B;         /* accent — only ever on a dark surface */
+    --copper-deep:#B06B33;
+    --done:#4FD8A0;
+    --gold:#F2C14E;
+    --ink:#FFFFFF;
+    --ink-dim:#C7D2EA;
+    --ink-faint:#8C9BC2;
+    --line:rgba(255,255,255,.14);
+    --line-strong:rgba(255,255,255,.26);
+    --f-display:'Anton','Arial Narrow','Helvetica Neue',sans-serif;
+    --f-body:'IBM Plex Sans',-apple-system,'Segoe UI',sans-serif;
+    --f-mono:'IBM Plex Mono','SFMono-Regular',Consolas,monospace;
+  }
+
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  img{ max-width:100%; }
+  [hidden]{ display:none!important; }
+  body{
+    background:var(--base);
+    color:var(--ink);
+    font-family:var(--f-body);
+    font-size:16px;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .app{
+    max-width:452px;
+    margin:0 auto;
+    min-height:100dvh;
+    padding:0 14px calc(46px + env(safe-area-inset-bottom));
+    background:
+      radial-gradient(125% 55% at 50% 0%, rgba(0,0,0,.32), transparent 60%),
+      radial-gradient(125% 42% at 50% 100%, rgba(0,0,0,.24), transparent 62%),
+      var(--base);
+  }
+
+  h1,h2,h3{ margin:0; }
+  ul{ margin:0; padding:0; list-style:none; }
+  button{ font-family:inherit; color:inherit; }
+
+  .eyebrow{
+    font-family:var(--f-mono);
+    font-size:.62rem;
+    font-weight:600;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    color:var(--ink-dim);
+  }
+  .mono-num{ font-family:var(--f-mono); font-variant-numeric:tabular-nums; }
+
+  /* ---------- Header ---------- */
+  .head{
+    position:sticky;
+    top:env(safe-area-inset-top,0px);
+    z-index:20;
+    display:flex;
+    align-items:center;
+    gap:11px;
+    padding:11px 2px 10px;
+    margin-bottom:6px;
+    background:linear-gradient(180deg, var(--header) 70%, rgba(10,21,48,.35));
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+  }
+  .monogram{
+    flex:none;
+    width:38px; height:38px;
+    display:grid; place-items:center;
+    background:#FFFFFF;
+    color:var(--copper-deep);
+    font-family:var(--f-display);
+    font-size:1.02rem;
+    letter-spacing:.02em;
+    border-radius:7px;
+    box-shadow:0 0 0 1px rgba(0,0,0,.12) inset, 0 4px 16px rgba(0,0,0,.32);
+  }
+  .head-id{ flex:1; min-width:0; }
+  .head-id .k{
+    font-family:var(--f-mono);
+    font-size:.56rem;
+    letter-spacing:.28em;
+    color:var(--ink-faint);
+    text-transform:uppercase;
+  }
+  .head-id .n{
+    font-family:var(--f-display);
+    font-size:1.32rem;
+    letter-spacing:.02em;
+    text-transform:uppercase;
+    line-height:1;
+    margin-top:2px;
+  }
+  .head-clock{ flex:none; text-align:right; }
+  .head-clock .t{
+    font-family:var(--f-mono);
+    font-weight:600;
+    font-variant-numeric:tabular-nums;
+    font-size:1.16rem;
+    letter-spacing:.02em;
+    line-height:1;
+  }
+  .head-clock .d{
+    font-family:var(--f-mono);
+    font-size:.56rem;
+    letter-spacing:.16em;
+    color:var(--ink-dim);
+    text-transform:uppercase;
+    margin-top:4px;
+  }
+  .led{
+    display:inline-block;
+    width:7px; height:7px;
+    border-radius:50%;
+    margin-right:5px;
+    background:var(--ink-faint);
+    vertical-align:middle;
+  }
+  .led.ok{ background:var(--done); box-shadow:0 0 7px rgba(79,216,160,.7); }
+  .led.warn{ background:var(--gold); box-shadow:0 0 7px rgba(242,193,78,.7); }
+  .led.err{ background:var(--copper); box-shadow:0 0 7px rgba(217,138,75,.75); }
+
+  .banner{
+    font-size:.8rem;
+    line-height:1.4;
+    padding:9px 12px;
+    border-radius:9px;
+    margin-bottom:12px;
+    border:1px solid rgba(242,193,78,.34);
+    background:var(--sunk);
+    color:var(--gold);
+  }
+
+  /* ---------- Module shell ---------- */
+  .mod{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:15px 15px 16px;
+    margin-bottom:12px;
+  }
+  .mod-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin-bottom:11px;
+  }
+  .mod-top .eyebrow{ display:flex; align-items:center; gap:7px; }
+  .tag{
+    font-family:var(--f-mono);
+    font-size:.56rem;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-dim);
+    border:1px solid var(--line-strong);
+    border-radius:999px;
+    padding:3px 8px;
+    white-space:nowrap;
+  }
+
+  .big{
+    font-family:var(--f-display);
+    font-size:1.72rem;
+    line-height:1.04;
+    text-transform:uppercase;
+    letter-spacing:.01em;
+    text-wrap:balance;
+  }
+  .big.dim{ color:var(--ink-dim); font-size:1.24rem; }
+  .sub{
+    font-size:.84rem;
+    color:var(--ink-dim);
+    margin-top:5px;
+    line-height:1.42;
+  }
+  .note{
+    font-size:.82rem;
+    color:var(--ink);
+    margin-top:8px;
+    padding:8px 10px;
+    background:var(--surface-2);
+    border-radius:8px;
+    border-left:2px solid var(--slate-lift);
+  }
+
+  .agenda{ display:flex; flex-direction:column; gap:10px; }
+  .ev{ display:grid; grid-template-columns:52px 1fr; gap:12px; align-items:start; }
+  .ev-time{
+    font-family:var(--f-mono);
+    font-weight:600;
+    font-size:.82rem;
+    font-variant-numeric:tabular-nums;
+    color:var(--copper);
+    padding-top:1px;
+  }
+  .ev-title{ font-size:.96rem; font-weight:500; line-height:1.34; }
+  .ev-loc{ font-size:.78rem; color:var(--ink-dim); margin-top:2px; }
+  .empty{
+    font-family:var(--f-mono);
+    font-size:.82rem;
+    color:var(--ink-dim);
+    letter-spacing:.02em;
+  }
+
+  .kid[data-k="francis"] .mod-top .eyebrow{ color:#8FD3E8; }
+  .kid[data-k="mathilda"] .mod-top .eyebrow{ color:#F0A8CE; }
+
+  /* ---------- Alex's own day ---------- */
+  .tag.status-leave{ color:var(--gold); border-color:rgba(242,193,78,.4); background:rgba(242,193,78,.08); }
+  .tag.status-away{ color:var(--copper); border-color:rgba(217,138,75,.4); background:rgba(217,138,75,.08); }
+
+  /* ---------- Mum: anything unusual ---------- */
+  .unusual{ border-color:rgba(242,193,78,.24); }
+  .unusual .big{ color:var(--ink); }
+  .unusual .big.dim{ color:var(--ink-dim); }
+
+  /* ---------- Week-ahead meal strip ---------- */
+  .weekstrip{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    margin-top:12px;
+    padding-top:12px;
+    border-top:1px solid var(--line);
+  }
+  .wk-row{
+    display:grid;
+    grid-template-columns:38px 1fr;
+    gap:10px;
+    align-items:baseline;
+    padding:4px 6px;
+    border-radius:8px;
+  }
+  .wk-row.is-today{
+    background:var(--surface-2);
+    border:1px solid var(--line-strong);
+  }
+  .wk-day{
+    font-family:var(--f-mono);
+    font-size:.62rem;
+    font-weight:600;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+  }
+  .wk-row.is-today .wk-day{ color:var(--copper); }
+  .wk-meal{ font-size:.86rem; color:var(--ink-dim); }
+  .wk-row.is-today .wk-meal{ color:var(--ink); font-weight:500; }
+  .wk-meal.wk-empty{ color:var(--ink-faint); font-style:italic; }
+
+  /* ---------- Shopping list ---------- */
+  .shop{ border-color:rgba(217,138,75,.28); }
+  .shop.quiet{ opacity:.72; }
+  .shop-quiet-state{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  .shop-quiet-state .big{ font-size:1.5rem; }
+  .shop-progress{
+    display:flex; align-items:center; gap:9px;
+    margin-bottom:13px;
+  }
+  .bar{
+    flex:1;
+    height:7px;
+    border-radius:999px;
+    background:var(--surface-2);
+    overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .bar > i{
+    display:block; height:100%;
+    width:0%;
+    background:linear-gradient(90deg, var(--copper), var(--done));
+    transition:width .35s ease;
+  }
+  .bar-count{
+    font-family:var(--f-mono);
+    font-size:.72rem;
+    font-weight:600;
+    color:var(--ink-dim);
+    white-space:nowrap;
+  }
+  .shop-grp{ margin-top:14px; }
+  .shop-grp:first-of-type{ margin-top:0; }
+  .shop-grp-h{
+    display:flex; align-items:baseline; gap:8px;
+    margin-bottom:7px;
+  }
+  .shop-note{
+    font-size:.74rem;
+    color:var(--ink-faint);
+    margin-top:12px;
+    padding-top:11px;
+    border-top:1px solid var(--line);
+    line-height:1.4;
+  }
+
+  .check{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    width:100%;
+    min-height:46px;
+    padding:8px 10px;
+    margin:5px 0;
+    background:var(--surface-2);
+    border:1px solid var(--line);
+    border-radius:10px;
+    text-align:left;
+    font-size:.92rem;
+    line-height:1.3;
+    cursor:pointer;
+    -webkit-tap-highlight-color:transparent;
+    transition:border-color .15s ease, background .15s ease;
+  }
+  .check:active{ transform:translateY(1px); }
+  .check:focus-visible{ outline:2px solid var(--copper); outline-offset:2px; }
+  .box{
+    flex:none;
+    width:24px; height:24px;
+    border-radius:7px;
+    border:2px solid var(--ink-faint);
+    display:grid; place-items:center;
+    transition:border-color .15s ease, background .15s ease;
+  }
+  .box svg{ width:14px; height:14px; opacity:0; transform:scale(.5); transition:opacity .15s ease, transform .18s cubic-bezier(.2,.9,.3,1.4); }
+  .check.on{ border-color:rgba(79,216,160,.4); background:rgba(79,216,160,.09); }
+  .check.on .lab{ color:var(--ink-dim); text-decoration:line-through; text-decoration-color:var(--ink-faint); }
+  .check.on .box{ border-color:var(--done); background:var(--done); }
+  .check.on .box svg{ opacity:1; transform:scale(1); }
+  .lab{ flex:1; }
+  @media (prefers-reduced-motion:reduce){
+    .box svg, .bar > i{ transition:none; }
+  }
+
+  .foot{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    padding:14px 4px 4px;
+    font-family:var(--f-mono);
+    font-size:.6rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-dim);
+  }
+  .foot button{
+    background:rgba(0,0,0,.18);
+    border:1px solid rgba(255,255,255,.5);
+    border-radius:999px;
+    padding:6px 11px;
+    font-size:.6rem;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:#FFFFFF;
+    cursor:pointer;
+  }
+  .foot button:active{ transform:translateY(1px); }
+  .foot button:focus-visible{ outline:2px solid var(--copper); outline-offset:2px; }
+</style>
+
+</head>
+<body>
+
+<div class="app">
+
+  <header class="head">
+    <div class="monogram">AL</div>
+    <div class="head-id">
+      <div class="k">Personal Ops Board</div>
+      <div class="n">Alex&nbsp;/&nbsp;Mission Control</div>
+    </div>
+    <div class="head-clock">
+      <div class="t" id="clock">--:--</div>
+      <div class="d"><span class="led" id="led" title="Data status"></span><span id="dateLine">&mdash;</span></div>
+    </div>
+  </header>
+
+  <div class="banner" id="banner" hidden></div>
+
+  <!-- 0a — ALEX TODAY -->
+  <section class="mod" id="alexMod">
+    <div class="mod-top">
+      <span class="eyebrow">&#9670; Your Day</span>
+      <span class="tag" id="alexTag">&mdash;</span>
+    </div>
+    <div id="alexBody"><div class="empty">&mdash;</div></div>
+  </section>
+
+  <!-- 0b — MUM: ANYTHING UNUSUAL -->
+  <section class="mod unusual" id="mumMod">
+    <div class="mod-top">
+      <span class="eyebrow">&#9670; Mum &middot; Anything Unusual</span>
+      <span class="tag">Today</span>
+    </div>
+    <div id="mumBody"><div class="empty">&mdash;</div></div>
+  </section>
+
+  <!-- 1 — FRANCIS TODAY -->
+  <section class="mod kid" data-k="francis" id="francisMod">
+    <div class="mod-top">
+      <span class="eyebrow">&#9670; Francis &middot; Today</span>
+      <span class="tag">Age 11</span>
+    </div>
+    <div id="francisBody"><div class="empty">&mdash;</div></div>
+  </section>
+
+  <!-- 2 — MATHILDA TODAY -->
+  <section class="mod kid" data-k="mathilda" id="mathildaMod">
+    <div class="mod-top">
+      <span class="eyebrow">&#9670; Mathilda &middot; Today</span>
+      <span class="tag">Nursery</span>
+    </div>
+    <div id="mathildaBody"><div class="empty">&mdash;</div></div>
+  </section>
+
+  <!-- 3 — DINNER -->
+  <section class="mod" id="teaMod">
+    <div class="mod-top">
+      <span class="eyebrow">&#9670; What&rsquo;s For Dinner</span>
+      <span class="tag" id="teaTag">Tonight</span>
+    </div>
+    <div class="big" id="teaMain">&mdash;</div>
+    <div class="note" id="teaNote" hidden></div>
+    <div class="weekstrip" id="weekStrip"></div>
+  </section>
+
+  <!-- 4 — SHOPPING LIST -->
+  <section class="mod shop" id="shopMod">
+    <div class="mod-top">
+      <span class="eyebrow">&#9670; Shopping List</span>
+      <span class="tag" id="shopTag">Thursdays</span>
+    </div>
+    <div id="shopBody"></div>
+  </section>
+
+  <div class="foot">
+    <span id="syncLine">&mdash;</span>
+    <button type="button" id="reloadBtn">&#8635; Reload</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* =====================================================================
+     SNAPSHOT  —  the only block a scheduled routine rewrites.
+     A cloud routine on Jessica's account can refresh this nightly: read
+     jesslangley4@gmail.com, filter today's events by the same Francis /
+     Mathilda keywords Langley Departures uses, read alex.langley90@gmail.com
+     for Alex's own day, and drop them in here, then republish the artifact.
+     Everything else on this board runs offline from the phone's clock.
+
+     alexStatus reads Alex's own calendar colour legend (same as Langley
+     Departures' Dad card): colorId 6 = 'away' (away from home/normal
+     workplace), colorId 5 = 'leave' (home, not working), anything else
+     ('normal') means an ordinary working day. alexToday excludes the
+     all-day away/leave marker event itself — that's what sets alexStatus —
+     and lists only Alex's actual appointments/meetings for today.
+
+     mumUnusual is hand-curated, not auto-detected: "out of the ordinary"
+     isn't a thing a keyword filter can reliably spot on Jess's calendar,
+     so this is filled in by whoever refreshes the snapshot each night —
+     null/empty means "nothing unusual, ordinary day". ---- */
+  var SNAPSHOT = {
+    "updatedISO": "2026-09-25T18:46:11.823Z",
+    "forDate": "2026-09-25",
+    "alexStatus": "leave",
+    "alexToday": [],
+    "mumUnusual": null,
+    "francisToday": [],
+    "mathildaToday": [
+        {
+            "time": null,
+            "title": "Nursery theme: World's Coffee Morning",
+            "loc": "",
+            "allDay": true
+        },
+        {
+            "time": "09:30",
+            "title": "Gymnastics",
+            "loc": "Allegro Gymnastics Academy",
+            "allDay": false
+        },
+        {
+            "time": "13:30",
+            "title": "Swimming",
+            "loc": "Emmerson Pool Hire",
+            "allDay": false
+        }
+    ]
+};
+
+  /* ---- Meal plan — mirror of the kitchen board ("Langley Departures").
+         That board is source of truth; the Thursday routine copies it here.
+         Any date not in this map shows "Nothing planned yet". ---- */
+  var WEEK_MEAL_PLAN = {
+    '2026-08-30': { meal: 'Baked Salmon & New Potatoes', note: '' },
+    '2026-08-31': { meal: 'Tuna Pasta Salad', note: '' },
+    '2026-09-01': { meal: 'Eating out', note: '' },
+    '2026-09-02': { meal: 'Veggie Bean Chilli', note: '' },
+    '2026-09-03': { meal: 'Pasta Bake', note: "Francis's first day of Year 7 at QEHS" },
+    '2026-09-04': { meal: 'Veggie fajitas', note: '' },
+    '2026-09-05': { meal: 'Veggie pizza night', note: 'Kids build their own' },
+    '2026-09-06': { meal: 'Slow-cooker chicken casserole', note: 'The one meat night — start it ~9am before Francis’s hockey camp' },
+    '2026-09-07': { meal: 'Frozen fishcakes with mash & peas', note: '' },
+    '2026-09-08': { meal: 'Veggie chickpea & spinach curry with rice', note: '' },
+    '2026-09-09': { meal: 'Lentil bolognese with spaghetti', note: 'Double batch, freezing extra' },
+    '2026-09-10': { meal: 'Jacket potatoes, tuna mayo or cheese & beans', note: '' }
+  };
+
+  /* ---- Shopping list auto-generation ------------------------------------
+     No manual shopping list exists yet, so this scans whatever week's worth
+     of meals sit around today's date in WEEK_MEAL_PLAN and matches each
+     meal name against a small keyword dictionary. It's an approximation —
+     check it against the fridge before you go. Swap this for a manually
+     supplied list any time by replacing SHOPPING_LIST_OVERRIDE with an
+     array of { cat, name } and the auto-generator will be skipped. ---- */
+  var SHOPPING_LIST_OVERRIDE = null; // e.g. [{cat:'Fresh & Chilled', name:'Milk'}, ...]
+
+  var MEAL_INGREDIENTS = [
+    { test:/salmon/i, items:[
+      {cat:'Fresh & Chilled', name:'Salmon fillets'}, {cat:'Fresh & Chilled', name:'New potatoes'}, {cat:'Fresh & Chilled', name:'Lemon'} ] },
+    { test:/tuna pasta|tuna.*salad/i, items:[
+      {cat:'Store Cupboard', name:'Pasta'}, {cat:'Store Cupboard', name:'Tinned tuna'}, {cat:'Fresh & Chilled', name:'Salad leaves'} ] },
+    { test:/jacket potato/i, items:[
+      {cat:'Fresh & Chilled', name:'Baking potatoes'}, {cat:'Store Cupboard', name:'Tuna mayo / tinned beans'}, {cat:'Fresh & Chilled', name:'Grated cheese'} ] },
+    { test:/chilli/i, items:[
+      {cat:'Store Cupboard', name:'Tinned beans'}, {cat:'Store Cupboard', name:'Tinned tomatoes'}, {cat:'Store Cupboard', name:'Rice'}, {cat:'Fresh & Chilled', name:'Onion & pepper'} ] },
+    { test:/pasta bake/i, items:[
+      {cat:'Store Cupboard', name:'Pasta'}, {cat:'Store Cupboard', name:'Tinned tomatoes'}, {cat:'Fresh & Chilled', name:'Grated cheese'} ] },
+    { test:/fajita/i, items:[
+      {cat:'Fresh & Chilled', name:'Peppers & onions'}, {cat:'Store Cupboard', name:'Wraps'}, {cat:'Store Cupboard', name:'Fajita spice mix'} ] },
+    { test:/pizza/i, items:[
+      {cat:'Fresh & Chilled', name:'Pizza bases / dough'}, {cat:'Fresh & Chilled', name:'Mozzarella'}, {cat:'Fresh & Chilled', name:'Pizza toppings'} ] },
+    { test:/casserole|slow.cooker.*chicken/i, items:[
+      {cat:'Fresh & Chilled', name:'Chicken thighs'}, {cat:'Fresh & Chilled', name:'Carrots & onion'}, {cat:'Store Cupboard', name:'Stock cubes'} ] },
+    { test:/fishcake/i, items:[
+      {cat:'Frozen', name:'Fishcakes'}, {cat:'Fresh & Chilled', name:'Potatoes'}, {cat:'Frozen', name:'Peas'} ] },
+    { test:/curry/i, items:[
+      {cat:'Store Cupboard', name:'Chickpeas'}, {cat:'Store Cupboard', name:'Curry paste'}, {cat:'Store Cupboard', name:'Rice'}, {cat:'Fresh & Chilled', name:'Spinach'} ] },
+    { test:/bolognese|lentil/i, items:[
+      {cat:'Store Cupboard', name:'Lentils or mince'}, {cat:'Store Cupboard', name:'Spaghetti'}, {cat:'Store Cupboard', name:'Tinned tomatoes'} ] },
+    { test:/eating out/i, items:[] }
+  ];
+  var STAPLES = [
+    {cat:'Fresh & Chilled', name:'Milk'}, {cat:'Fresh & Chilled', name:'Eggs'},
+    {cat:'Bakery', name:'Bread'}, {cat:'Fresh & Chilled', name:'Fruit for lunchboxes'}
+  ];
+  var CAT_ORDER = ['Fresh & Chilled', 'Bakery', 'Store Cupboard', 'Frozen'];
+
+  var TICK_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="#0B0B0F" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+
+  /* ============ HELPERS ============ */
+  function esc(s){
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+  function ymd(d){ return d.getFullYear() + '-' + pad(d.getMonth()+1) + '-' + pad(d.getDate()); }
+  function parseYMD(s){ var p = s.split('-'); return new Date(+p[0], (+p[1])-1, +p[2]); }
+  function addDays(d, n){ var r = new Date(d); r.setDate(r.getDate()+n); return r; }
+  function fmtGap(ms){
+    if (ms < 0) ms = 0;
+    var s = Math.floor(ms/1000);
+    var h = Math.floor(s/3600), m = Math.floor((s%3600)/60);
+    var d = Math.floor(h/24);
+    if (d > 0) return d + 'd ' + (h%24) + 'h';
+    if (h > 0) return h + 'h ' + m + 'm';
+    return m + 'm';
+  }
+  function snapshotFresh(){
+    var t = Date.parse(SNAPSHOT.updatedISO);
+    return isFinite(t) ? (Date.now() - t) : Infinity;
+  }
+  function snapIsToday(){ return SNAPSHOT.forDate === ymd(new Date()); }
+
+  var todayKey = ymd(new Date());
+
+  /* ============ KIDS' TODAY ============ */
+  function renderKidToday(bodyId, list){
+    var body = document.getElementById(bodyId);
+    if (!snapIsToday()){
+      body.innerHTML = '<div class="empty">Waiting for today&rsquo;s sync…</div>';
+      return;
+    }
+    if (!list || !list.length){
+      body.innerHTML = '<div class="empty">Nothing on the calendar today.</div>';
+      return;
+    }
+    body.innerHTML = '<div class="agenda">' + list.map(function(ev){
+      return '<div class="ev">' +
+        '<div class="ev-time">' + (ev.allDay ? 'ALL&nbsp;DAY' : esc(ev.time || '')) + '</div>' +
+        '<div><div class="ev-title">' + esc(ev.title || 'Event') + '</div>' +
+        (ev.loc ? '<div class="ev-loc">' + esc(ev.loc) + '</div>' : '') + '</div>' +
+      '</div>';
+    }).join('') + '</div>';
+  }
+
+  /* ============ ALEX'S OWN DAY ============ */
+  var ALEX_STATUS_LABEL = { leave: 'ON LEAVE', away: 'AWAY', normal: 'WORKING' };
+  function renderAlex(){
+    var tag = document.getElementById('alexTag');
+    tag.className = 'tag' + (SNAPSHOT.alexStatus === 'leave' ? ' status-leave'
+      : SNAPSHOT.alexStatus === 'away' ? ' status-away' : '');
+    tag.textContent = snapIsToday() ? (ALEX_STATUS_LABEL[SNAPSHOT.alexStatus] || 'TODAY') : '…';
+    renderKidToday('alexBody', SNAPSHOT.alexToday);
+  }
+
+  /* ============ MUM: ANYTHING UNUSUAL ============ */
+  function renderMumUnusual(){
+    var body = document.getElementById('mumBody');
+    if (!snapIsToday()){
+      body.innerHTML = '<div class="empty">Waiting for today&rsquo;s sync…</div>';
+      return;
+    }
+    if (!SNAPSHOT.mumUnusual){
+      body.innerHTML = '<div class="big dim">Nothing out of the ordinary</div><div class="sub">Normal day for Mum.</div>';
+      return;
+    }
+    body.innerHTML = '<div class="big">' + esc(SNAPSHOT.mumUnusual) + '</div>';
+  }
+
+  /* ============ DINNER ============ */
+  function renderTea(){
+    var today = new Date();
+    var entry = WEEK_MEAL_PLAN[ymd(today)];
+    var mainEl = document.getElementById('teaMain');
+    var noteEl = document.getElementById('teaNote');
+    var tagEl = document.getElementById('teaTag');
+    if (!entry || !entry.meal){
+      mainEl.className = 'big dim';
+      mainEl.textContent = 'Nothing planned yet';
+      noteEl.hidden = true;
+      tagEl.textContent = 'Tonight';
+    } else {
+      mainEl.className = 'big';
+      mainEl.textContent = entry.meal;
+      if (entry.note){ noteEl.hidden = false; noteEl.textContent = entry.note; }
+      else noteEl.hidden = true;
+      tagEl.textContent = 'Tonight';
+    }
+
+    var stripEl = document.getElementById('weekStrip');
+    var rows = [];
+    for (var i = 0; i < 7; i++){
+      var d = addDays(today, i);
+      var key = ymd(d);
+      var e = WEEK_MEAL_PLAN[key];
+      var label = i === 0 ? 'TODAY' : d.toLocaleDateString('en-GB', { weekday:'short' }).toUpperCase();
+      rows.push(
+        '<div class="wk-row' + (i === 0 ? ' is-today' : '') + '">' +
+          '<span class="wk-day">' + label + '</span>' +
+          '<span class="wk-meal' + (e && e.meal ? '' : ' wk-empty') + '">' + esc(e && e.meal ? e.meal : 'Not planned yet') + '</span>' +
+        '</div>'
+      );
+    }
+    stripEl.innerHTML = rows.join('');
+  }
+
+  /* ============ SHOPPING LIST ============ */
+  var SHOP_KEY = 'amc:shop:v1:';
+  var shopChecks = {};
+  var shopWeekKey = null;
+  var shopItems = [];
+
+  function mondayOf(d){
+    var dow = d.getDay();
+    var back = dow === 0 ? 6 : dow - 1;
+    return addDays(d, -back);
+  }
+
+  function buildShoppingList(){
+    if (SHOPPING_LIST_OVERRIDE){ return SHOPPING_LIST_OVERRIDE.slice(); }
+    var today = new Date();
+    var mon = mondayOf(today);
+    var seen = {};
+    var items = [];
+    function addItem(it){
+      var k = it.cat + '|' + it.name.toLowerCase();
+      if (seen[k]) return;
+      seen[k] = true;
+      items.push(it);
+    }
+    for (var i = 0; i < 7; i++){
+      var key = ymd(addDays(mon, i));
+      var e = WEEK_MEAL_PLAN[key];
+      if (!e || !e.meal) continue;
+      for (var r = 0; r < MEAL_INGREDIENTS.length; r++){
+        if (MEAL_INGREDIENTS[r].test.test(e.meal)){
+          MEAL_INGREDIENTS[r].items.forEach(addItem);
+        }
+      }
+    }
+    STAPLES.forEach(addItem);
+    return items;
+  }
+
+  function loadShopChecks(weekKey){
+    var out = {};
+    try {
+      var raw = localStorage.getItem(SHOP_KEY + weekKey);
+      if (raw){
+        var saved = JSON.parse(raw);
+        if (saved && typeof saved === 'object') out = saved;
+      }
+    } catch (e){}
+    return out;
+  }
+  function saveShopChecks(){
+    try {
+      localStorage.setItem(SHOP_KEY + shopWeekKey, JSON.stringify(shopChecks));
+      var cutoff = addDays(new Date(), -21);
+      for (var i = localStorage.length - 1; i >= 0; i--){
+        var k = localStorage.key(i);
+        if (k && k.indexOf(SHOP_KEY) === 0){
+          var ds = k.slice(SHOP_KEY.length);
+          if (/^\d{4}-\d{2}-\d{2}$/.test(ds) && parseYMD(ds) < cutoff) localStorage.removeItem(k);
+        }
+      }
+    } catch (e){}
+  }
+  function rowHTML(idx, item, on){
+    return '<button type="button" class="check' + (on ? ' on' : '') +
+      '" data-idx="' + idx + '" aria-pressed="' + (on ? 'true' : 'false') + '">' +
+      '<span class="box">' + TICK_SVG + '</span><span class="lab">' + esc(item.name) + '</span></button>';
+  }
+  function renderShop(){
+    var mod = document.getElementById('shopMod');
+    var tag = document.getElementById('shopTag');
+    var body = document.getElementById('shopBody');
+    var today = new Date();
+    var isThursday = today.getDay() === 4;
+
+    if (!isThursday){
+      mod.classList.add('quiet');
+      var daysToThu = (4 - today.getDay() + 7) % 7 || 7;
+      var next = addDays(today, daysToThu);
+      tag.textContent = 'Next: ' + next.toLocaleDateString('en-GB', { weekday:'short', day:'numeric' });
+      body.innerHTML =
+        '<div class="shop-quiet-state">' +
+          '<span class="big dim">Not shop day</span>' +
+        '</div>' +
+        '<div class="sub">The shopping list appears here every Thursday — ' + daysToThu + ' day' + (daysToThu === 1 ? '' : 's') + ' to go.</div>';
+      return;
+    }
+    mod.classList.remove('quiet');
+    tag.textContent = 'Today';
+
+    shopWeekKey = ymd(mondayOf(today));
+    shopItems = buildShoppingList();
+    shopChecks = loadShopChecks(shopWeekKey);
+
+    if (!shopItems.length){
+      body.innerHTML = '<div class="empty">No meals planned this week yet — nothing to shop for.</div>';
+      return;
+    }
+
+    var byCat = {};
+    shopItems.forEach(function(it, idx){
+      if (!byCat[it.cat]) byCat[it.cat] = [];
+      byCat[it.cat].push(idx);
+    });
+
+    var html = '<div class="shop-progress"><div class="bar"><i id="shopBar"></i></div><span class="bar-count" id="shopCount">0 / ' + shopItems.length + '</span></div>';
+    CAT_ORDER.concat(Object.keys(byCat).filter(function(c){ return CAT_ORDER.indexOf(c) === -1; })).forEach(function(cat){
+      if (!byCat[cat]) return;
+      html += '<div class="shop-grp"><div class="shop-grp-h"><span class="eyebrow">' + esc(cat) + '</span></div>';
+      html += byCat[cat].map(function(idx){ return rowHTML(idx, shopItems[idx], !!shopChecks[idx]); }).join('');
+      html += '</div>';
+    });
+    html += '<div class="shop-note">Auto-generated from this week&rsquo;s meal plan — check it against the fridge before you go.</div>';
+    body.innerHTML = html;
+    updateShopProgress();
+  }
+  function updateShopProgress(){
+    var bar = document.getElementById('shopBar');
+    var count = document.getElementById('shopCount');
+    if (!bar || !count) return;
+    var done = shopItems.filter(function(it, idx){ return shopChecks[idx]; }).length;
+    bar.style.width = Math.round(done / shopItems.length * 100) + '%';
+    count.textContent = done + ' / ' + shopItems.length;
+  }
+  function onShopTap(e){
+    var btn = e.target.closest ? e.target.closest('.check') : null;
+    if (!btn) return;
+    var idx = btn.getAttribute('data-idx');
+    shopChecks[idx] = !shopChecks[idx];
+    btn.classList.toggle('on', shopChecks[idx]);
+    btn.setAttribute('aria-pressed', shopChecks[idx] ? 'true' : 'false');
+    saveShopChecks();
+    updateShopProgress();
+  }
+
+  /* ============ STATUS ============ */
+  function renderStatus(){
+    var age = snapshotFresh();
+    var led = document.getElementById('led');
+    var sync = document.getElementById('syncLine');
+    var banner = document.getElementById('banner');
+    var mins = Math.round(age / 60000);
+    var when;
+    if (mins < 2) when = 'just now';
+    else if (mins < 90) when = mins + ' min ago';
+    else if (mins < 36 * 60) when = Math.round(mins / 60) + 'h ago';
+    else when = Math.round(mins / 1440) + 'd ago';
+
+    // The board is rebuilt once a night, so "a few hours to ~a day old" is normal.
+    if (age < 20 * 3600000){ led.className = 'led ok'; }
+    else if (age < 40 * 3600000){ led.className = 'led warn'; }
+    else { led.className = 'led err'; }
+
+    sync.textContent = 'Calendar synced ' + when;
+    if (age >= 40 * 3600000){
+      banner.hidden = false;
+      banner.textContent = 'Calendar data is ' + when + ' old — the kids’ today cards may be stale. Check the diary yourself today.';
+    } else {
+      banner.hidden = true;
+    }
+  }
+
+  /* ============ CLOCK + ROLLOVER ============ */
+  function tick(){
+    var now = new Date();
+    document.getElementById('clock').textContent = now.toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', second:'2-digit' });
+    document.getElementById('dateLine').textContent = now.toLocaleDateString('en-GB', { weekday:'short', day:'numeric', month:'short' }).toUpperCase();
+
+    var k = ymd(now);
+    if (k !== todayKey){
+      todayKey = k;
+      renderAlex();
+      renderMumUnusual();
+      renderKidToday('francisBody', SNAPSHOT.francisToday);
+      renderKidToday('mathildaBody', SNAPSHOT.mathildaToday);
+      renderTea();
+      renderShop();
+    }
+    renderStatus();
+  }
+
+  /* ============ INIT ============ */
+  function init(){
+    renderAlex();
+    renderMumUnusual();
+    renderKidToday('francisBody', SNAPSHOT.francisToday);
+    renderKidToday('mathildaBody', SNAPSHOT.mathildaToday);
+    renderTea();
+    renderShop();
+    document.getElementById('shopMod').addEventListener('click', onShopTap);
+    tick();
+    setInterval(tick, 1000);
+
+    document.getElementById('reloadBtn').addEventListener('click', function(){ location.reload(); });
+  }
+
+  init();
+})();
+</script>
+
+</body>
+</html>
