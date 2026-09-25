@@ -35,18 +35,18 @@ function matchesAny(title, keywords) {
   const t = (title || '').toLowerCase();
   return keywords.some(function (k) { return t.indexOf(k) !== -1; });
 }
-function eventsToday(events, todayYMD) {
+function eventsOn(events, targetYMD) {
   return (events || []).filter(function (ev) {
     if (ev.start && ev.start.date && !ev.start.dateTime) {
       // All-day, possibly multi-day (e.g. a week-long "Leave" block) — the
-      // end date is exclusive, so check today falls inside [start, end).
+      // end date is exclusive, so check the target day falls inside [start, end).
       const startYMD = ev.start.date.slice(0, 10);
       const endYMD = ev.end && ev.end.date ? ev.end.date.slice(0, 10) : startYMD;
-      return startYMD <= todayYMD && todayYMD < endYMD;
+      return startYMD <= targetYMD && targetYMD < endYMD;
     }
     const startDate = ev.start && ev.start.dateTime;
     if (!startDate) return false;
-    return londonYMD(new Date(startDate)) === todayYMD;
+    return londonYMD(new Date(startDate)) === targetYMD;
   });
 }
 function isAllDay(ev) {
@@ -64,16 +64,21 @@ function toBoardEvent(ev) {
 
 const now = new Date();
 const todayYMD = londonYMD(now);
+const tomorrowYMD = londonYMD(new Date(now.getTime() + 86400000));
 
 const primary = readJSON('cal-primary.json', { events: [] });
 const alexCal = readJSON('cal-alex.json', { events: [] });
 const mumUnusual = readJSON('mum-unusual.json', { note: null });
 
-const primaryToday = eventsToday(primary.events, todayYMD);
+const primaryToday = eventsOn(primary.events, todayYMD);
+const primaryTomorrow = eventsOn(primary.events, tomorrowYMD);
 const francisToday = primaryToday.filter(function (ev) { return matchesAny(ev.summary, FRANCIS_KEYWORDS); }).map(toBoardEvent);
+const francisTomorrow = primaryTomorrow.filter(function (ev) { return matchesAny(ev.summary, FRANCIS_KEYWORDS); }).map(toBoardEvent);
 const mathildaToday = primaryToday.filter(function (ev) { return matchesAny(ev.summary, MATHILDA_KEYWORDS); }).map(toBoardEvent);
+const mathildaTomorrow = primaryTomorrow.filter(function (ev) { return matchesAny(ev.summary, MATHILDA_KEYWORDS); }).map(toBoardEvent);
 
-const alexToday_raw = eventsToday(alexCal.events, todayYMD);
+const alexToday_raw = eventsOn(alexCal.events, todayYMD);
+const alexTomorrow_raw = eventsOn(alexCal.events, tomorrowYMD);
 
 // An all-day event with colorId 5/6 sets Alex's status badge rather than
 // appearing as a normal agenda item; 'away' wins if both are somehow present.
@@ -88,16 +93,24 @@ const alexToday = alexToday_raw
     return !(isAllDay(ev) && (ev.colorId === ALEX_AWAY_COLOR_ID || ev.colorId === ALEX_LEAVE_COLOR_ID));
   })
   .map(toBoardEvent);
+const alexTomorrow = alexTomorrow_raw
+  .filter(function (ev) {
+    return !(isAllDay(ev) && (ev.colorId === ALEX_AWAY_COLOR_ID || ev.colorId === ALEX_LEAVE_COLOR_ID));
+  })
+  .map(toBoardEvent);
 
 const snapshot = {
   updatedISO: now.toISOString(),
   forDate: todayYMD,
   alexStatus: alexStatus,
   alexToday: alexToday,
+  alexTomorrow: alexTomorrow,
   // Hand-curated, not calendar-derived — see mum-unusual.json.
   mumUnusual: (mumUnusual && mumUnusual.note) ? mumUnusual.note : null,
   francisToday: francisToday,
-  mathildaToday: mathildaToday
+  francisTomorrow: francisTomorrow,
+  mathildaToday: mathildaToday,
+  mathildaTomorrow: mathildaTomorrow
 };
 
 const template = fs.readFileSync(TEMPLATE_PATH, 'utf8');
@@ -111,10 +124,10 @@ if (patched === template) {
 
 fs.writeFileSync(OUT_PATH, patched);
 console.log(
-  'alex-mission-control: today ' + todayYMD +
+  'alex-mission-control: today ' + todayYMD + ' / tomorrow ' + tomorrowYMD +
   ' | alexStatus=' + alexStatus +
-  ' | alexToday=' + alexToday.length +
-  ' | francisToday=' + francisToday.length +
-  ' | mathildaToday=' + mathildaToday.length +
+  ' | alexToday=' + alexToday.length + ' alexTomorrow=' + alexTomorrow.length +
+  ' | francisToday=' + francisToday.length + ' francisTomorrow=' + francisTomorrow.length +
+  ' | mathildaToday=' + mathildaToday.length + ' mathildaTomorrow=' + mathildaTomorrow.length +
   ' | mumUnusual=' + (snapshot.mumUnusual ? 'yes' : 'no')
 );

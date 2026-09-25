@@ -234,6 +234,22 @@
   .kid[data-k="francis"] .mod-top .eyebrow{ color:#8FD3E8; }
   .kid[data-k="mathilda"] .mod-top .eyebrow{ color:#F0A8CE; }
 
+  /* ---------- Tomorrow strip (within Alex/Francis/Mathilda cards) ---------- */
+  .tomorrow{
+    margin-top:12px;
+    padding-top:12px;
+    border-top:1px solid var(--line);
+  }
+  .tomorrow-label{
+    font-family:var(--f-mono);
+    font-size:.56rem;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    margin-bottom:8px;
+  }
+
   /* ---------- Alex's own day ---------- */
   .tag.status-leave{ color:var(--gold); border-color:rgba(242,193,78,.4); background:rgba(242,193,78,.08); }
   .tag.status-away{ color:var(--copper); border-color:rgba(217,138,75,.4); background:rgba(217,138,75,.08); }
@@ -417,6 +433,20 @@
       <span class="tag" id="alexTag">&mdash;</span>
     </div>
     <div id="alexBody"><div class="empty">&mdash;</div></div>
+    <div class="tomorrow">
+      <div class="tomorrow-label">Tomorrow</div>
+      <div id="alexTomorrowBody"><div class="empty">&mdash;</div></div>
+    </div>
+  </section>
+
+  <!-- 0a2 — DAILY JOBS -->
+  <section class="mod" id="jobsMod">
+    <div class="mod-top">
+      <span class="eyebrow">&#9670; Daily Jobs</span>
+      <span class="tag" id="jobsTag">0 / 0</span>
+    </div>
+    <div class="shop-progress"><div class="bar"><i id="jobsBar"></i></div><span class="bar-count" id="jobsCount">0 / 0</span></div>
+    <div id="jobsBody"></div>
   </section>
 
   <!-- 0b — MUM: ANYTHING UNUSUAL -->
@@ -435,6 +465,10 @@
       <span class="tag">Age 11</span>
     </div>
     <div id="francisBody"><div class="empty">&mdash;</div></div>
+    <div class="tomorrow">
+      <div class="tomorrow-label">Tomorrow</div>
+      <div id="francisTomorrowBody"><div class="empty">&mdash;</div></div>
+    </div>
   </section>
 
   <!-- 2 — MATHILDA TODAY -->
@@ -444,6 +478,10 @@
       <span class="tag">Nursery</span>
     </div>
     <div id="mathildaBody"><div class="empty">&mdash;</div></div>
+    <div class="tomorrow">
+      <div class="tomorrow-label">Tomorrow</div>
+      <div id="mathildaTomorrowBody"><div class="empty">&mdash;</div></div>
+    </div>
   </section>
 
   <!-- 3 — DINNER -->
@@ -502,14 +540,17 @@
     alexToday: [
       { time: '08:00', title: 'Med', loc: '', allDay: false }
     ],
+    alexTomorrow: [],
     mumUnusual: null,
     francisToday: [
       { time: '18:15', title: 'Francis - Hockey Academy Night (U10/U12)', loc: 'The Lindum', allDay: false }
     ],
+    francisTomorrow: [],
     mathildaToday: [
       { time: null, title: 'Nursery theme: International Day of Sign Language', loc: '', allDay: true },
       { time: '16:40', title: 'Thilda vaccine', loc: '', allDay: false }
-    ]
+    ],
+    mathildaTomorrow: []
   };
 
   /* ---- Meal plan — mirror of the kitchen board ("Langley Departures").
@@ -599,15 +640,16 @@
 
   var todayKey = ymd(new Date());
 
-  /* ============ KIDS' TODAY ============ */
-  function renderKidToday(bodyId, list){
+  /* ============ KIDS' TODAY / TOMORROW ============ */
+  function renderKidToday(bodyId, list, dayWord){
+    dayWord = dayWord || 'today';
     var body = document.getElementById(bodyId);
     if (!snapIsToday()){
-      body.innerHTML = '<div class="empty">Waiting for today&rsquo;s sync…</div>';
+      body.innerHTML = '<div class="empty">Waiting for sync&hellip;</div>';
       return;
     }
     if (!list || !list.length){
-      body.innerHTML = '<div class="empty">Nothing on the calendar today.</div>';
+      body.innerHTML = '<div class="empty">Nothing on the calendar ' + dayWord + '.</div>';
       return;
     }
     body.innerHTML = '<div class="agenda">' + list.map(function(ev){
@@ -627,20 +669,100 @@
       : SNAPSHOT.alexStatus === 'away' ? ' status-away' : '');
     tag.textContent = snapIsToday() ? (ALEX_STATUS_LABEL[SNAPSHOT.alexStatus] || 'TODAY') : '…';
     renderKidToday('alexBody', SNAPSHOT.alexToday);
+    renderKidToday('alexTomorrowBody', SNAPSHOT.alexTomorrow, 'tomorrow');
   }
 
   /* ============ MUM: ANYTHING UNUSUAL ============ */
+  /* Weekly routine defaults — shown only when nothing exceptional is
+     hand-flagged in mumUnusual. Keyed by Date.getDay() (0=Sun..6=Sat). */
+  var MUM_WEEKLY_ROUTINE = {
+    5: 'Day with Mathilda'   // Friday
+  };
   function renderMumUnusual(){
     var body = document.getElementById('mumBody');
     if (!snapIsToday()){
       body.innerHTML = '<div class="empty">Waiting for today&rsquo;s sync…</div>';
       return;
     }
-    if (!SNAPSHOT.mumUnusual){
-      body.innerHTML = '<div class="big dim">Nothing out of the ordinary</div><div class="sub">Normal day for Mum.</div>';
+    if (SNAPSHOT.mumUnusual){
+      body.innerHTML = '<div class="big">' + esc(SNAPSHOT.mumUnusual) + '</div>';
       return;
     }
-    body.innerHTML = '<div class="big">' + esc(SNAPSHOT.mumUnusual) + '</div>';
+    var routine = MUM_WEEKLY_ROUTINE[new Date().getDay()];
+    if (routine){
+      body.innerHTML = '<div class="big">' + esc(routine) + '</div>';
+      return;
+    }
+    body.innerHTML = '<div class="big dim">Nothing out of the ordinary</div><div class="sub">Normal day for Mum.</div>';
+  }
+
+  /* ============ DAILY JOBS (localStorage, per day) ============ */
+  var JOBS_KEY = 'amc:jobs:v1:';
+  var DAILY_JOBS = [
+    { id:'workout', label:'Workout' },
+    { id:'steps', label:'10,000 steps' }
+  ];
+  var WEEKEND_JOBS = [
+    { id:'dogs', label:'Walk dogs' }
+  ];
+  var jobsChecks = {};
+
+  function todaysJobList(){
+    var dow = new Date().getDay();
+    var isWeekend = (dow === 0 || dow === 6);
+    return DAILY_JOBS.concat(isWeekend ? WEEKEND_JOBS : []);
+  }
+  function loadJobsChecks(){
+    var out = {};
+    try {
+      var raw = localStorage.getItem(JOBS_KEY + todayKey);
+      if (raw){
+        var saved = JSON.parse(raw);
+        if (saved && typeof saved === 'object') out = saved;
+      }
+    } catch (e){}
+    return out;
+  }
+  function saveJobsChecks(){
+    try {
+      localStorage.setItem(JOBS_KEY + todayKey, JSON.stringify(jobsChecks));
+      var cutoff = addDays(new Date(), -14);
+      for (var i = localStorage.length - 1; i >= 0; i--){
+        var k = localStorage.key(i);
+        if (k && k.indexOf(JOBS_KEY) === 0){
+          var ds = k.slice(JOBS_KEY.length);
+          if (/^\d{4}-\d{2}-\d{2}$/.test(ds) && parseYMD(ds) < cutoff) localStorage.removeItem(k);
+        }
+      }
+    } catch (e){}
+  }
+  function jobRowHTML(item, on){
+    return '<button type="button" class="check' + (on ? ' on' : '') +
+      '" data-jid="' + item.id + '" aria-pressed="' + (on ? 'true' : 'false') + '">' +
+      '<span class="box">' + TICK_SVG + '</span><span class="lab">' + esc(item.label) + '</span></button>';
+  }
+  function updateJobsProgress(list){
+    list = list || todaysJobList();
+    var done = list.filter(function(it){ return jobsChecks[it.id]; }).length;
+    document.getElementById('jobsBar').style.width = Math.round(done / list.length * 100) + '%';
+    document.getElementById('jobsCount').textContent = done + ' / ' + list.length;
+    document.getElementById('jobsTag').textContent = done + ' / ' + list.length;
+  }
+  function renderJobs(){
+    var list = todaysJobList();
+    jobsChecks = loadJobsChecks();
+    document.getElementById('jobsBody').innerHTML = list.map(function(it){ return jobRowHTML(it, !!jobsChecks[it.id]); }).join('');
+    updateJobsProgress(list);
+  }
+  function onJobsTap(e){
+    var btn = e.target.closest ? e.target.closest('.check') : null;
+    if (!btn) return;
+    var id = btn.getAttribute('data-jid');
+    jobsChecks[id] = !jobsChecks[id];
+    btn.classList.toggle('on', jobsChecks[id]);
+    btn.setAttribute('aria-pressed', jobsChecks[id] ? 'true' : 'false');
+    saveJobsChecks();
+    updateJobsProgress();
   }
 
   /* ============ DINNER ============ */
@@ -851,9 +973,12 @@
     if (k !== todayKey){
       todayKey = k;
       renderAlex();
+      renderJobs();
       renderMumUnusual();
       renderKidToday('francisBody', SNAPSHOT.francisToday);
+      renderKidToday('francisTomorrowBody', SNAPSHOT.francisTomorrow, 'tomorrow');
       renderKidToday('mathildaBody', SNAPSHOT.mathildaToday);
+      renderKidToday('mathildaTomorrowBody', SNAPSHOT.mathildaTomorrow, 'tomorrow');
       renderTea();
       renderShop();
     }
@@ -863,11 +988,15 @@
   /* ============ INIT ============ */
   function init(){
     renderAlex();
+    renderJobs();
     renderMumUnusual();
     renderKidToday('francisBody', SNAPSHOT.francisToday);
+    renderKidToday('francisTomorrowBody', SNAPSHOT.francisTomorrow, 'tomorrow');
     renderKidToday('mathildaBody', SNAPSHOT.mathildaToday);
+    renderKidToday('mathildaTomorrowBody', SNAPSHOT.mathildaTomorrow, 'tomorrow');
     renderTea();
     renderShop();
+    document.getElementById('jobsMod').addEventListener('click', onJobsTap);
     document.getElementById('shopMod').addEventListener('click', onShopTap);
     tick();
     setInterval(tick, 1000);
