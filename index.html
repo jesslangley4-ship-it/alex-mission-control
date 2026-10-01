@@ -783,7 +783,7 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-10-01T13:04:50.642Z",
+    "updatedISO": "2026-10-01T13:11:08.393Z",
     "forDate": "2026-10-01",
     "alexStatus": "leave",
     "alexToday": [],
@@ -1064,16 +1064,173 @@ var RecipeKit = (function(){
     }
   };
 
-  /* ---- Shopping list auto-generation ------------------------------------
-     Scans the week's meals in WEEK_MEAL_PLAN. When a meal carries real
-     recipe.ingredients (from the Tea Planner), those are used directly,
-     grouped under the meal's own name. Meals with no recipe attached fall
-     back to matching the meal name against a small keyword dictionary —
-     an approximation, so check it against the fridge before you go. Swap
-     this for a manually supplied list any time by replacing
-     SHOPPING_LIST_OVERRIDE with an array of { cat, name } and the
-     auto-generator will be skipped. ---- */
-  var SHOPPING_LIST_OVERRIDE = null; // e.g. [{cat:'Fresh & Chilled', name:'Milk'}, ...]
+  /* ---- Shopping list ------------------------------------------------------
+     Normally bake.js fills SHOPPING_LIST_OVERRIDE from shopping.json, a
+     daily mirror of the Tea Planner's own hand-kept "To buy" list — so the
+     board shows exactly what Jessica put there, not a guess. If that mirror
+     is ever missing, this falls back to scanning WEEK_MEAL_PLAN: a meal's
+     real recipe.ingredients are used directly (grouped under the meal's own
+     name) when present, otherwise its name is matched against a small
+     keyword dictionary — an approximation, so check it against the fridge
+     before you go. ---- */
+  var SHOPPING_LIST_OVERRIDE = [
+    {
+      "cat": "Veg",
+      "name": "Red pepper"
+    },
+    {
+      "cat": "Veg",
+      "name": "Carrots (bag)"
+    },
+    {
+      "cat": "Veg",
+      "name": "Sugar snap peas or mangetout"
+    },
+    {
+      "cat": "Veg",
+      "name": "Spring onions"
+    },
+    {
+      "cat": "Veg",
+      "name": "Fresh root ginger"
+    },
+    {
+      "cat": "Veg",
+      "name": "Garlic"
+    },
+    {
+      "cat": "Veg",
+      "name": "Limes"
+    },
+    {
+      "cat": "Veg",
+      "name": "Onions"
+    },
+    {
+      "cat": "Veg",
+      "name": "Celery"
+    },
+    {
+      "cat": "Veg",
+      "name": "Leeks"
+    },
+    {
+      "cat": "Veg",
+      "name": "White or red cabbage (small, for slaw)"
+    },
+    {
+      "cat": "Veg",
+      "name": "Lemon"
+    },
+    {
+      "cat": "Veg",
+      "name": "Little gem lettuce"
+    },
+    {
+      "cat": "Veg",
+      "name": "Potatoes (for wedges & mash)"
+    },
+    {
+      "cat": "Veg",
+      "name": "Frozen peas"
+    },
+    {
+      "cat": "Veg",
+      "name": "Tinned sweetcorn"
+    },
+    {
+      "cat": "Fish/meat",
+      "name": "Raw king prawns (300g)"
+    },
+    {
+      "cat": "Fish/meat",
+      "name": "Chicken thighs, boneless (6)"
+    },
+    {
+      "cat": "Fish/meat",
+      "name": "Fish fingers"
+    },
+    {
+      "cat": "Fish/meat",
+      "name": "Breaded fish fillets"
+    },
+    {
+      "cat": "Dairy",
+      "name": "Parmesan or vegetarian hard cheese"
+    },
+    {
+      "cat": "Dairy",
+      "name": "Mayonnaise"
+    },
+    {
+      "cat": "Dairy",
+      "name": "Butter"
+    },
+    {
+      "cat": "Dairy",
+      "name": "Milk (if low)"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Egg noodles or straight-to-wok noodles"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Light soy sauce"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Sweet chilli sauce"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Tinned chopped tomatoes"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Tomato puree"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Cornflour"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Dried red split lentils"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Passata"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Spaghetti (large pack)"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Wholemeal pitta breads"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Ketchup or tartare sauce"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Tinned baked beans"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Microwave mash pouches (for speed on Thursday)"
+    },
+    {
+      "cat": "Other",
+      "name": "Crusty bread"
+    },
+    {
+      "cat": "Other",
+      "name": "Veggie sausages"
+    }
+  ];
 
   var MEAL_INGREDIENTS = [
     { test:/salmon/i, items:[

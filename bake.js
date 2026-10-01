@@ -139,6 +139,24 @@ if (meals && typeof meals === 'object') {
   mealCount = Object.keys(meals).length;
 }
 
+// Tea Planner mirror: shopping.json (the planner's own hand-kept "To buy"
+// list, written by the daily routine) replaces SHOPPING_LIST_OVERRIDE, so
+// the board shows exactly what Jessica sees in the planner rather than a
+// guess built from recipe text.
+const shopping = readJSON('shopping.json', null);
+let shopCount = 'skipped';
+if (Array.isArray(shopping)) {
+  const shoppingJs = 'var SHOPPING_LIST_OVERRIDE = ' +
+    JSON.stringify(shopping, null, 2).replace(/</g, '\\u003c').replace(/\n/g, '\n  ') + ';';
+  const withShopping = out.replace(/var SHOPPING_LIST_OVERRIDE = null;.*\n/, function () { return shoppingJs + '\n'; });
+  if (withShopping === out) {
+    console.error('template drifted: SHOPPING_LIST_OVERRIDE line not found in ' + TEMPLATE_PATH);
+    process.exit(1);
+  }
+  out = withShopping;
+  shopCount = shopping.length;
+}
+
 fs.writeFileSync(OUT_PATH, out);
 console.log(
   'alex-mission-control: today ' + todayYMD + ' / tomorrow ' + tomorrowYMD +
@@ -147,5 +165,6 @@ console.log(
   ' | francisToday=' + francisToday.length + ' francisTomorrow=' + francisTomorrow.length +
   ' | mathildaToday=' + mathildaToday.length + ' mathildaTomorrow=' + mathildaTomorrow.length +
   ' | mumUnusual=' + (snapshot.mumUnusual ? 'yes' : 'no') +
-  ' | meals=' + mealCount
+  ' | meals=' + mealCount +
+  ' | shopping=' + shopCount
 );

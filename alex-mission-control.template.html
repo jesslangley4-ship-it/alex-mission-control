@@ -821,16 +821,16 @@ var RecipeKit = (function(){
     '2026-09-10': { meal: 'Jacket potatoes, tuna mayo or cheese & beans', note: '' }
   };
 
-  /* ---- Shopping list auto-generation ------------------------------------
-     Scans the week's meals in WEEK_MEAL_PLAN. When a meal carries real
-     recipe.ingredients (from the Tea Planner), those are used directly,
-     grouped under the meal's own name. Meals with no recipe attached fall
-     back to matching the meal name against a small keyword dictionary —
-     an approximation, so check it against the fridge before you go. Swap
-     this for a manually supplied list any time by replacing
-     SHOPPING_LIST_OVERRIDE with an array of { cat, name } and the
-     auto-generator will be skipped. ---- */
-  var SHOPPING_LIST_OVERRIDE = null; // e.g. [{cat:'Fresh & Chilled', name:'Milk'}, ...]
+  /* ---- Shopping list ------------------------------------------------------
+     Normally bake.js fills SHOPPING_LIST_OVERRIDE from shopping.json, a
+     daily mirror of the Tea Planner's own hand-kept "To buy" list — so the
+     board shows exactly what Jessica put there, not a guess. If that mirror
+     is ever missing, this falls back to scanning WEEK_MEAL_PLAN: a meal's
+     real recipe.ingredients are used directly (grouped under the meal's own
+     name) when present, otherwise its name is matched against a small
+     keyword dictionary — an approximation, so check it against the fridge
+     before you go. ---- */
+  var SHOPPING_LIST_OVERRIDE = null; // filled by bake.js from shopping.json when present
 
   var MEAL_INGREDIENTS = [
     { test:/salmon/i, items:[

@@ -1,0 +1,158 @@
+[
+ {
+  "cat": "Veg",
+  "name": "Red pepper"
+ },
+ {
+  "cat": "Veg",
+  "name": "Carrots (bag)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Sugar snap peas or mangetout"
+ },
+ {
+  "cat": "Veg",
+  "name": "Spring onions"
+ },
+ {
+  "cat": "Veg",
+  "name": "Fresh root ginger"
+ },
+ {
+  "cat": "Veg",
+  "name": "Garlic"
+ },
+ {
+  "cat": "Veg",
+  "name": "Limes"
+ },
+ {
+  "cat": "Veg",
+  "name": "Onions"
+ },
+ {
+  "cat": "Veg",
+  "name": "Celery"
+ },
+ {
+  "cat": "Veg",
+  "name": "Leeks"
+ },
+ {
+  "cat": "Veg",
+  "name": "White or red cabbage (small, for slaw)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Lemon"
+ },
+ {
+  "cat": "Veg",
+  "name": "Little gem lettuce"
+ },
+ {
+  "cat": "Veg",
+  "name": "Potatoes (for wedges & mash)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Frozen peas"
+ },
+ {
+  "cat": "Veg",
+  "name": "Tinned sweetcorn"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Raw king prawns (300g)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Chicken thighs, boneless (6)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Fish fingers"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Breaded fish fillets"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Parmesan or vegetarian hard cheese"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Mayonnaise"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Butter"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Milk (if low)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Egg noodles or straight-to-wok noodles"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Light soy sauce"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Sweet chilli sauce"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tinned chopped tomatoes"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tomato puree"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Cornflour"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Dried red split lentils"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Passata"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Spaghetti (large pack)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Wholemeal pitta breads"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Ketchup or tartare sauce"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tinned baked beans"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Microwave mash pouches (for speed on Thursday)"
+ },
+ {
+  "cat": "Other",
+  "name": "Crusty bread"
+ },
+ {
+  "cat": "Other",
+  "name": "Veggie sausages"
+ }
+]
