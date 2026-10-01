@@ -783,23 +783,29 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-09-30T06:09:29.228Z",
-    "forDate": "2026-09-30",
+    "updatedISO": "2026-10-01T06:08:33.718Z",
+    "forDate": "2026-10-01",
     "alexStatus": "leave",
     "alexToday": [],
     "alexTomorrow": [],
     "mumUnusual": null,
     "francisToday": [],
     "francisTomorrow": [],
-    "mathildaToday": [
+    "mathildaToday": [],
+    "mathildaTomorrow": [
         {
-            "time": "18:15",
-            "title": "Mathilda: Nursery preschool information evening",
-            "loc": "Happy Days Day Nursery",
+            "time": "09:30",
+            "title": "Gymnastics",
+            "loc": "Allegro Gymnastics Academy",
+            "allDay": false
+        },
+        {
+            "time": "13:30",
+            "title": "Swimming",
+            "loc": "Emmerson Pool Hire",
             "allDay": false
         }
-    ],
-    "mathildaTomorrow": []
+    ]
 };
 
   /* ---- Meal plan — mirror of the Tea Planner (the family's source of truth).
@@ -807,34 +813,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-09-29": {
-      "meal": "Cheesy veggie quesadillas with side salad",
-      "note": "Fits around Francis's guitar lesson (6–7pm)",
-      "kind": "veg",
-      "method": "hob",
-      "time": "10 min prep · 20 min",
-      "recipe": {
-        "ingredients": [
-          "8 flour tortillas",
-          "150g grated cheddar",
-          "1 red pepper, finely diced",
-          "198g tin sweetcorn, drained",
-          "400g tin black beans, drained and lightly mashed",
-          "2 spring onions, sliced (optional)",
-          "½ tsp smoked paprika",
-          "Salad and salsa to serve"
-        ],
-        "serves": "4 (2 adults, 2 kids)",
-        "steps": [
-          "Mix the beans, pepper, sweetcorn, spring onions and paprika.",
-          "Spread the mix over 4 tortillas, top with cheese, and lay the other 4 tortillas on top.",
-          "Cook each one in a dry frying pan over a medium heat for 2–3 minutes a side, pressing down, until golden and the cheese melts.",
-          "Or air fry two at a time at 190°C for 6 minutes, turning halfway (a rack on top stops the lid flying).",
-          "Cut into wedges and serve with salad and salsa."
-        ],
-        "tip": "Make them before the 6pm guitar lesson and keep them warm in a low oven. Leave paprika out of Mathilda's."
-      }
-    },
     "2026-09-30": {
       "meal": "Sunday's ratatouille, reheated, with bread or rice",
       "note": "Open afternoon 4–5pm, then Hockey Academy 6:15–7:45pm",
