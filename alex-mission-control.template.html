@@ -822,12 +822,14 @@ var RecipeKit = (function(){
   };
 
   /* ---- Shopping list auto-generation ------------------------------------
-     No manual shopping list exists yet, so this scans whatever week's worth
-     of meals sit around today's date in WEEK_MEAL_PLAN and matches each
-     meal name against a small keyword dictionary. It's an approximation —
-     check it against the fridge before you go. Swap this for a manually
-     supplied list any time by replacing SHOPPING_LIST_OVERRIDE with an
-     array of { cat, name } and the auto-generator will be skipped. ---- */
+     Scans the week's meals in WEEK_MEAL_PLAN. When a meal carries real
+     recipe.ingredients (from the Tea Planner), those are used directly,
+     grouped under the meal's own name. Meals with no recipe attached fall
+     back to matching the meal name against a small keyword dictionary —
+     an approximation, so check it against the fridge before you go. Swap
+     this for a manually supplied list any time by replacing
+     SHOPPING_LIST_OVERRIDE with an array of { cat, name } and the
+     auto-generator will be skipped. ---- */
   var SHOPPING_LIST_OVERRIDE = null; // e.g. [{cat:'Fresh & Chilled', name:'Milk'}, ...]
 
   var MEAL_INGREDIENTS = [
@@ -1159,6 +1161,10 @@ var RecipeKit = (function(){
       var key = ymd(addDays(mon, i));
       var e = WEEK_MEAL_PLAN[key];
       if (!e || !e.meal) continue;
+      if (e.recipe && e.recipe.ingredients && e.recipe.ingredients.length){
+        e.recipe.ingredients.forEach(function(ing){ addItem({ cat: e.meal, name: String(ing) }); });
+        continue;
+      }
       for (var r = 0; r < MEAL_INGREDIENTS.length; r++){
         if (MEAL_INGREDIENTS[r].test.test(e.meal)){
           MEAL_INGREDIENTS[r].items.forEach(addItem);
