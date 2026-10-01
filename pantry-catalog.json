@@ -1,9 +1,0 @@
-[
- { "id": "light-soy-sauce", "name": "Light soy sauce", "match": "soy sauce", "weeksSupply": 6 },
- { "id": "sweet-chilli-sauce", "name": "Sweet chilli sauce", "match": "sweet chilli", "weeksSupply": 6 },
- { "id": "ketchup-tartare-sauce", "name": "Ketchup or tartare sauce", "match": "ketchup|tartare", "weeksSupply": 4 },
- { "id": "mayonnaise", "name": "Mayonnaise", "match": "mayonnaise", "weeksSupply": 4 },
- { "id": "parmesan-hard-cheese", "name": "Parmesan or vegetarian hard cheese", "match": "parmesan|vegetarian hard cheese", "weeksSupply": 3 },
- { "id": "frozen-peas", "name": "Frozen peas", "match": "frozen peas", "weeksSupply": 4 },
- { "id": "tinned-sweetcorn", "name": "Tinned sweetcorn", "match": "sweetcorn", "weeksSupply": 3 }
-]
