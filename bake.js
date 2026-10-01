@@ -139,13 +139,35 @@ if (meals && typeof meals === 'object') {
   mealCount = Object.keys(meals).length;
 }
 
+// Pack-aware pantry tracking (pantry.js): sauces/condiments/cheese/frozen
+// bags etc. only get added back to the list once this week's recipes would
+// use up what's left, per pantry-catalog.json + pantry-state.json. State is
+// kept in this repo (never written back to the Tea Planner).
+const { computePantryRestock } = require('./pantry.js');
+const pantryCatalog = readJSON('pantry-catalog.json', []);
+const pantryState = readJSON('pantry-state.json', { lastProcessedWeek: null, thisWeekRestock: [], items: {} });
+const pantryResult = computePantryRestock(pantryCatalog, pantryState, meals || {}, todayYMD);
+fs.writeFileSync(path.join(ROOT, 'pantry-state.json'), JSON.stringify(pantryResult.state, null, 1) + '\n');
+
 // Tea Planner mirror: shopping.json (the planner's own hand-kept "To buy"
 // list, written by the daily routine) replaces SHOPPING_LIST_OVERRIDE, so
 // the board shows exactly what Jessica sees in the planner rather than a
-// guess built from recipe text.
-const shopping = readJSON('shopping.json', null);
+// guess built from recipe text. Anything pantry tracking says is running
+// out this week is merged in too, skipping names already on the list.
+const shoppingBase = readJSON('shopping.json', null);
 let shopCount = 'skipped';
-if (Array.isArray(shopping)) {
+let pantryRestockCount = 0;
+if (Array.isArray(shoppingBase)) {
+  const haveNames = {};
+  shoppingBase.forEach(function (it) { haveNames[String(it.name || '').trim().toLowerCase()] = true; });
+  const shopping = shoppingBase.slice();
+  pantryResult.restock.forEach(function (name) {
+    const key = String(name).trim().toLowerCase();
+    if (haveNames[key]) return;
+    haveNames[key] = true;
+    shopping.push({ cat: 'Pantry (running low)', name: name });
+    pantryRestockCount++;
+  });
   const shoppingJs = 'var SHOPPING_LIST_OVERRIDE = ' +
     JSON.stringify(shopping, null, 2).replace(/</g, '\\u003c').replace(/\n/g, '\n  ') + ';';
   const withShopping = out.replace(/var SHOPPING_LIST_OVERRIDE = null;.*\n/, function () { return shoppingJs + '\n'; });
@@ -166,5 +188,6 @@ console.log(
   ' | mathildaToday=' + mathildaToday.length + ' mathildaTomorrow=' + mathildaTomorrow.length +
   ' | mumUnusual=' + (snapshot.mumUnusual ? 'yes' : 'no') +
   ' | meals=' + mealCount +
-  ' | shopping=' + shopCount
+  ' | shopping=' + shopCount +
+  ' | pantryRestock=' + pantryRestockCount
 );

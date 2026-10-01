@@ -1,0 +1,27 @@
+{
+ "lastProcessedWeek": "2026-09-28",
+ "thisWeekRestock": [],
+ "items": {
+  "light-soy-sauce": {
+   "weeksRemaining": 4
+  },
+  "sweet-chilli-sauce": {
+   "weeksRemaining": 4
+  },
+  "ketchup-tartare-sauce": {
+   "weeksRemaining": 3
+  },
+  "mayonnaise": {
+   "weeksRemaining": 3
+  },
+  "parmesan-hard-cheese": {
+   "weeksRemaining": 1
+  },
+  "frozen-peas": {
+   "weeksRemaining": 3
+  },
+  "tinned-sweetcorn": {
+   "weeksRemaining": 2
+  }
+ }
+}
