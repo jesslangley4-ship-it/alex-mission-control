@@ -783,16 +783,28 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-10-01T13:26:11.566Z",
-    "forDate": "2026-10-01",
+    "updatedISO": "2026-10-02T06:07:31.515Z",
+    "forDate": "2026-10-02",
     "alexStatus": "leave",
     "alexToday": [],
     "alexTomorrow": [],
     "mumUnusual": null,
     "francisToday": [],
-    "francisTomorrow": [],
-    "mathildaToday": [],
-    "mathildaTomorrow": [
+    "francisTomorrow": [
+        {
+            "time": "09:15",
+            "title": "Francis - Hockey U10/U12 Open Session",
+            "loc": "The Lindum",
+            "allDay": false
+        },
+        {
+            "time": "13:40",
+            "title": "Francis: Lindum Hockey vs Sheffield Uni Bankers (Away)",
+            "loc": "Meadowhead School, S8 8BR",
+            "allDay": false
+        }
+    ],
+    "mathildaToday": [
         {
             "time": "09:30",
             "title": "Gymnastics",
@@ -805,7 +817,8 @@ var RecipeKit = (function(){
             "loc": "Emmerson Pool Hire",
             "allDay": false
         }
-    ]
+    ],
+    "mathildaTomorrow": []
 };
 
   /* ---- Meal plan — mirror of the Tea Planner (the family's source of truth).
@@ -813,28 +826,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-09-30": {
-      "meal": "Sunday's ratatouille, reheated, with bread or rice",
-      "note": "Open afternoon 4–5pm, then Hockey Academy 6:15–7:45pm",
-      "kind": "veg",
-      "method": "reheat",
-      "time": "10 min",
-      "recipe": {
-        "ingredients": [
-          "Sunday's ratatouille (4 portions)",
-          "Crusty bread, or 250g microwave rice",
-          "Grated cheese to top (optional)"
-        ],
-        "serves": "4",
-        "steps": [
-          "Tip the ratatouille into a pan with a splash of water.",
-          "Heat gently, stirring, until it bubbles and is piping hot all the way through (about 8 minutes).",
-          "Or microwave in a covered bowl for 4–5 minutes, stirring halfway.",
-          "Serve with bread or rice, and a sprinkle of cheese if you like."
-        ],
-        "tip": "Only reheat it once. Anyone eating after hockey can have their portion microwaved separately."
-      }
-    },
     "2026-10-01": {
       "meal": "Creamy mushroom & leek risotto",
       "note": "",

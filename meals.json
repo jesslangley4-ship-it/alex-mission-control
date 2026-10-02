@@ -1,26 +1,4 @@
 {
- "2026-09-30": {
-  "meal": "Sunday's ratatouille, reheated, with bread or rice",
-  "note": "Open afternoon 4–5pm, then Hockey Academy 6:15–7:45pm",
-  "kind": "veg",
-  "method": "reheat",
-  "time": "10 min",
-  "recipe": {
-   "ingredients": [
-    "Sunday's ratatouille (4 portions)",
-    "Crusty bread, or 250g microwave rice",
-    "Grated cheese to top (optional)"
-   ],
-   "serves": "4",
-   "steps": [
-    "Tip the ratatouille into a pan with a splash of water.",
-    "Heat gently, stirring, until it bubbles and is piping hot all the way through (about 8 minutes).",
-    "Or microwave in a covered bowl for 4–5 minutes, stirring halfway.",
-    "Serve with bread or rice, and a sprinkle of cheese if you like."
-   ],
-   "tip": "Only reheat it once. Anyone eating after hockey can have their portion microwaved separately."
-  }
- },
  "2026-10-01": {
   "meal": "Creamy mushroom & leek risotto",
   "note": "",
