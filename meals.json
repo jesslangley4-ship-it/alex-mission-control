@@ -1,10 +1,10 @@
 {
- "2026-10-04": {
-  "meal": "Lentil bolognese with spaghetti",
-  "note": "Free day — double batch: eat tonight, freeze 4 portions for Tuesday after Hull hockey training",
+ "2026-10-05": {
+  "meal": "Slow-cooker lentil bolognese with spaghetti",
+  "note": "Moved from Sunday. Slow cooker on this afternoon; keep 4 portions in the fridge for Tuesday",
   "kind": "veg",
-  "method": "batch",
-  "time": "15 min prep · 30 min cook",
+  "method": "slow-cooker",
+  "time": "15 min prep · 3–4 hr high",
   "recipe": {
    "ingredients": [
     "2 tbsp olive oil",
@@ -12,75 +12,46 @@
     "3 garlic cloves, crushed",
     "2 carrots, finely diced",
     "4 celery sticks, finely diced",
-    "400g dried red split lentils",
+    "400g dried red split lentils, rinsed",
     "2 x 690g passata",
     "2 tbsp tomato purée",
     "1 tbsp dried mixed herbs",
-    "1 veg stock cube, dissolved in 300ml water",
+    "1 veg stock cube, dissolved in 600ml hot water",
     "600g spaghetti",
     "Parmesan or vegetarian hard cheese, to serve"
    ],
    "serves": "4 tonight + 4 portions for Tuesday",
    "steps": [
-    "Soften the onions, garlic, carrots and celery in the oil for 8-10 minutes.",
-    "Stir in the lentils, passata, tomato purée, herbs and stock. Season.",
-    "Cover and simmer gently for 25-30 minutes, stirring occasionally, until thick and the lentils are tender.",
-    "Cook the spaghetti per pack instructions and drain.",
-    "Take out Mathilda's portion, and the 4 portions to freeze, before adding any extra pepper or chilli flakes to the rest.",
-    "Serve the sauce over spaghetti with grated cheese.",
-    "Cool the 4 freezer portions within an hour, then pack into labelled tubs and freeze flat for Tuesday."
+    "For the best flavour, soften the onions, garlic, carrots and celery in the oil in a frying pan for 8 minutes. If you're short on time, put them straight into the slow cooker instead.",
+    "Put the veg, rinsed lentils, passata, tomato purée, herbs and stock into the slow cooker. Stir well and season.",
+    "Cook on high for 3–4 hours (or low for 6–7 hours), stirring once if you can, until the lentils are soft and the sauce is thick. Add a splash of water if it gets too thick.",
+    "Take out Mathilda's portion and the 4 portions for Tuesday before adding any extra pepper or chilli to the rest.",
+    "About 15 minutes before tea, cook the spaghetti for 10 minutes and drain.",
+    "Serve the sauce over the spaghetti with grated cheese.",
+    "Cool Tuesday's 4 portions within an hour, then cover and keep in the fridge (no need to freeze for tomorrow)."
    ],
-   "tip": "Mathilda: mash the lentils a little finer if she's fussy about texture. A meal-drawer regular — freezes really well."
-  }
- },
- "2026-10-05": {
-  "meal": "Fish finger pitta pockets with slaw",
-  "note": "Quiet Monday, nothing on for tea",
-  "kind": "fish",
-  "method": "oven",
-  "time": "10 min prep · 15 min cook",
-  "recipe": {
-   "ingredients": [
-    "12 fish fingers",
-    "4 wholemeal pitta breads",
-    "1/4 white or red cabbage, finely shredded",
-    "1 carrot, grated",
-    "3 tbsp mayonnaise",
-    "1 tsp lemon juice",
-    "A few lettuce leaves",
-    "Ketchup or tartare sauce, to serve"
-   ],
-   "serves": "4 (2 adults, 2 kids)",
-   "steps": [
-    "Heat the oven to 200°C (180°C fan) and cook the fish fingers for 12-15 minutes, turning once, until golden and piping hot (or air-fryer: 180°C for 10 minutes, turning halfway).",
-    "Mix the cabbage and carrot with the mayonnaise and lemon juice to make the slaw. Season.",
-    "Warm the pittas briefly and split open.",
-    "Fill each pitta with lettuce, 3 fish fingers and a spoonful of slaw.",
-    "Serve with ketchup or tartare sauce on the side."
-   ],
-   "tip": "Mathilda: fish fingers and pitta plain, slaw on the side so she can dip or avoid it. Cut her pitta into fingers."
+   "tip": "Red lentils soak up a lot of liquid in the slow cooker, which is why there's extra stock. Mathilda: mash her lentils a little finer if she's fussy about texture."
   }
  },
  "2026-10-06": {
-  "meal": "Reheat: Lentil bolognese with spaghetti",
+  "meal": "Reheat: Monday's lentil bolognese with spaghetti",
   "note": "Hull hockey training 6-7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest",
   "kind": "veg",
   "method": "reheat",
   "time": "5 min prep · 10 min",
   "recipe": {
    "ingredients": [
-    "4 frozen portions of Sunday's lentil bolognese",
+    "4 portions of Monday's lentil bolognese (from the fridge)",
     "300g spaghetti",
     "Parmesan or vegetarian hard cheese, to serve"
    ],
    "serves": "4",
    "steps": [
-    "Defrost the bolognese portions overnight in the fridge, or use the microwave defrost setting.",
-    "Tip into a pan with a splash of water and heat gently, stirring, until bubbling and piping hot all the way through (about 8-10 minutes). Or microwave in a covered bowl for 5-6 minutes, stirring halfway.",
-    "Cook fresh spaghetti while the sauce heats.",
+    "Tip the bolognese into a pan with a splash of water and heat gently, stirring, until bubbling and piping hot all the way through (about 8–10 minutes). Or microwave in a covered bowl for 4–5 minutes, stirring halfway.",
+    "Cook the spaghetti for 10 minutes while the sauce heats.",
     "Serve with grated cheese. Anyone back late from hockey can have their portion microwaved separately."
    ],
-   "tip": "Only reheat each portion once, and check it's piping hot all the way through before serving."
+   "tip": "Only reheat it once, and check it's piping hot all the way through before serving."
   }
  },
  "2026-10-07": {
@@ -109,28 +80,31 @@
   }
  },
  "2026-10-08": {
-  "meal": "Air-fryer breaded fish fillets with mash, peas & sweetcorn",
-  "note": "Early tea before Francis's parents' evening appointment at 7:05pm — ready in about 20 minutes",
+  "meal": "Fish finger pitta pockets with slaw",
+  "note": "Moved from Monday. Early, quick tea before Francis's parents' evening appointment at 7:05pm",
   "kind": "fish",
   "method": "air-fryer",
-  "time": "5 min prep · 15-20 min cook",
+  "time": "10 min prep · 10 min cook",
   "recipe": {
    "ingredients": [
-    "4 breaded fish fillets",
-    "2 microwave mash pouches (or 500g potatoes, peeled and chunked)",
-    "25g butter",
-    "2 tbsp milk",
-    "200g frozen peas",
-    "198g tin sweetcorn, drained"
+    "12 fish fingers",
+    "4 wholemeal pitta breads",
+    "1/4 white or red cabbage, finely shredded",
+    "1 carrot, grated",
+    "3 tbsp mayonnaise",
+    "1 tsp lemon juice",
+    "A few lettuce leaves",
+    "Ketchup or tartare sauce, to serve"
    ],
    "serves": "4 (2 adults, 2 kids)",
    "steps": [
-    "Preheat the air fryer to 200°C. Air fry the fish fillets for 10-12 minutes, turning halfway, until golden and piping hot.",
-    "Meanwhile heat the mash pouches in the microwave per pack instructions (or boil the potato chunks for 12-15 minutes, then drain and mash with the butter and milk).",
-    "Cook the peas and sweetcorn in a pan of boiling water for 3-4 minutes, then drain.",
-    "Serve the fish fillets with the mash, peas and sweetcorn."
+    "Air fry the fish fingers at 180°C for 10 minutes, turning halfway, until golden and piping hot. (Or oven at 200°C / 180°C fan for 12–15 minutes.)",
+    "While they cook, mix the cabbage and carrot with the mayonnaise and lemon juice to make the slaw. Season.",
+    "Warm the pittas briefly and split them open.",
+    "Fill each pitta with lettuce, 3 fish fingers and a spoonful of slaw.",
+    "Serve with ketchup or tartare sauce on the side."
    ],
-   "tip": "Use the microwave mash pouches for real speed before parents' evening — ready in under 20 minutes total. Mathilda: flake her fish and check for bones."
+   "tip": "Mathilda: fish fingers and pitta plain, slaw on the side so she can dip or avoid it. Cut her pitta into fingers."
   }
  }
 }
