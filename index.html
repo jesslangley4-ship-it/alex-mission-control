@@ -783,18 +783,10 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-10-06T06:10:13.743Z",
-    "forDate": "2026-10-06",
+    "updatedISO": "2026-10-07T06:09:41.025Z",
+    "forDate": "2026-10-07",
     "alexStatus": "normal",
     "alexToday": [
-        {
-            "time": "09:00",
-            "title": "Meeting",
-            "loc": "RAF Digby",
-            "allDay": false
-        }
-    ],
-    "alexTomorrow": [
         {
             "time": null,
             "title": "SPTA RECCE",
@@ -802,16 +794,9 @@ var RecipeKit = (function(){
             "allDay": true
         }
     ],
+    "alexTomorrow": [],
     "mumUnusual": null,
     "francisToday": [
-        {
-            "time": "18:00",
-            "title": "Francis - Hull Hockey Training",
-            "loc": "Hymers College, Hymers Avenue, Hull HU3 1LW",
-            "allDay": false
-        }
-    ],
-    "francisTomorrow": [
         {
             "time": "18:15",
             "title": "Francis - Hockey Academy Night (U10/U12)",
@@ -819,6 +804,7 @@ var RecipeKit = (function(){
             "allDay": false
         }
     ],
+    "francisTomorrow": [],
     "mathildaToday": [],
     "mathildaTomorrow": []
 };
@@ -828,40 +814,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-10-05": {
-      "meal": "Slow-cooker lentil bolognese with spaghetti",
-      "note": "Moved from Sunday. Slow cooker on this afternoon; keep 4 portions in the fridge for Tuesday",
-      "kind": "veg",
-      "method": "slow-cooker",
-      "time": "15 min prep · 3–4 hr high",
-      "recipe": {
-        "ingredients": [
-          "2 tbsp olive oil",
-          "2 onions, chopped",
-          "3 garlic cloves, crushed",
-          "2 carrots, finely diced",
-          "4 celery sticks, finely diced",
-          "400g dried red split lentils, rinsed",
-          "2 x 690g passata",
-          "2 tbsp tomato purée",
-          "1 tbsp dried mixed herbs",
-          "1 veg stock cube, dissolved in 600ml hot water",
-          "600g spaghetti",
-          "Parmesan or vegetarian hard cheese, to serve"
-        ],
-        "serves": "4 tonight + 4 portions for Tuesday",
-        "steps": [
-          "For the best flavour, soften the onions, garlic, carrots and celery in the oil in a frying pan for 8 minutes. If you're short on time, put them straight into the slow cooker instead.",
-          "Put the veg, rinsed lentils, passata, tomato purée, herbs and stock into the slow cooker. Stir well and season.",
-          "Cook on high for 3–4 hours (or low for 6–7 hours), stirring once if you can, until the lentils are soft and the sauce is thick. Add a splash of water if it gets too thick.",
-          "Take out Mathilda's portion and the 4 portions for Tuesday before adding any extra pepper or chilli to the rest.",
-          "About 15 minutes before tea, cook the spaghetti for 10 minutes and drain.",
-          "Serve the sauce over the spaghetti with grated cheese.",
-          "Cool Tuesday's 4 portions within an hour, then cover and keep in the fridge (no need to freeze for tomorrow)."
-        ],
-        "tip": "Red lentils soak up a lot of liquid in the slow cooker, which is why there's extra stock. Mathilda: mash her lentils a little finer if she's fussy about texture."
-      }
-    },
     "2026-10-06": {
       "meal": "Reheat: Monday's lentil bolognese with spaghetti",
       "note": "Hull hockey training 6-7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest",
