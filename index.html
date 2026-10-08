@@ -783,30 +783,36 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-10-07T06:09:41.025Z",
-    "forDate": "2026-10-07",
+    "updatedISO": "2026-10-08T06:10:41.908Z",
+    "forDate": "2026-10-08",
     "alexStatus": "normal",
-    "alexToday": [
+    "alexToday": [],
+    "alexTomorrow": [
         {
-            "time": null,
-            "title": "SPTA RECCE",
-            "loc": "",
-            "allDay": true
-        }
-    ],
-    "alexTomorrow": [],
-    "mumUnusual": null,
-    "francisToday": [
-        {
-            "time": "18:15",
-            "title": "Francis - Hockey Academy Night (U10/U12)",
-            "loc": "The Lindum",
+            "time": "08:30",
+            "title": "Car in garage",
+            "loc": "Dexel Tyre & Auto Centre - Gainsborough",
             "allDay": false
         }
     ],
+    "mumUnusual": null,
+    "francisToday": [],
     "francisTomorrow": [],
     "mathildaToday": [],
-    "mathildaTomorrow": []
+    "mathildaTomorrow": [
+        {
+            "time": "09:30",
+            "title": "Gymnastics",
+            "loc": "Allegro Gymnastics Academy",
+            "allDay": false
+        },
+        {
+            "time": "13:30",
+            "title": "Swimming",
+            "loc": "Emmerson Pool Hire",
+            "allDay": false
+        }
+    ]
 };
 
   /* ---- Meal plan — mirror of the Tea Planner (the family's source of truth).
@@ -814,27 +820,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-10-06": {
-      "meal": "Reheat: Monday's lentil bolognese with spaghetti",
-      "note": "Hull hockey training 6-7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest",
-      "kind": "veg",
-      "method": "reheat",
-      "time": "5 min prep · 10 min",
-      "recipe": {
-        "ingredients": [
-          "4 portions of Monday's lentil bolognese (from the fridge)",
-          "300g spaghetti",
-          "Parmesan or vegetarian hard cheese, to serve"
-        ],
-        "serves": "4",
-        "steps": [
-          "Tip the bolognese into a pan with a splash of water and heat gently, stirring, until bubbling and piping hot all the way through (about 8–10 minutes). Or microwave in a covered bowl for 4–5 minutes, stirring halfway.",
-          "Cook the spaghetti for 10 minutes while the sauce heats.",
-          "Serve with grated cheese. Anyone back late from hockey can have their portion microwaved separately."
-        ],
-        "tip": "Only reheat it once, and check it's piping hot all the way through before serving."
-      }
-    },
     "2026-10-07": {
       "meal": "Air-fryer veggie sausages with crispy potato wedges & beans",
       "note": "Hockey Academy Night 6:15-7:45pm (The Lindum) — air fryer gets tea done fast either side of the run",
@@ -886,6 +871,198 @@ var RecipeKit = (function(){
           "Serve with ketchup or tartare sauce on the side."
         ],
         "tip": "Mathilda: fish fingers and pitta plain, slaw on the side so she can dip or avoid it. Cut her pitta into fingers."
+      }
+    },
+    "2026-10-09": {
+      "meal": "Slow-cooker veggie bean chilli with rice",
+      "note": "Mathilda's gymnastics 9:30am & swimming 1:30pm today — slow cooker on before we leave so tea's ready, with extra to freeze for Tuesday's Hull hockey night",
+      "kind": "veg",
+      "method": "slow-cooker",
+      "time": "15 min prep · 6-7 hr low",
+      "recipe": {
+        "ingredients": [
+          "2 onions, chopped",
+          "2 garlic cloves, crushed",
+          "2 peppers, chopped",
+          "2 x 400g tin kidney beans, drained",
+          "1 x 400g tin black beans, drained",
+          "2 x 400g tin chopped tomatoes",
+          "1 tbsp tomato purée",
+          "1 tsp ground cumin",
+          "1 tsp smoked paprika",
+          "Pinch chilli flakes (for the grown-ups only)",
+          "300g basmati or long-grain rice, to serve",
+          "Grated cheddar & soured cream, to serve (optional)"
+        ],
+        "serves": "4 (2 adults, 2 kids) + 2 extra portions to freeze",
+        "steps": [
+          "Soften the onions, garlic and peppers in a little oil for 5 minutes, or skip this and put everything straight in the slow cooker if you're short on time.",
+          "Put the veg, beans, tomatoes, tomato purée, cumin and paprika into the slow cooker. Stir, season and cover.",
+          "Cook on low for 6-7 hours (or high for 3-4) until thick and the veg is soft.",
+          "Take out Mathilda's portion and 2 extra portions to freeze before stirring chilli flakes into the rest.",
+          "About 20 minutes before serving, cook the rice.",
+          "Serve the chilli over rice with grated cheddar and soured cream."
+        ],
+        "tip": "On by 9am before gymnastics & swimming. Mathilda: keep hers mild, no chilli flakes. Cool the 2 extra portions within an hour, then portion, label and freeze — move to the fridge on Monday to thaw for Tuesday's tea."
+      }
+    },
+    "2026-10-10": {
+      "meal": "Air-fryer breaded fish fillets with mash, peas & sweetcorn",
+      "note": "Free evening after this morning's hockey session & home match — family favourite",
+      "kind": "fish",
+      "method": "air-fryer",
+      "time": "5 min prep · 15 min cook",
+      "recipe": {
+        "ingredients": [
+          "4 breaded fish fillets",
+          "4 servings mash (fresh potatoes, or microwave pouches for speed)",
+          "200g frozen peas",
+          "198g tin or frozen sweetcorn",
+          "Butter & milk, for the mash (if making fresh)"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Air fry the fish fillets at 190°C for 12-14 minutes, turning halfway, until golden and piping hot.",
+          "If making fresh mash, boil chunked potatoes for 15 minutes, drain, then mash with butter and a splash of milk.",
+          "Cook the peas and sweetcorn in a pan of boiling water for 4-5 minutes, or microwave.",
+          "Drain and serve everything together."
+        ],
+        "tip": "Mathilda: cut her fillet into pieces and check it's not too hot. Microwave mash pouches work well if it's been a long day."
+      }
+    },
+    "2026-10-11": {
+      "meal": "Slow-cooker gammon with parsley sauce, mash & peas",
+      "note": "This week's one meat night. On before U12 Yorks Performance training (12-2:30pm) so it's ready for tea. Alex may be away for work over the next few days (PO Visit) — keep a portion aside for him to reheat.",
+      "kind": "meat",
+      "method": "slow-cooker",
+      "time": "10 min prep · 5-6 hr low",
+      "recipe": {
+        "ingredients": [
+          "1kg unsmoked gammon joint",
+          "1 onion, halved",
+          "2 bay leaves",
+          "500ml water or weak chicken stock",
+          "25g butter",
+          "25g plain flour",
+          "300ml milk",
+          "2 tbsp fresh parsley, chopped (or 1 tbsp dried)",
+          "Potatoes, for mash",
+          "300g frozen peas"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Put the gammon, onion and bay leaves in the slow cooker and pour over the water or stock.",
+          "Cover and cook on low for 5-6 hours, until the gammon is tender and shreds easily.",
+          "Lift out the gammon, rest for 5 minutes, then slice or shred, discarding any string and excess fat.",
+          "For the sauce, melt the butter in a pan, stir in the flour for 1 minute, then gradually whisk in the milk. Simmer for 3-4 minutes until thickened, then stir in the parsley.",
+          "Boil and mash the potatoes. Cook the peas for 4-5 minutes.",
+          "Serve the gammon with mash, peas and parsley sauce."
+        ],
+        "tip": "On by 11am before U12 training. Mathilda: rinse her portion briefly if the gammon's salty, and go light on the sauce. Keep a portion aside for Alex if he's away."
+      }
+    },
+    "2026-10-12": {
+      "meal": "Sweet potato & spinach dhal with rice",
+      "note": "Free evening — good day to batch cook extra for Wednesday's Hockey Academy Night",
+      "kind": "veg",
+      "method": "hob",
+      "time": "10 min prep · 30 min cook",
+      "recipe": {
+        "ingredients": [
+          "1 tbsp vegetable oil",
+          "1 onion, chopped",
+          "2 garlic cloves, crushed",
+          "1 tsp grated fresh ginger",
+          "1 tsp ground turmeric",
+          "1 tsp ground cumin",
+          "2 sweet potatoes, peeled and diced",
+          "300g dried red split lentils, rinsed",
+          "800ml vegetable stock",
+          "200g spinach",
+          "400ml tin light coconut milk",
+          "300g basmati rice, to serve"
+        ],
+        "serves": "4 tonight + 4 portions for Wednesday",
+        "steps": [
+          "Soften the onion in the oil for 5 minutes. Add the garlic, ginger, turmeric and cumin and cook for 1 minute.",
+          "Add the sweet potato, lentils and stock. Bring to the boil, then simmer for 20 minutes, stirring now and then, until the lentils and sweet potato are soft.",
+          "Stir in the coconut milk and spinach and cook for 3-4 minutes until the spinach wilts.",
+          "Take out Mathilda's portion and 4 portions to cool for Wednesday before seasoning the rest.",
+          "Cook the rice and serve with the dhal.",
+          "Cool the 4 extra portions within an hour, cover and keep in the fridge for Wednesday (no need to freeze)."
+        ],
+        "tip": "Mathilda: keep hers plain and mash the sweet potato a little finer."
+      }
+    },
+    "2026-10-13": {
+      "meal": "Reheat: Friday's veggie bean chilli with rice",
+      "note": "Hull hockey training 6-7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest",
+      "kind": "veg",
+      "method": "reheat",
+      "time": "5 min prep · 10 min",
+      "recipe": {
+        "ingredients": [
+          "Friday's frozen veggie bean chilli portions (thawed in the fridge since Monday)",
+          "300g rice",
+          "Grated cheese, to serve (optional)"
+        ],
+        "serves": "4",
+        "steps": [
+          "Make sure the chilli is fully thawed, then tip into a pan with a splash of water.",
+          "Heat gently, stirring, until bubbling and piping hot all the way through (about 10 minutes). Or microwave in a covered bowl for 5-6 minutes, stirring halfway.",
+          "Cook the rice while the chilli heats.",
+          "Serve with cheese. Anyone back late from hockey can have their portion microwaved separately."
+        ],
+        "tip": "Only reheat it once, and check it's piping hot all the way through before serving."
+      }
+    },
+    "2026-10-14": {
+      "meal": "Reheat: Monday's sweet potato & spinach dhal with rice",
+      "note": "Hockey Academy Night 6:15-7:45pm (The Lindum) — quick reheat gets tea done either side of the run",
+      "kind": "veg",
+      "method": "reheat",
+      "time": "5 min prep · 10 min",
+      "recipe": {
+        "ingredients": [
+          "Monday's dhal portions (from the fridge)",
+          "300g rice"
+        ],
+        "serves": "4",
+        "steps": [
+          "Tip the dhal into a pan with a splash of water.",
+          "Heat gently, stirring, until bubbling and piping hot all the way through (about 8-10 minutes). Or microwave in a covered bowl for 4-5 minutes, stirring halfway.",
+          "Cook the rice while the dhal heats.",
+          "Serve straightaway."
+        ],
+        "tip": "Only reheat it once, and check it's piping hot before serving."
+      }
+    },
+    "2026-10-15": {
+      "meal": "Garlic butter baked haddock with crushed new potatoes & peas",
+      "note": "Normal evening, nothing on for tea",
+      "kind": "fish",
+      "method": "oven",
+      "time": "10 min prep · 20 min cook",
+      "recipe": {
+        "ingredients": [
+          "4 haddock fillets",
+          "25g butter, melted",
+          "1 garlic clove, crushed",
+          "1 lemon",
+          "500g new potatoes",
+          "200g frozen peas",
+          "Small handful fresh parsley, chopped (optional)"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Heat the oven to 200°C (180°C fan). Boil the new potatoes for 15-18 minutes until tender.",
+          "Mix the melted butter with the garlic and a squeeze of lemon. Put the haddock on a lined tray and brush over the butter.",
+          "Bake for 12-15 minutes, until the fish flakes easily.",
+          "Cook the peas for the last 4 minutes of the potatoes.",
+          "Drain and lightly crush the potatoes with a fork, stir through the parsley and a knob of butter.",
+          "Serve the fish with the crushed potatoes, peas and lemon wedges."
+        ],
+        "tip": "Mathilda: leave the garlic butter off her portion and check carefully for bones."
       }
     }
   };
