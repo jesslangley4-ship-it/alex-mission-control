@@ -563,7 +563,7 @@
   <section class="mod shop" id="shopMod">
     <div class="mod-top">
       <span class="eyebrow">&#9670; Shopping List</span>
-      <span class="tag" id="shopTag">Thursdays</span>
+      <span class="tag" id="shopTag">Fridays</span>
     </div>
     <div id="shopBody"></div>
   </section>
@@ -1209,18 +1209,18 @@ var RecipeKit = (function(){
     var tag = document.getElementById('shopTag');
     var body = document.getElementById('shopBody');
     var today = new Date();
-    var isThursday = today.getDay() === 4;
+    var isShopDay = today.getDay() === 5;
 
-    if (!isThursday){
+    if (!isShopDay){
       mod.classList.add('quiet');
-      var daysToThu = (4 - today.getDay() + 7) % 7 || 7;
-      var next = addDays(today, daysToThu);
+      var daysToFri = (5 - today.getDay() + 7) % 7 || 7;
+      var next = addDays(today, daysToFri);
       tag.textContent = 'Next: ' + next.toLocaleDateString('en-GB', { weekday:'short', day:'numeric' });
       body.innerHTML =
         '<div class="shop-quiet-state">' +
           '<span class="big dim">Not shop day</span>' +
         '</div>' +
-        '<div class="sub">The shopping list appears here every Thursday — ' + daysToThu + ' day' + (daysToThu === 1 ? '' : 's') + ' to go.</div>';
+        '<div class="sub">The shopping list appears here every Friday — ' + daysToFri + ' day' + (daysToFri === 1 ? '' : 's') + ' to go.</div>';
       return;
     }
     mod.classList.remove('quiet');
