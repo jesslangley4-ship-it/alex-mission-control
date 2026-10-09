@@ -13,31 +13,11 @@
  },
  {
   "cat": "Veg",
-  "name": "Spring onions"
- },
- {
-  "cat": "Veg",
-  "name": "Fresh root ginger"
- },
- {
-  "cat": "Veg",
-  "name": "Garlic"
- },
- {
-  "cat": "Veg",
-  "name": "Limes"
- },
- {
-  "cat": "Veg",
   "name": "Onions"
  },
  {
   "cat": "Veg",
   "name": "Celery"
- },
- {
-  "cat": "Veg",
-  "name": "Leeks"
  },
  {
   "cat": "Veg",
@@ -49,14 +29,6 @@
  },
  {
   "cat": "Veg",
-  "name": "Little gem lettuce"
- },
- {
-  "cat": "Veg",
-  "name": "Potatoes (for wedges & mash)"
- },
- {
-  "cat": "Veg",
   "name": "Frozen peas"
  },
  {
@@ -65,31 +37,7 @@
  },
  {
   "cat": "Fish/meat",
-  "name": "Raw king prawns (300g)"
- },
- {
-  "cat": "Fish/meat",
   "name": "Chicken thighs, boneless (6)"
- },
- {
-  "cat": "Fish/meat",
-  "name": "Fish fingers"
- },
- {
-  "cat": "Fish/meat",
-  "name": "Breaded fish fillets"
- },
- {
-  "cat": "Dairy",
-  "name": "Parmesan or vegetarian hard cheese"
- },
- {
-  "cat": "Dairy",
-  "name": "Mayonnaise"
- },
- {
-  "cat": "Dairy",
-  "name": "Butter"
  },
  {
   "cat": "Dairy",
@@ -101,27 +49,7 @@
  },
  {
   "cat": "Cupboard",
-  "name": "Light soy sauce"
- },
- {
-  "cat": "Cupboard",
   "name": "Sweet chilli sauce"
- },
- {
-  "cat": "Cupboard",
-  "name": "Tinned chopped tomatoes"
- },
- {
-  "cat": "Cupboard",
-  "name": "Tomato puree"
- },
- {
-  "cat": "Cupboard",
-  "name": "Cornflour"
- },
- {
-  "cat": "Cupboard",
-  "name": "Dried red split lentils"
  },
  {
   "cat": "Cupboard",
@@ -129,23 +57,11 @@
  },
  {
   "cat": "Cupboard",
-  "name": "Spaghetti (large pack)"
- },
- {
-  "cat": "Cupboard",
   "name": "Wholemeal pitta breads"
  },
  {
   "cat": "Cupboard",
-  "name": "Ketchup or tartare sauce"
- },
- {
-  "cat": "Cupboard",
   "name": "Tinned baked beans"
- },
- {
-  "cat": "Cupboard",
-  "name": "Microwave mash pouches (for speed on Thursday)"
  },
  {
   "cat": "Other",
@@ -154,5 +70,81 @@
  {
   "cat": "Other",
   "name": "Veggie sausages"
+ },
+ {
+  "cat": "Veg",
+  "name": "Sweet potatoes (2)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Spinach (200g bag)"
+ },
+ {
+  "cat": "Veg",
+  "name": "New potatoes (500g)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Gammon joint (1kg, unsmoked)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tin light coconut milk"
+ },
+ {
+  "cat": "Other",
+  "name": "Vimto"
+ },
+ {
+  "cat": "Other",
+  "name": "Fruit (double up on bananas)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Cereals"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Biscuits"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Cereal / muesli bars"
+ },
+ {
+  "cat": "Other",
+  "name": "Kids snacks"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Crisps (normal multipack, for kids)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Crisps (1 pack of fancy ones, for us)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Steaks (4)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Broccoli"
+ },
+ {
+  "cat": "Veg",
+  "name": "Large flat mushrooms"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Dairy-free butter x 2"
+ },
+ {
+  "cat": "Other",
+  "name": "Wine"
+ },
+ {
+  "cat": "Other",
+  "name": "Tonic"
  }
 ]
