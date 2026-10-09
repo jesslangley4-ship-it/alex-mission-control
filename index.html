@@ -783,11 +783,10 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-10-08T06:10:41.908Z",
-    "forDate": "2026-10-08",
+    "updatedISO": "2026-10-09T06:17:58.510Z",
+    "forDate": "2026-10-09",
     "alexStatus": "normal",
-    "alexToday": [],
-    "alexTomorrow": [
+    "alexToday": [
         {
             "time": "08:30",
             "title": "Car in garage",
@@ -795,11 +794,24 @@ var RecipeKit = (function(){
             "allDay": false
         }
     ],
+    "alexTomorrow": [],
     "mumUnusual": null,
     "francisToday": [],
-    "francisTomorrow": [],
-    "mathildaToday": [],
-    "mathildaTomorrow": [
+    "francisTomorrow": [
+        {
+            "time": "09:15",
+            "title": "Francis - Hockey U10/U12 Open Session",
+            "loc": "The Lindum",
+            "allDay": false
+        },
+        {
+            "time": "13:30",
+            "title": "Francis: Lindum Hockey vs Slazengers (Home)",
+            "loc": "Lindum Sports Association, LN2 4PE",
+            "allDay": false
+        }
+    ],
+    "mathildaToday": [
         {
             "time": "09:30",
             "title": "Gymnastics",
@@ -812,7 +824,8 @@ var RecipeKit = (function(){
             "loc": "Emmerson Pool Hire",
             "allDay": false
         }
-    ]
+    ],
+    "mathildaTomorrow": []
 };
 
   /* ---- Meal plan — mirror of the Tea Planner (the family's source of truth).
@@ -820,31 +833,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-10-07": {
-      "meal": "Air-fryer veggie sausages with crispy potato wedges & beans",
-      "note": "Hockey Academy Night 6:15-7:45pm (The Lindum) — air fryer gets tea done fast either side of the run",
-      "kind": "veg",
-      "method": "air-fryer",
-      "time": "10 min prep · 20 min cook",
-      "recipe": {
-        "ingredients": [
-          "8 veggie sausages",
-          "3 large potatoes, cut into wedges",
-          "1 tbsp olive oil",
-          "1/2 tsp smoked paprika (for the grown-ups' wedges)",
-          "400g tin baked beans"
-        ],
-        "serves": "4 (2 adults, 2 kids)",
-        "steps": [
-          "Toss the potato wedges in the oil, season, and air fry at 200°C for 12 minutes.",
-          "Add the paprika to the wedges for the grown-ups now, keeping Mathilda and Francis's plain.",
-          "Add the veggie sausages to the air fryer basket alongside the wedges and cook for a further 8-10 minutes, turning halfway, until golden and the wedges are crisp.",
-          "Heat the beans in a small pan or the microwave for 3-4 minutes.",
-          "Serve the sausages and wedges with the beans."
-        ],
-        "tip": "Mathilda: cut her sausage into coins and keep her wedges plain. Ready in 20 minutes either side of hockey academy."
-      }
-    },
     "2026-10-08": {
       "meal": "Fish finger pitta pockets with slaw",
       "note": "Moved from Monday. Early, quick tea before Francis's parents' evening appointment at 7:05pm",
