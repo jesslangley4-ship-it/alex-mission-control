@@ -783,21 +783,13 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-10-09T14:54:15.995Z",
-    "forDate": "2026-10-09",
+    "updatedISO": "2026-10-10T06:07:57.922Z",
+    "forDate": "2026-10-10",
     "alexStatus": "normal",
-    "alexToday": [
-        {
-            "time": "08:30",
-            "title": "Car in garage",
-            "loc": "Dexel Tyre & Auto Centre - Gainsborough",
-            "allDay": false
-        }
-    ],
+    "alexToday": [],
     "alexTomorrow": [],
     "mumUnusual": null,
-    "francisToday": [],
-    "francisTomorrow": [
+    "francisToday": [
         {
             "time": "09:15",
             "title": "Francis - Hockey U10/U12 Open Session",
@@ -811,20 +803,15 @@ var RecipeKit = (function(){
             "allDay": false
         }
     ],
-    "mathildaToday": [
+    "francisTomorrow": [
         {
-            "time": "09:30",
-            "title": "Gymnastics",
-            "loc": "Allegro Gymnastics Academy",
-            "allDay": false
-        },
-        {
-            "time": "13:30",
-            "title": "Swimming",
-            "loc": "Emmerson Pool Hire",
+            "time": "10:00",
+            "title": "U12 Yorks Performance hockey training",
+            "loc": "",
             "allDay": false
         }
     ],
+    "mathildaToday": [],
     "mathildaTomorrow": []
 };
 
@@ -833,34 +820,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-10-08": {
-      "meal": "Fish finger pitta pockets with slaw",
-      "note": "Moved from Monday. Early, quick tea before Francis's parents' evening appointment at 7:05pm",
-      "kind": "fish",
-      "method": "air-fryer",
-      "time": "10 min prep · 10 min cook",
-      "recipe": {
-        "ingredients": [
-          "12 fish fingers",
-          "4 wholemeal pitta breads",
-          "1/4 white or red cabbage, finely shredded",
-          "1 carrot, grated",
-          "3 tbsp mayonnaise",
-          "1 tsp lemon juice",
-          "A few lettuce leaves",
-          "Ketchup or tartare sauce, to serve"
-        ],
-        "serves": "4 (2 adults, 2 kids)",
-        "steps": [
-          "Air fry the fish fingers at 180°C for 10 minutes, turning halfway, until golden and piping hot. (Or oven at 200°C / 180°C fan for 12–15 minutes.)",
-          "While they cook, mix the cabbage and carrot with the mayonnaise and lemon juice to make the slaw. Season.",
-          "Warm the pittas briefly and split them open.",
-          "Fill each pitta with lettuce, 3 fish fingers and a spoonful of slaw.",
-          "Serve with ketchup or tartare sauce on the side."
-        ],
-        "tip": "Mathilda: fish fingers and pitta plain, slaw on the side so she can dip or avoid it. Cut her pitta into fingers."
-      }
-    },
     "2026-10-09": {
       "meal": "Steak with broccoli, mushrooms & wedges",
       "note": "Mathilda's gymnastics 9:30am & swimming 1:30pm today, evening's free — steak night",
@@ -977,8 +936,8 @@ var RecipeKit = (function(){
       }
     },
     "2026-10-13": {
-      "meal": "Fish finger pitta pockets with slaw",
-      "note": "Hockey skipped this week — easy one back in, everything's already in so nothing to buy",
+      "meal": "Fish finger pitta pockets with salad",
+      "note": "Hockey skipped this week — easy one back in, with salad instead of slaw. Everything's already in so nothing to buy",
       "kind": "fish",
       "method": "air-fryer",
       "time": "10 min prep · 10 min cook",
@@ -986,22 +945,18 @@ var RecipeKit = (function(){
         "ingredients": [
           "12 fish fingers",
           "4 wholemeal pitta breads",
-          "1/4 white or red cabbage, finely shredded",
-          "1 carrot, grated",
-          "3 tbsp mayonnaise",
-          "1 tsp lemon juice",
           "A few lettuce leaves",
+          "Side salad (whatever's in)",
           "Ketchup or tartare sauce, to serve"
         ],
         "serves": "4 (2 adults, 2 kids)",
         "steps": [
           "Air fry the fish fingers at 180°C for 10 minutes, turning halfway, until golden and piping hot. (Or oven at 200°C / 180°C fan for 12-15 minutes.)",
-          "While they cook, mix the cabbage and carrot with the mayonnaise and lemon juice to make the slaw. Season.",
           "Warm the pittas briefly and split them open.",
-          "Fill each pitta with lettuce, 3 fish fingers and a spoonful of slaw.",
-          "Serve with ketchup or tartare sauce on the side."
+          "Fill each pitta with lettuce and 3 fish fingers.",
+          "Serve with a side salad and ketchup or tartare sauce."
         ],
-        "tip": "Mathilda: fish fingers and pitta plain, slaw on the side so she can dip or avoid it. Cut her pitta into fingers."
+        "tip": "Mathilda: fish fingers and pitta plain. Cut her pitta into fingers."
       }
     },
     "2026-10-14": {
