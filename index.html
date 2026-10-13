@@ -783,18 +783,25 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-10-12T06:23:05.448Z",
-    "forDate": "2026-10-12",
+    "updatedISO": "2026-10-13T06:07:55.063Z",
+    "forDate": "2026-10-13",
     "alexStatus": "away",
     "alexToday": [],
     "alexTomorrow": [],
     "mumUnusual": null,
-    "francisToday": [],
-    "francisTomorrow": [
+    "francisToday": [
         {
             "time": "18:00",
             "title": "Francis - Hull Hockey Training",
             "loc": "Hymers College, Hymers Avenue, Hull HU3 1LW",
+            "allDay": false
+        }
+    ],
+    "francisTomorrow": [
+        {
+            "time": "18:15",
+            "title": "Francis - Hockey Academy Night (U10/U12)",
+            "loc": "The Lindum",
             "allDay": false
         }
     ],
@@ -807,39 +814,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-10-11": {
-      "meal": "Sweet potato & spinach dhal with rice",
-      "note": "U12 Yorks Performance hockey training 12-2:30pm today, evening's free — good day to batch cook extra for Wednesday's Hockey Academy Night",
-      "kind": "veg",
-      "method": "hob",
-      "time": "10 min prep · 30 min cook",
-      "recipe": {
-        "ingredients": [
-          "1 tbsp vegetable oil",
-          "1 onion, chopped",
-          "2 garlic cloves, crushed",
-          "1 tsp grated fresh ginger",
-          "1 tsp ground turmeric",
-          "1 tsp ground cumin",
-          "2 sweet potatoes, peeled and diced",
-          "300g dried red split lentils, rinsed",
-          "800ml vegetable stock",
-          "200g spinach",
-          "400ml tin light coconut milk",
-          "300g basmati rice, to serve"
-        ],
-        "serves": "4 tonight + 4 portions for Wednesday",
-        "steps": [
-          "Soften the onion in the oil for 5 minutes. Add the garlic, ginger, turmeric and cumin and cook for 1 minute.",
-          "Add the sweet potato, lentils and stock. Bring to the boil, then simmer for 20 minutes, stirring now and then, until the lentils and sweet potato are soft.",
-          "Stir in the coconut milk and spinach and cook for 3-4 minutes until the spinach wilts.",
-          "Take out Mathilda's portion and 4 portions to cool for Wednesday before seasoning the rest.",
-          "Cook the rice and serve with the dhal.",
-          "Cool the 4 extra portions within an hour, cover and keep in the fridge for Wednesday (no need to freeze)."
-        ],
-        "tip": "Mathilda: keep hers plain and mash the sweet potato a little finer."
-      }
-    },
     "2026-10-12": {
       "meal": "Slow-cooker gammon with parsley sauce, mash & peas",
       "note": "Free day, nothing else on — note this makes 2 meat nights this week alongside Friday's steak. Alex may still be away for work (PO Visit) — keep a portion aside for him to reheat.",
