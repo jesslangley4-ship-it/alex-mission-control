@@ -1,28 +1,4 @@
 {
- "2026-10-13": {
-  "meal": "Fish finger pitta pockets with salad",
-  "note": "Hockey skipped this week — easy one back in, with salad instead of slaw. Everything's already in so nothing to buy",
-  "kind": "fish",
-  "method": "air-fryer",
-  "time": "10 min prep · 10 min cook",
-  "recipe": {
-   "ingredients": [
-    "12 fish fingers",
-    "4 wholemeal pitta breads",
-    "A few lettuce leaves",
-    "Side salad (whatever's in)",
-    "Ketchup or tartare sauce, to serve"
-   ],
-   "serves": "4 (2 adults, 2 kids)",
-   "steps": [
-    "Air fry the fish fingers at 180°C for 10 minutes, turning halfway, until golden and piping hot. (Or oven at 200°C / 180°C fan for 12-15 minutes.)",
-    "Warm the pittas briefly and split them open.",
-    "Fill each pitta with lettuce and 3 fish fingers.",
-    "Serve with a side salad and ketchup or tartare sauce."
-   ],
-   "tip": "Mathilda: fish fingers and pitta plain. Cut her pitta into fingers."
-  }
- },
  "2026-10-14": {
   "meal": "Reheat: Sunday's sweet potato & spinach dhal with rice",
   "note": "Hockey Academy Night 6:15-7:45pm (The Lindum) — quick reheat gets tea done either side of the run",
@@ -70,6 +46,202 @@
     "Serve the fish with the crushed potatoes, peas and lemon wedges."
    ],
    "tip": "Mathilda: leave the garlic butter off her portion and check carefully for bones."
+  }
+ },
+ "2026-10-16": {
+  "meal": "Baked Salmon & New Potatoes",
+  "note": "Free evening — gymnastics 9:30am & swimming 1:30pm today, but nothing on for tea",
+  "kind": "fish",
+  "method": "oven",
+  "time": "10 min prep · 20 min cook",
+  "recipe": {
+   "ingredients": [
+    "4 salmon fillets",
+    "600g new potatoes, halved",
+    "200g green beans or tenderstem",
+    "1 lemon",
+    "1 tbsp olive oil",
+    "Small knob of butter"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Boil the new potatoes for 15 minutes until tender.",
+    "Put the salmon skin-side down on a lined tray. Drizzle with the oil, squeeze over half the lemon and season.",
+    "Bake for 12–15 minutes, until it flakes easily.",
+    "Steam or boil the green beans for the last 4 minutes of the potatoes.",
+    "Drain the potatoes and toss with the butter. Serve with lemon wedges."
+   ],
+   "tip": "Air fryer instead: 180°C for 10–12 minutes. Flake Mathilda's portion and check carefully for bones."
+  }
+ },
+ "2026-10-17": {
+  "meal": "Veggie Bean Chilli",
+  "note": "Francis's away match at Chapeltown (KO 14:30) means a long round trip — slow cooker on before we leave so tea's ready when we're back",
+  "kind": "veg",
+  "method": "slow-cooker",
+  "time": "15 min prep · 6-7 hr low",
+  "recipe": {
+   "ingredients": [
+    "1 tbsp olive oil",
+    "1 onion, chopped",
+    "2 garlic cloves, crushed",
+    "1 red pepper, sliced",
+    "2 tsp ground cumin",
+    "1 tsp smoked paprika",
+    "1/2–1 tsp chilli flakes (to taste)",
+    "2 x 400g tins kidney beans, drained",
+    "400g tin black beans, drained",
+    "2 x 400g tins chopped tomatoes",
+    "1 tbsp tomato purée",
+    "300g rice, to serve",
+    "Grated cheese & soured cream, to serve (optional)"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Soften the onion and pepper in the oil in a frying pan for 5 minutes (or skip this and put everything straight into the slow cooker if you're short on time).",
+    "Add the garlic, cumin and paprika and cook for 1 minute.",
+    "Tip the onion mixture, beans, chopped tomatoes and tomato purée into the slow cooker. Stir well and season.",
+    "Cover and cook on low for 6–7 hours (or high for 3–4), until thick and the veg is tender.",
+    "Take out Mathilda's portion, then stir the chilli flakes through the rest.",
+    "Cook the rice for 15 minutes before serving. Serve the chilli over rice with cheese and soured cream if using."
+   ],
+   "tip": "Slow cooker on by 9am before we set off for Chapeltown. Mathilda: take hers out before the chilli flakes go in and keep it mild."
+  }
+ },
+ "2026-10-18": {
+  "meal": "Bolognese (meal-drawer batch)",
+  "note": "This week's one meat night. Hull fixture time still TBC — the slow cooker keeps tea ready whenever we're back, and the extra goes in the freezer for the meal drawer",
+  "kind": "meat",
+  "method": "slow-cooker",
+  "time": "20 min prep · 6-7 hr low",
+  "recipe": {
+   "ingredients": [
+    "1 tbsp olive oil",
+    "1 onion, chopped",
+    "2 carrots, finely diced",
+    "2 celery sticks, finely diced",
+    "2 garlic cloves, crushed",
+    "1kg beef mince",
+    "2 x 400g tins chopped tomatoes",
+    "2 tbsp tomato purée",
+    "1 beef stock cube, dissolved in 200ml hot water",
+    "1 tsp dried mixed herbs",
+    "600g spaghetti",
+    "Parmesan or vegetarian hard cheese, to serve"
+   ],
+   "serves": "4 tonight + extra for the freezer",
+   "steps": [
+    "Brown the mince in batches in a frying pan, then drain off any excess fat and tip into the slow cooker.",
+    "Soften the onion, carrots and celery in the same pan for 5 minutes, then add the garlic for 1 minute. Add to the slow cooker.",
+    "Stir in the chopped tomatoes, tomato purée, stock and herbs. Season.",
+    "Cover and cook on low for 6–7 hours (or high for 3–4), stirring once if you're around.",
+    "Take out Mathilda's portion, then cool the extra portions you're freezing before serving the rest.",
+    "Cook the spaghetti for 10 minutes and serve with the sauce and parmesan."
+   ],
+   "tip": "Cool the extra fully within an hour, then portion, label and freeze for the meal drawer — no raw dump bags. Mathilda: mash hers a little finer."
+  }
+ },
+ "2026-10-19": {
+  "meal": "Veggie chickpea & spinach curry with rice",
+  "note": "Free evening — good day to batch-cook extra for Tuesday's busy night after Hull hockey training",
+  "kind": "veg",
+  "method": "hob",
+  "time": "10 min prep · 25 min cook",
+  "recipe": {
+   "ingredients": [
+    "1 tbsp vegetable oil",
+    "1 onion, chopped",
+    "2 garlic cloves, crushed",
+    "1 tsp fresh ginger, grated",
+    "2 tsp curry powder (mild)",
+    "1 tsp ground cumin",
+    "2 x 400g tins chickpeas, drained",
+    "400g tin chopped tomatoes",
+    "200ml vegetable stock",
+    "200g spinach",
+    "300g basmati rice, to serve"
+   ],
+   "serves": "4 tonight + 4 portions for Tuesday",
+   "steps": [
+    "Soften the onion in the oil for 5 minutes. Add the garlic, ginger, curry powder and cumin and cook for 1 minute.",
+    "Add the chickpeas, chopped tomatoes and stock. Simmer for 15 minutes, stirring now and then.",
+    "Take out Mathilda's portion and 4 portions to cool for Tuesday before seasoning the rest.",
+    "Stir the spinach into the remainder and cook for 3–4 minutes until wilted.",
+    "Cook the rice and serve with the curry.",
+    "Cool Tuesday's 4 portions within an hour, cover and keep in the fridge."
+   ],
+   "tip": "Mathilda: keep hers mild — no curry powder in her portion, just the chickpeas and veg."
+  }
+ },
+ "2026-10-20": {
+  "meal": "Reheat: Monday's chickpea & spinach curry with rice",
+  "note": "Hull Hockey Training 6–7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest",
+  "kind": "veg",
+  "method": "reheat",
+  "time": "5 min prep · 10 min",
+  "recipe": {
+   "ingredients": [
+    "4 portions Monday's chickpea & spinach curry (from the fridge)",
+    "300g rice"
+   ],
+   "serves": "4",
+   "steps": [
+    "Tip the curry into a pan with a splash of water.",
+    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8–10 minutes). Or microwave in a covered bowl for 4–5 minutes, stirring halfway.",
+    "Cook the rice while the curry heats.",
+    "Serve straightaway."
+   ],
+   "tip": "Only reheat it once, and check it's piping hot all the way through before serving. Anyone back late from training can have their portion microwaved separately."
+  }
+ },
+ "2026-10-21": {
+  "meal": "Frozen fishcakes with mash & peas",
+  "note": "Hockey Academy Night 6:15–7:45pm (The Lindum) — air fryer gets tea done fast either side of the run",
+  "kind": "fish",
+  "method": "air-fryer",
+  "time": "5 min prep · 15 min cook",
+  "recipe": {
+   "ingredients": [
+    "8 frozen fishcakes",
+    "4 servings mash (fresh potatoes, or microwave pouches for speed)",
+    "200g frozen peas",
+    "Butter & milk, for the mash (if making fresh)"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Air fry the fishcakes at 190°C for 12–15 minutes, turning halfway, until golden and piping hot all the way through (check the pack for exact timing).",
+    "If making fresh mash, boil chunked potatoes for 15 minutes, drain, then mash with butter and a splash of milk.",
+    "Cook the peas in a pan of boiling water for 4–5 minutes, or microwave.",
+    "Drain and serve everything together."
+   ],
+   "tip": "Mathilda: cut hers into pieces and check it's piping hot through the middle before serving. Microwave mash pouches work well on a short turnaround."
+  }
+ },
+ "2026-10-22": {
+  "meal": "Tuna Pasta Salad",
+  "note": "Free evening, nothing on for tea",
+  "kind": "fish",
+  "method": "hob",
+  "time": "15 min prep · 10 min cook",
+  "recipe": {
+   "ingredients": [
+    "300g pasta (fusilli or similar)",
+    "2 x 160g tins tuna, drained",
+    "100g tinned or frozen sweetcorn",
+    "1 red pepper, diced",
+    "4 tbsp mayonnaise",
+    "1 tsp lemon juice",
+    "Salad leaves, to serve"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Cook the pasta according to the pack instructions, then drain and run under cold water to cool slightly.",
+    "Cook the sweetcorn for 3–4 minutes if frozen, or just drain if tinned.",
+    "Mix the tuna, mayonnaise and lemon juice in a big bowl.",
+    "Stir in the pasta, sweetcorn and red pepper. Season.",
+    "Serve with salad leaves on the side."
+   ],
+   "tip": "Mathilda: keep her tuna mayo light, and swap the raw pepper for cucumber sticks on the side if she's not keen."
   }
  }
 }
