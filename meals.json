@@ -49,29 +49,35 @@
   }
  },
  "2026-10-16": {
-  "meal": "Baked Salmon & New Potatoes",
-  "note": "Free evening — gymnastics 9:30am & swimming 1:30pm today, but nothing on for tea",
+  "meal": "Garlic & tomato prawn pasta",
+  "note": "Using up the prawns in the freezer. Free evening, nothing on for tea",
   "kind": "fish",
-  "method": "oven",
+  "method": "hob",
   "time": "10 min prep · 20 min cook",
   "recipe": {
    "ingredients": [
-    "4 salmon fillets",
-    "600g new potatoes, halved",
-    "200g green beans or tenderstem",
-    "1 lemon",
+    "400g frozen prawns (raw or cooked)",
+    "350g pasta (penne, fusilli or spaghetti)",
     "1 tbsp olive oil",
-    "Small knob of butter"
+    "3 garlic cloves, crushed",
+    "1/2 tsp chilli flakes (optional, for the grown-ups)",
+    "400g tin chopped tomatoes",
+    "1 tbsp tomato purée",
+    "Juice of 1/2 lemon",
+    "A handful of spinach (optional)",
+    "Parmesan or vegetarian hard cheese, to serve (optional)"
    ],
    "serves": "4 (2 adults, 2 kids)",
    "steps": [
-    "Heat the oven to 200°C (180°C fan). Boil the new potatoes for 15 minutes until tender.",
-    "Put the salmon skin-side down on a lined tray. Drizzle with the oil, squeeze over half the lemon and season.",
-    "Bake for 12–15 minutes, until it flakes easily.",
-    "Steam or boil the green beans for the last 4 minutes of the potatoes.",
-    "Drain the potatoes and toss with the butter. Serve with lemon wedges."
+    "Defrost the prawns: put them in a sieve under cold running water for 10 minutes, then pat dry. (Or leave them in the fridge overnight.)",
+    "Cook the pasta for 10–12 minutes. Save a mugful of the pasta water, then drain.",
+    "While the pasta cooks, fry the garlic in the oil for 1 minute, then add the chopped tomatoes and purée and simmer for 8 minutes. Season.",
+    "Add the prawns. If they're raw, cook for 3–4 minutes until pink all the way through. If they're cooked, just heat for 2 minutes until piping hot.",
+    "Stir in the spinach (if using) until wilted, then the lemon juice.",
+    "Toss the pasta through the sauce, adding a splash of pasta water to loosen it.",
+    "Take out Mathilda's portion, then stir the chilli flakes through the rest and serve with cheese."
    ],
-   "tip": "Air fryer instead: 180°C for 10–12 minutes. Flake Mathilda's portion and check carefully for bones."
+   "tip": "Don't overcook the prawns or they go rubbery: pink and curled is done. Mathilda: no chilli, and cut her prawns into small pieces."
   }
  },
  "2026-10-17": {
@@ -109,36 +115,25 @@
   }
  },
  "2026-10-18": {
-  "meal": "Bolognese (meal-drawer batch)",
-  "note": "This week's one meat night. Hull fixture time still TBC — the slow cooker keeps tea ready whenever we're back, and the extra goes in the freezer for the meal drawer",
+  "meal": "Bolognese from the freezer with spaghetti",
+  "note": "Using the bolognese in the freezer. Move it to the fridge on Saturday night. Quick to have ready whenever you're back from Hull (fixture time still TBC)",
   "kind": "meat",
-  "method": "slow-cooker",
-  "time": "20 min prep · 6-7 hr low",
+  "method": "reheat",
+  "time": "5 min prep · 15 min",
   "recipe": {
    "ingredients": [
-    "1 tbsp olive oil",
-    "1 onion, chopped",
-    "2 carrots, finely diced",
-    "2 celery sticks, finely diced",
-    "2 garlic cloves, crushed",
-    "1kg beef mince",
-    "2 x 400g tins chopped tomatoes",
-    "2 tbsp tomato purée",
-    "1 beef stock cube, dissolved in 200ml hot water",
-    "1 tsp dried mixed herbs",
-    "600g spaghetti",
+    "Frozen bolognese (enough for 4)",
+    "400g spaghetti",
     "Parmesan or vegetarian hard cheese, to serve"
    ],
-   "serves": "4 tonight + extra for the freezer",
+   "serves": "4 (2 adults, 2 kids)",
    "steps": [
-    "Brown the mince in batches in a frying pan, then drain off any excess fat and tip into the slow cooker.",
-    "Soften the onion, carrots and celery in the same pan for 5 minutes, then add the garlic for 1 minute. Add to the slow cooker.",
-    "Stir in the chopped tomatoes, tomato purée, stock and herbs. Season.",
-    "Cover and cook on low for 6–7 hours (or high for 3–4), stirring once if you're around.",
-    "Take out Mathilda's portion, then cool the extra portions you're freezing before serving the rest.",
-    "Cook the spaghetti for 10 minutes and serve with the sauce and parmesan."
+    "Saturday night: move the bolognese from the freezer to the fridge to defrost overnight. (Forgot? Use the microwave defrost setting, stirring every few minutes.)",
+    "Tip it into a pan with a splash of water and heat gently, stirring, until bubbling and piping hot all the way through (about 10 minutes). Or microwave in a covered bowl for 5–6 minutes, stirring halfway.",
+    "Cook the spaghetti for 10 minutes while the sauce heats, then drain.",
+    "Serve with grated cheese."
    ],
-   "tip": "Cool the extra fully within an hour, then portion, label and freeze for the meal drawer — no raw dump bags. Mathilda: mash hers a little finer."
+   "tip": "Only reheat it once, and check it's piping hot all the way through. Mathilda: cut her spaghetti short."
   }
  },
  "2026-10-19": {
