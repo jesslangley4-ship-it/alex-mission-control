@@ -783,30 +783,29 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-10-21T06:07:03.618Z",
-    "forDate": "2026-10-21",
+    "updatedISO": "2026-10-22T06:07:52.584Z",
+    "forDate": "2026-10-22",
     "alexStatus": "normal",
-    "alexToday": [
-        {
-            "time": null,
-            "title": "ITC Instructor Day",
-            "loc": "",
-            "allDay": true
-        }
-    ],
+    "alexToday": [],
     "alexTomorrow": [],
     "mumUnusual": null,
-    "francisToday": [
-        {
-            "time": "18:15",
-            "title": "Francis - Hockey Academy Night (U10/U12)",
-            "loc": "The Lindum",
-            "allDay": false
-        }
-    ],
+    "francisToday": [],
     "francisTomorrow": [],
     "mathildaToday": [],
-    "mathildaTomorrow": []
+    "mathildaTomorrow": [
+        {
+            "time": "09:30",
+            "title": "Gymnastics",
+            "loc": "Allegro Gymnastics Academy",
+            "allDay": false
+        },
+        {
+            "time": "13:30",
+            "title": "Swimming",
+            "loc": "Emmerson Pool Hire",
+            "allDay": false
+        }
+    ]
 };
 
   /* ---- Meal plan — mirror of the Tea Planner (the family's source of truth).
@@ -814,27 +813,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-10-20": {
-      "meal": "Reheat: Monday's chickpea & spinach curry with rice",
-      "note": "Hull Hockey Training 6–7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest",
-      "kind": "veg",
-      "method": "reheat",
-      "time": "5 min prep · 10 min",
-      "recipe": {
-        "ingredients": [
-          "4 portions Monday's chickpea & spinach curry (from the fridge)",
-          "300g rice"
-        ],
-        "serves": "4",
-        "steps": [
-          "Tip the curry into a pan with a splash of water.",
-          "Heat gently, stirring, until bubbling and piping hot all the way through (about 8–10 minutes). Or microwave in a covered bowl for 4–5 minutes, stirring halfway.",
-          "Cook the rice while the curry heats.",
-          "Serve straightaway."
-        ],
-        "tip": "Only reheat it once, and check it's piping hot all the way through before serving. Anyone back late from training can have their portion microwaved separately."
-      }
-    },
     "2026-10-21": {
       "meal": "Frozen fishcakes with mash & peas",
       "note": "Hockey Academy Night 6:15–7:45pm (The Lindum) — air fryer gets tea done fast either side of the run",
@@ -883,6 +861,198 @@ var RecipeKit = (function(){
           "Serve with salad leaves on the side."
         ],
         "tip": "Mathilda: keep her tuna mayo light, and swap the raw pepper for cucumber sticks on the side if she's not keen."
+      }
+    },
+    "2026-10-23": {
+      "meal": "Air-fryer veggie sausages with crispy potato wedges & beans",
+      "note": "Normal evening — gymnastics & swimming earlier today, nothing on for tea",
+      "kind": "veg",
+      "method": "air-fryer",
+      "time": "10 min prep · 20 min cook",
+      "recipe": {
+        "ingredients": [
+          "8 veggie sausages",
+          "3 large potatoes, cut into wedges",
+          "1 tbsp olive oil",
+          "1/2 tsp smoked paprika (for the grown-ups' wedges)",
+          "400g tin baked beans"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Toss the potato wedges in the oil, season, and air fry at 200°C for 12 minutes.",
+          "Add the paprika to the wedges for the grown-ups now, keeping Mathilda and Francis's plain.",
+          "Add the veggie sausages to the air fryer basket alongside the wedges and cook for a further 8-10 minutes, turning halfway, until golden and the wedges are crisp.",
+          "Heat the beans in a small pan or the microwave for 3-4 minutes.",
+          "Serve the sausages and wedges with the beans."
+        ],
+        "tip": "Mathilda: cut her sausage into coins and keep her wedges plain."
+      }
+    },
+    "2026-10-24": {
+      "meal": "Slow-cooker chicken casserole",
+      "note": "This week's one meat night. Francis at the nerd convention, Jess & Mathilda seeing cousins today — slow cooker on before you head out so tea's ready whenever everyone's back",
+      "kind": "meat",
+      "method": "slow-cooker",
+      "time": "15 min prep · 6-7 hr low",
+      "recipe": {
+        "ingredients": [
+          "6 boneless chicken thighs",
+          "1 onion, chopped",
+          "2 carrots, sliced",
+          "2 celery sticks, sliced",
+          "2 leeks, sliced",
+          "400g tin chopped tomatoes",
+          "500ml chicken stock",
+          "1 tbsp tomato purée",
+          "1 tsp dried thyme",
+          "1 tbsp cornflour, mixed with a splash of water",
+          "Crusty bread or mash, to serve"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Put the onion, carrots, celery and leeks into the slow cooker.",
+          "Add the chicken thighs on top, then the tomatoes, stock, tomato purée and thyme. Season.",
+          "Cover and cook on low for 6-7 hours (or high for 3-4) until the chicken is tender and falling apart.",
+          "About 20 minutes before serving, stir in the cornflour slurry to thicken, and shred the chicken through the sauce.",
+          "Serve with crusty bread or mash."
+        ],
+        "tip": "On by 8-9am before you head out. Mathilda: mash her portion with a fork and check for bones. Freeze any leftovers fully cooled, portioned and labelled for the meal drawer."
+      }
+    },
+    "2026-10-25": {
+      "meal": "Lentil bolognese with spaghetti",
+      "note": "Free day — good one for batch cooking. Make extra to reheat on Tuesday after Hull hockey training",
+      "kind": "veg",
+      "method": "hob",
+      "time": "15 min prep · 30 min cook",
+      "recipe": {
+        "ingredients": [
+          "2 tbsp olive oil",
+          "2 onions, chopped",
+          "3 garlic cloves, crushed",
+          "2 carrots, finely diced",
+          "4 celery sticks, finely diced",
+          "400g dried red split lentils, rinsed",
+          "2 x 690g passata",
+          "2 tbsp tomato purée",
+          "1 tbsp dried mixed herbs",
+          "1 veg stock cube, dissolved in 600ml hot water",
+          "600g spaghetti",
+          "Parmesan or vegetarian hard cheese, to serve"
+        ],
+        "serves": "4 tonight + 4 portions for Tuesday",
+        "steps": [
+          "Soften the onions, garlic, carrots and celery in the oil in a large pan for 8 minutes.",
+          "Add the rinsed lentils, passata, tomato purée, herbs and stock. Stir well and season.",
+          "Simmer gently for 25-30 minutes, stirring now and then, until the lentils are soft and the sauce is thick. Add a splash of water if it gets too thick.",
+          "Take out Mathilda's portion and 4 portions to cool for Tuesday before adding any extra pepper or chilli to the rest.",
+          "About 15 minutes before tea, cook the spaghetti for 10 minutes and drain.",
+          "Serve the sauce over the spaghetti with grated cheese.",
+          "Cool Tuesday's 4 portions within an hour, then cover and keep in the fridge (no need to freeze)."
+        ],
+        "tip": "Mathilda: mash her lentils a little finer if she's fussy about texture."
+      }
+    },
+    "2026-10-26": {
+      "meal": "Baked salmon & new potatoes",
+      "note": "Half term starts today — evening's free, nothing on for tea",
+      "kind": "fish",
+      "method": "oven",
+      "time": "5 min prep · 20 min cook",
+      "recipe": {
+        "ingredients": [
+          "4 salmon fillets",
+          "500g new potatoes, halved",
+          "200g green beans or tenderstem",
+          "1 lemon",
+          "1 tbsp olive oil",
+          "Small knob of butter",
+          "Salt and pepper"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Heat the oven to 200°C (180°C fan). Boil the new potatoes for 15 minutes until tender.",
+          "Put the salmon skin-side down on a lined tray. Drizzle with oil, squeeze over half the lemon and season.",
+          "Bake for 12-15 minutes, until it flakes easily.",
+          "Steam or boil the green beans for the last 4 minutes of the potatoes.",
+          "Drain the potatoes and toss with the butter. Serve with lemon wedges."
+        ],
+        "tip": "Air fryer instead: 180°C for 10-12 minutes. Flake Mathilda's portion and check carefully for bones."
+      }
+    },
+    "2026-10-27": {
+      "meal": "Reheat: Sunday's lentil bolognese with spaghetti",
+      "note": "Hull hockey training 6-7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest",
+      "kind": "veg",
+      "method": "reheat",
+      "time": "5 min prep · 15 min",
+      "recipe": {
+        "ingredients": [
+          "4 portions of Sunday's lentil bolognese sauce (from the fridge)",
+          "300g spaghetti",
+          "Parmesan or vegetarian hard cheese, to serve"
+        ],
+        "serves": "4",
+        "steps": [
+          "Tip the bolognese into a pan with a splash of water and heat gently, stirring, until bubbling and piping hot all the way through (about 8-10 minutes). Or microwave in a covered bowl for 4-5 minutes, stirring halfway.",
+          "Cook the spaghetti for 10 minutes while the sauce heats, then drain.",
+          "Serve with grated cheese. Anyone back late from training can have their portion microwaved separately."
+        ],
+        "tip": "Only reheat it once, and check it's piping hot all the way through before serving."
+      }
+    },
+    "2026-10-28": {
+      "meal": "Baked cod with lemon & herb crumb, new potatoes & green beans",
+      "note": "Hockey Academy Night 6:15-7:45pm (The Lindum) — air fryer gets tea done fast either side of the run",
+      "kind": "fish",
+      "method": "air-fryer",
+      "time": "10 min prep · 15 min cook",
+      "recipe": {
+        "ingredients": [
+          "4 cod fillets",
+          "50g breadcrumbs (panko or blitzed stale bread)",
+          "Zest of 1 lemon, plus wedges",
+          "Small handful fresh parsley, chopped (or 1 tsp dried)",
+          "25g butter, melted",
+          "500g new potatoes, halved",
+          "200g green beans"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Boil the new potatoes for 15 minutes until tender.",
+          "Mix the breadcrumbs, lemon zest, parsley, melted butter and a pinch of salt.",
+          "Put the cod fillets in the air fryer basket and press the crumb on top.",
+          "Air fry at 180°C for 10-12 minutes, until the crumb is golden and the fish flakes.",
+          "Cook the beans for the last 4 minutes of the potatoes. Serve with lemon wedges."
+        ],
+        "tip": "Mathilda: leave the lemon zest off her portion and check carefully for bones."
+      }
+    },
+    "2026-10-29": {
+      "meal": "Jacket potatoes, tuna mayo or cheese & beans",
+      "note": "Mathilda's hospital eye test is at 2:20pm (dilating drops — she may be unsettled after) — keeping tea simple and familiar tonight",
+      "kind": "easy",
+      "method": "air-fryer",
+      "time": "10 min prep · 35 min cook",
+      "recipe": {
+        "ingredients": [
+          "4 baking potatoes",
+          "2 x 160g tins tuna, drained",
+          "3 tbsp mayonnaise",
+          "100g grated cheddar",
+          "400g tin baked beans",
+          "Salad leaves, to serve (optional)"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Prick the potatoes all over and microwave on high for 10 minutes to soften.",
+          "Transfer to the air fryer at 200°C for 20-25 minutes, until the skins are crisp. (Or straight in the oven at 200°C/180°C fan for 60-75 minutes if you'd rather skip the microwave.)",
+          "Mix the tuna with the mayonnaise.",
+          "Heat the beans in a pan or the microwave for 3-4 minutes.",
+          "Split the potatoes open and top with tuna mayo, cheese or beans.",
+          "Serve with salad leaves if anyone wants them."
+        ],
+        "tip": "Mathilda: she may be sensitive to light and a bit out of sorts after today's eye drops — give her cheese and beans rather than tuna if she's not keen, and keep the lights low for tea."
       }
     }
   };
