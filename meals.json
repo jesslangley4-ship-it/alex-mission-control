@@ -27,28 +27,30 @@
   }
  },
  "2026-10-23": {
-  "meal": "Air-fryer veggie sausages with crispy potato wedges & beans",
-  "note": "Normal evening — gymnastics & swimming earlier today, nothing on for tea",
-  "kind": "veg",
-  "method": "air-fryer",
-  "time": "10 min prep · 20 min cook",
+  "meal": "Baked salmon & new potatoes",
+  "note": "Swapped in from Monday. Gymnastics & swimming earlier today, nothing on for tea",
+  "kind": "fish",
+  "method": "oven",
+  "time": "5 min prep · 20 min cook",
   "recipe": {
    "ingredients": [
-    "8 veggie sausages",
-    "3 large potatoes, cut into wedges",
+    "4 salmon fillets",
+    "500g new potatoes, halved",
+    "200g green beans or tenderstem",
+    "1 lemon",
     "1 tbsp olive oil",
-    "1/2 tsp smoked paprika (for the grown-ups' wedges)",
-    "400g tin baked beans"
+    "Small knob of butter",
+    "Salt and pepper"
    ],
    "serves": "4 (2 adults, 2 kids)",
    "steps": [
-    "Toss the potato wedges in the oil, season, and air fry at 200°C for 12 minutes.",
-    "Add the paprika to the wedges for the grown-ups now, keeping Mathilda and Francis's plain.",
-    "Add the veggie sausages to the air fryer basket alongside the wedges and cook for a further 8-10 minutes, turning halfway, until golden and the wedges are crisp.",
-    "Heat the beans in a small pan or the microwave for 3-4 minutes.",
-    "Serve the sausages and wedges with the beans."
+    "Heat the oven to 200°C (180°C fan). Boil the new potatoes for 15 minutes until tender.",
+    "Put the salmon skin-side down on a lined tray. Drizzle with oil, squeeze over half the lemon and season.",
+    "Bake for 12-15 minutes, until it flakes easily.",
+    "Steam or boil the green beans for the last 4 minutes of the potatoes.",
+    "Drain the potatoes and toss with the butter. Serve with lemon wedges."
    ],
-   "tip": "Mathilda: cut her sausage into coins and keep her wedges plain."
+   "tip": "Air fryer instead: 180°C for 10-12 minutes. Flake Mathilda's portion and check carefully for bones."
   }
  },
  "2026-10-24": {
@@ -117,30 +119,28 @@
   }
  },
  "2026-10-26": {
-  "meal": "Baked salmon & new potatoes",
-  "note": "Half term starts today — evening's free, nothing on for tea",
-  "kind": "fish",
-  "method": "oven",
-  "time": "5 min prep · 20 min cook",
+  "meal": "Air-fryer veggie sausages with crispy potato wedges & beans",
+  "note": "Swapped from Friday. Half term starts today, evening's free",
+  "kind": "veg",
+  "method": "air-fryer",
+  "time": "10 min prep · 20 min cook",
   "recipe": {
    "ingredients": [
-    "4 salmon fillets",
-    "500g new potatoes, halved",
-    "200g green beans or tenderstem",
-    "1 lemon",
+    "8 veggie sausages",
+    "3 large potatoes, cut into wedges",
     "1 tbsp olive oil",
-    "Small knob of butter",
-    "Salt and pepper"
+    "1/2 tsp smoked paprika (for the grown-ups' wedges)",
+    "400g tin baked beans"
    ],
    "serves": "4 (2 adults, 2 kids)",
    "steps": [
-    "Heat the oven to 200°C (180°C fan). Boil the new potatoes for 15 minutes until tender.",
-    "Put the salmon skin-side down on a lined tray. Drizzle with oil, squeeze over half the lemon and season.",
-    "Bake for 12-15 minutes, until it flakes easily.",
-    "Steam or boil the green beans for the last 4 minutes of the potatoes.",
-    "Drain the potatoes and toss with the butter. Serve with lemon wedges."
+    "Toss the potato wedges in the oil, season, and air fry at 200°C for 12 minutes.",
+    "Add the paprika to the wedges for the grown-ups now, keeping Mathilda and Francis's plain.",
+    "Add the veggie sausages to the air fryer basket alongside the wedges and cook for a further 8-10 minutes, turning halfway, until golden and the wedges are crisp.",
+    "Heat the beans in a small pan or the microwave for 3-4 minutes.",
+    "Serve the sausages and wedges with the beans."
    ],
-   "tip": "Air fryer instead: 180°C for 10-12 minutes. Flake Mathilda's portion and check carefully for bones."
+   "tip": "Mathilda: cut her sausage into coins and keep her wedges plain."
   }
  },
  "2026-10-27": {
