@@ -1209,7 +1209,7 @@ var RecipeKit = (function(){
     var tag = document.getElementById('shopTag');
     var body = document.getElementById('shopBody');
     var today = new Date();
-    var isShopDay = today.getDay() === 5;
+    var isShopDay = !!SHOPPING_LIST_OVERRIDE || today.getDay() === 5; // SHOP_EVERY_DAY: the Tea Planner list shows every day
 
     if (!isShopDay){
       mod.classList.add('quiet');
@@ -1224,9 +1224,15 @@ var RecipeKit = (function(){
       return;
     }
     mod.classList.remove('quiet');
-    tag.textContent = 'Today';
+    tag.textContent = SHOPPING_LIST_OVERRIDE ? 'Tea Planner' : 'Today';
 
     shopWeekKey = ymd(mondayOf(today));
+    if (SHOPPING_LIST_OVERRIDE) {
+      // ticks are stored by position, so start fresh whenever the planner's list changes
+      var sig = 0, txt = SHOPPING_LIST_OVERRIDE.map(function(it){ return it.cat + '|' + it.name; }).join('\n');
+      for (var si = 0; si < txt.length; si++) sig = (sig * 31 + txt.charCodeAt(si)) | 0;
+      shopWeekKey += 'L' + (sig >>> 0).toString(36);
+    }
     shopItems = buildShoppingList();
     shopChecks = loadShopChecks(shopWeekKey);
 
@@ -1248,7 +1254,7 @@ var RecipeKit = (function(){
       html += byCat[cat].map(function(idx){ return rowHTML(idx, shopItems[idx], !!shopChecks[idx]); }).join('');
       html += '</div>';
     });
-    html += '<div class="shop-note">Auto-generated from this week&rsquo;s meal plan — check it against the fridge before you go.</div>';
+    html += '<div class="shop-note">' + (SHOPPING_LIST_OVERRIDE ? 'Copied from Jess&rsquo;s Tea Planner each morning. Ticks here are just on this phone.' : 'Auto-generated from this week&rsquo;s meal plan — check it against the fridge before you go.') + '</div>';
     body.innerHTML = html;
     updateShopProgress();
   }
