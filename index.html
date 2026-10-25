@@ -783,30 +783,30 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-10-24T06:07:48.808Z",
-    "forDate": "2026-10-24",
+    "updatedISO": "2026-10-25T06:49:45.978Z",
+    "forDate": "2026-10-25",
     "alexStatus": "normal",
-    "alexToday": [
-        {
-            "time": "08:30",
-            "title": "Tyre fitting",
-            "loc": "",
-            "allDay": false
-        }
-    ],
+    "alexToday": [],
     "alexTomorrow": [],
     "mumUnusual": null,
-    "francisToday": [
+    "francisToday": [],
+    "francisTomorrow": [
         {
-            "time": "09:15",
-            "title": "Francis - Hockey U10/U12 Open Session",
-            "loc": "The Lindum",
-            "allDay": false
+            "time": null,
+            "title": "QEHS: October half-term (school closed)",
+            "loc": "",
+            "allDay": true
         }
     ],
-    "francisTomorrow": [],
     "mathildaToday": [],
-    "mathildaTomorrow": []
+    "mathildaTomorrow": [
+        {
+            "time": null,
+            "title": "Halloween costume week (Mathilda can wear costume to nursery)",
+            "loc": "",
+            "allDay": true
+        }
+    ]
 };
 
   /* ---- Meal plan — mirror of the Tea Planner (the family's source of truth).
@@ -814,33 +814,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-10-23": {
-      "meal": "Baked salmon & new potatoes",
-      "note": "Swapped in from Monday. Gymnastics & swimming earlier today, nothing on for tea",
-      "kind": "fish",
-      "method": "oven",
-      "time": "5 min prep · 20 min cook",
-      "recipe": {
-        "ingredients": [
-          "4 salmon fillets",
-          "500g new potatoes, halved",
-          "200g green beans or tenderstem",
-          "1 lemon",
-          "1 tbsp olive oil",
-          "Small knob of butter",
-          "Salt and pepper"
-        ],
-        "serves": "4 (2 adults, 2 kids)",
-        "steps": [
-          "Heat the oven to 200°C (180°C fan). Boil the new potatoes for 15 minutes until tender.",
-          "Put the salmon skin-side down on a lined tray. Drizzle with oil, squeeze over half the lemon and season.",
-          "Bake for 12-15 minutes, until it flakes easily.",
-          "Steam or boil the green beans for the last 4 minutes of the potatoes.",
-          "Drain the potatoes and toss with the butter. Serve with lemon wedges."
-        ],
-        "tip": "Air fryer instead: 180°C for 10-12 minutes. Flake Mathilda's portion and check carefully for bones."
-      }
-    },
     "2026-10-24": {
       "meal": "Slow-cooker creamy chicken, leek & mushroom casserole",
       "note": "This week's one meat night. Francis at the nerd convention, Jess & Mathilda seeing cousins today, so slow cooker on before you head out and tea's ready whenever everyone's back",
