@@ -1,23 +1,23 @@
 [
  {
   "cat": "Veg",
-  "name": "Onions (3)"
+  "name": "Onions (4)"
  },
  {
   "cat": "Veg",
-  "name": "Leeks (2)"
+  "name": "Carrots (2)"
  },
  {
   "cat": "Veg",
-  "name": "Mushrooms (250g)"
+  "name": "Celery (2 sticks)"
  },
  {
   "cat": "Veg",
-  "name": "Courgettes (2)"
+  "name": "Leeks (3)"
  },
  {
   "cat": "Veg",
-  "name": "Peppers (2)"
+  "name": "Peppers (6)"
  },
  {
   "cat": "Veg",
@@ -25,23 +25,31 @@
  },
  {
   "cat": "Veg",
-  "name": "Potatoes, large (3, for wedges)"
+  "name": "Potatoes, for mash (4 servings)"
  },
  {
   "cat": "Veg",
-  "name": "Baking potatoes (4)"
+  "name": "Lettuce"
  },
  {
   "cat": "Veg",
-  "name": "Green beans (400g)"
+  "name": "Avocados (3)"
  },
  {
   "cat": "Veg",
-  "name": "Salad leaves"
+  "name": "Cherry tomatoes (250g)"
  },
  {
   "cat": "Veg",
-  "name": "Cucumber"
+  "name": "Fresh parsley (small bunch)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Breaded fish fillets (4)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Chicken thighs, boneless (6)"
  },
  {
   "cat": "Fish/meat",
@@ -49,15 +57,79 @@
  },
  {
   "cat": "Fish/meat",
+  "name": "Cod fillets (4)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Cheddar, block (500g)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Crème fraîche (200ml)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Soured cream"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Butter"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tinned chopped tomatoes (1)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tomato purée"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Cornflour"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tinned black beans (2)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tortillas, large pack (for 3 nights)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Pasta (400g)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Couscous (200g)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Black olives, small jar"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tinned sweetcorn (running low — restock)"
+ },
+ {
+  "cat": "Other",
+  "name": "Crusty bread"
+ },
+ {
+  "cat": "Other",
+  "name": "Salsa"
+ },
+ {
+  "cat": "Other",
+  "name": "Lemons (2)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Cucumber"
+ },
+ {
+  "cat": "Fish/meat",
   "name": "Pork pies"
- },
- {
-  "cat": "Dairy",
-  "name": "Cheddar, block (300g)"
- },
- {
-  "cat": "Dairy",
-  "name": "Crème fraîche, 150ml (or oat crème fraîche)"
  },
  {
   "cat": "Dairy",
@@ -70,18 +142,6 @@
  {
   "cat": "Dairy",
   "name": "Hummus"
- },
- {
-  "cat": "Cupboard",
-  "name": "Tinned chopped tomatoes (2)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Passata (1 × 690g)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Tomato purée"
  },
  {
   "cat": "Cupboard",
@@ -118,10 +178,6 @@
  {
   "cat": "Cupboard",
   "name": "Crisps (1 pack of fancy ones, for us)"
- },
- {
-  "cat": "Other",
-  "name": "Crusty bread"
  },
  {
   "cat": "Other",
@@ -166,5 +222,9 @@
  {
   "cat": "Household",
   "name": "Toothpaste"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Light soy sauce"
  }
 ]

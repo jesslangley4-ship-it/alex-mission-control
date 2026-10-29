@@ -1,26 +1,4 @@
 {
- "2026-10-27": {
-  "meal": "Reheat: Sunday's cheesy veggie pasta bake",
-  "note": "Hull hockey training 6-7pm (Hymers College) plus travel. Tea ready for whoever's not driving, kept warm for the rest",
-  "kind": "veg",
-  "method": "reheat",
-  "time": "5 min prep · 35 min",
-  "recipe": {
-   "ingredients": [
-    "Sunday's second pasta bake (from the fridge)",
-    "The rest of the grated cheddar (about 100g)",
-    "Salad leaves, to serve (optional)"
-   ],
-   "serves": "4",
-   "steps": [
-    "Heat the oven to 180°C (160°C fan).",
-    "Cover the dish with foil and bake for 25 minutes.",
-    "Take off the foil, scatter over the cheese and bake for another 10 minutes, until golden and piping hot all the way through.",
-    "Serve with salad if anyone wants it."
-   ],
-   "tip": "Only reheat it once, and check the middle is piping hot. Anyone back late from training can have theirs microwaved separately for 2–3 minutes."
-  }
- },
  "2026-10-28": {
   "meal": "Baked cod with lemon & herb crumb, new potatoes & green beans",
   "note": "Hockey Academy Night 6:15-7:45pm (The Lindum) — air fryer gets tea done fast either side of the run",
@@ -73,6 +51,197 @@
     "Serve with salad leaves if anyone wants them."
    ],
    "tip": "Mathilda: she may be sensitive to light and a bit out of sorts after today's eye drops — give her cheese and beans rather than tuna if she's not keen, and keep the lights low for tea."
+  }
+ },
+ "2026-10-30": {
+  "meal": "Air-fryer breaded fish fillets with mash, peas & sweetcorn",
+  "note": "Half-term starts and Mathilda's had the nursery Halloween party today after gymnastics (9:30am) and swimming (1:30pm) — keeping tea quick, familiar and not too rich.",
+  "kind": "fish",
+  "method": "air-fryer",
+  "time": "5 min prep · 15 min cook",
+  "recipe": {
+   "ingredients": [
+    "4 breaded fish fillets",
+    "4 servings mash (fresh potatoes, or microwave pouches for speed)",
+    "200g frozen peas",
+    "198g tin or frozen sweetcorn",
+    "Butter & milk, for the mash (if making fresh)"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Air fry the fish fillets at 190°C for 12-14 minutes, turning halfway, until golden and piping hot.",
+    "If making fresh mash, boil chunked potatoes for 15 minutes, drain, then mash with butter and a splash of milk.",
+    "Cook the peas and sweetcorn in a pan of boiling water for 4-5 minutes, or microwave.",
+    "Drain and serve everything together."
+   ],
+   "tip": "Mathilda: cut her fillet into pieces and check it's not too hot. Microwave mash pouches work well after a party-food day when there's less time to cook."
+  }
+ },
+ "2026-10-31": {
+  "meal": "Slow-cooker chicken casserole",
+  "note": "This week's one meat night. Hockey open session 9:15-10:15am, then the away match at Sheffield (12-1pm) — a long round trip, plus trick-or-treating this evening. Slow cooker on by 9am so tea's ready whenever we're back.",
+  "kind": "meat",
+  "method": "slow-cooker",
+  "time": "15 min prep · 6-7 hr low",
+  "recipe": {
+   "ingredients": [
+    "6 boneless chicken thighs",
+    "1 onion, chopped",
+    "2 carrots, sliced",
+    "2 celery sticks, sliced",
+    "2 leeks, sliced",
+    "400g tin chopped tomatoes",
+    "500ml chicken stock",
+    "1 tbsp tomato purée",
+    "1 tsp dried thyme",
+    "1 tbsp cornflour, mixed with a splash of water",
+    "Crusty bread or mash, to serve"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Put the onion, carrots, celery and leeks into the slow cooker.",
+    "Add the chicken thighs on top, then the tomatoes, stock, tomato purée and thyme. Season.",
+    "Cover and cook on low for 6-7 hours (or high for 3-4) until the chicken is tender and falling apart.",
+    "About 20 minutes before serving, stir in the cornflour slurry to thicken, and shred the chicken through the sauce.",
+    "Serve with crusty bread or mash."
+   ],
+   "tip": "On by 9am before hockey and the drive to Sheffield. Mathilda: mash her portion with a fork and check for bones. Freeze any leftovers fully cooled, portioned and labelled for the meal drawer."
+  }
+ },
+ "2026-11-01": {
+  "meal": "Veggie fajitas",
+  "note": "Mathilda's Halloween disco 2-3pm at Allegro. Alex away at the Arsenal Ladies match today — keep a labelled portion aside for him to reheat when he's back. A free evening otherwise, so a good day to batch: extra for Tuesday (fridge) and Wednesday (freezer).",
+  "kind": "veg",
+  "method": "batch",
+  "time": "20 min prep · 20 min cook",
+  "recipe": {
+   "ingredients": [
+    "3 tbsp olive oil",
+    "3 onions, sliced",
+    "6 mixed peppers, sliced",
+    "3 garlic cloves, crushed",
+    "2 x 400g tins black beans, drained",
+    "2 x 400g tins sweetcorn, drained",
+    "3 tbsp fajita seasoning",
+    "18-24 tortillas (enough for tonight, Tuesday and Wednesday)",
+    "300g grated cheddar",
+    "To serve: salsa, soured cream, lettuce, avocado"
+   ],
+   "serves": "4 tonight + 4 for Tuesday (fridge) + 4 for Wednesday (freezer)",
+   "steps": [
+    "Fry the onions and peppers in the oil in your largest pan (or two pans) for 8-10 minutes until soft, then add the garlic for 1 minute.",
+    "Stir in the beans, sweetcorn and a splash of water. Take out Mathilda's portion now, keeping it plain.",
+    "Split what's left into three roughly equal portions: tonight's, Tuesday's and Wednesday's. Stir the fajita seasoning through tonight's portion and simmer for 5 minutes.",
+    "Cool the Tuesday and Wednesday portions within an hour, without adding seasoning to them yet.",
+    "Cover and fridge Tuesday's portion. Portion, label and freeze Wednesday's.",
+    "Warm tortillas in a dry pan or the microwave. Fill with tonight's filling, cheese and toppings, fold and serve."
+   ],
+   "tip": "Mathilda: keep hers mild with no seasoning. Move Wednesday's portion from the freezer to the fridge on Monday night to defrost. Keep a labelled portion of tonight's filling in the fridge for Alex to reheat when he's home from the match."
+  }
+ },
+ "2026-11-02": {
+  "meal": "Creamy salmon & pea pasta",
+  "note": "Free evening, nothing on for tea tonight — a new one to try.",
+  "kind": "fish",
+  "method": "hob",
+  "time": "10 min prep · 15 min cook",
+  "recipe": {
+   "ingredients": [
+    "400g pasta (penne or fusilli)",
+    "2 tbsp olive oil",
+    "1 leek, sliced",
+    "2 garlic cloves, crushed",
+    "4 salmon fillets, skinned and cut into chunks",
+    "200ml crème fraîche",
+    "150g frozen peas",
+    "Zest of 1 lemon",
+    "Small handful fresh parsley or dill, chopped (optional)"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Cook the pasta according to the pack instructions. Save a mugful of the cooking water, then drain.",
+    "While the pasta cooks, soften the leek in the oil for 5 minutes, then add the garlic for 1 minute.",
+    "Add the salmon chunks and cook gently for 4-5 minutes, turning carefully, until just cooked through.",
+    "Stir in the peas and crème fraîche and simmer for 2-3 minutes.",
+    "Take out Mathilda's portion now, keeping it plain.",
+    "Toss the pasta through the rest with the lemon zest and herbs, loosening with a splash of the pasta water. Season and serve."
+   ],
+   "tip": "Mathilda: flake her salmon finely and check carefully for bones. Keep her portion plain without the lemon zest."
+  }
+ },
+ "2026-11-03": {
+  "meal": "Reheat: Sunday's fajita filling",
+  "note": "Hull hockey training 6-7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest.",
+  "kind": "veg",
+  "method": "reheat",
+  "time": "5 min prep · 10 min",
+  "recipe": {
+   "ingredients": [
+    "Sunday's fridge portion of fajita filling",
+    "6-8 tortillas",
+    "100g grated cheddar",
+    "To serve: salsa, soured cream, lettuce"
+   ],
+   "serves": "4",
+   "steps": [
+    "Tip the filling into a pan with a splash of water.",
+    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8 minutes). Or microwave in a covered bowl for 4-5 minutes, stirring halfway.",
+    "Warm the tortillas in a dry pan or the microwave.",
+    "Fill with the filling, cheese and toppings, fold and serve."
+   ],
+   "tip": "Only reheat it once, and check it's piping hot all the way through. Anyone back late from hockey can have theirs microwaved separately."
+  }
+ },
+ "2026-11-04": {
+  "meal": "Reheat: Sunday's frozen fajita filling",
+  "note": "Hockey Academy Night 6:15-7:45pm (The Lindum) — reheat gets tea done fast either side of the run. Filling was moved to the fridge on Monday night to defrost.",
+  "kind": "veg",
+  "method": "reheat",
+  "time": "5 min prep · 10-12 min",
+  "recipe": {
+   "ingredients": [
+    "Sunday's frozen (now defrosted) portion of fajita filling",
+    "6-8 tortillas",
+    "100g grated cheddar",
+    "To serve: salsa, soured cream, lettuce"
+   ],
+   "serves": "4",
+   "steps": [
+    "Tip the filling into a pan with a splash of water.",
+    "Heat gently, stirring, until bubbling and piping hot all the way through (about 10 minutes, a little longer than a fridge portion). Or microwave in a covered bowl for 5-6 minutes, stirring halfway.",
+    "Warm the tortillas in a dry pan or the microwave.",
+    "Fill with the filling, cheese and toppings, fold and serve."
+   ],
+   "tip": "Only reheat it once, and check it's piping hot all the way through, especially since this portion was frozen. Anyone back late from the run can have theirs microwaved separately."
+  }
+ },
+ "2026-11-05": {
+  "meal": "Mediterranean baked cod with cherry tomatoes, olives & couscous",
+  "note": "Free evening, nothing on for tea tonight — a new one to try.",
+  "kind": "fish",
+  "method": "oven",
+  "time": "10 min prep · 20 min cook",
+  "recipe": {
+   "ingredients": [
+    "4 cod fillets",
+    "250g cherry tomatoes, halved",
+    "50g black olives, pitted and halved",
+    "1 tbsp olive oil",
+    "1 garlic clove, crushed",
+    "Pinch dried oregano",
+    "200g couscous",
+    "300ml hot vegetable stock",
+    "Squeeze of lemon"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Put the cod in an ovenproof dish and scatter the cherry tomatoes, garlic and oregano around it. Drizzle with the oil.",
+    "Bake for 15-18 minutes, until the fish flakes easily and the tomatoes have softened.",
+    "Stir the olives through the tomatoes for the last 5 minutes, for the grown-ups only.",
+    "Put the couscous in a bowl, cover with the hot stock, cover with a plate and leave for 5 minutes, then fluff with a fork.",
+    "Serve the fish and tomatoes over the couscous with a squeeze of lemon."
+   ],
+   "tip": "Mathilda: leave the olives out of her portion and check carefully for bones."
   }
  }
 }
