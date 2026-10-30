@@ -783,8 +783,8 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-10-29T06:10:41.868Z",
-    "forDate": "2026-10-29",
+    "updatedISO": "2026-10-30T06:09:51.235Z",
+    "forDate": "2026-10-30",
     "alexStatus": "normal",
     "alexToday": [],
     "alexTomorrow": [],
@@ -799,21 +799,19 @@ var RecipeKit = (function(){
     ],
     "francisTomorrow": [
         {
-            "time": null,
-            "title": "QEHS: October half-term (school closed)",
-            "loc": "",
-            "allDay": true
+            "time": "09:15",
+            "title": "Francis - Hockey U10/U12 Open Session",
+            "loc": "The Lindum",
+            "allDay": false
+        },
+        {
+            "time": "12:00",
+            "title": "Francis: Lindum Hockey vs Sheffield (Away)",
+            "loc": "Westfield Sports Centre, S20 1HQ",
+            "allDay": false
         }
     ],
     "mathildaToday": [
-        {
-            "time": null,
-            "title": "Halloween costume week (Mathilda can wear costume to nursery)",
-            "loc": "",
-            "allDay": true
-        }
-    ],
-    "mathildaTomorrow": [
         {
             "time": null,
             "title": "Halloween costume week (Mathilda can wear costume to nursery)",
@@ -838,7 +836,8 @@ var RecipeKit = (function(){
             "loc": "Emmerson Pool Hire",
             "allDay": false
         }
-    ]
+    ],
+    "mathildaTomorrow": []
 };
 
   /* ---- Meal plan — mirror of the Tea Planner (the family's source of truth).
@@ -846,33 +845,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-10-28": {
-      "meal": "Baked cod with lemon & herb crumb, new potatoes & green beans",
-      "note": "Hockey Academy Night 6:15-7:45pm (The Lindum) — air fryer gets tea done fast either side of the run",
-      "kind": "fish",
-      "method": "air-fryer",
-      "time": "10 min prep · 15 min cook",
-      "recipe": {
-        "ingredients": [
-          "4 cod fillets",
-          "50g breadcrumbs (panko or blitzed stale bread)",
-          "Zest of 1 lemon, plus wedges",
-          "Small handful fresh parsley, chopped (or 1 tsp dried)",
-          "25g butter, melted",
-          "500g new potatoes, halved",
-          "200g green beans"
-        ],
-        "serves": "4 (2 adults, 2 kids)",
-        "steps": [
-          "Boil the new potatoes for 15 minutes until tender.",
-          "Mix the breadcrumbs, lemon zest, parsley, melted butter and a pinch of salt.",
-          "Put the cod fillets in the air fryer basket and press the crumb on top.",
-          "Air fry at 180°C for 10-12 minutes, until the crumb is golden and the fish flakes.",
-          "Cook the beans for the last 4 minutes of the potatoes. Serve with lemon wedges."
-        ],
-        "tip": "Mathilda: leave the lemon zest off her portion and check carefully for bones."
-      }
-    },
     "2026-10-29": {
       "meal": "Jacket potatoes, tuna mayo or cheese & beans",
       "note": "Mathilda's hospital eye test is at 2:20pm (dilating drops — she may be unsettled after) — keeping tea simple and familiar tonight",
