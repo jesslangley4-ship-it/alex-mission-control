@@ -1,23 +1,11 @@
 [
  {
   "cat": "Veg",
-  "name": "Onions (4)"
+  "name": "Onions (3)"
  },
  {
   "cat": "Veg",
-  "name": "Carrots (2)"
- },
- {
-  "cat": "Veg",
-  "name": "Celery (2 sticks)"
- },
- {
-  "cat": "Veg",
-  "name": "Leeks (3)"
- },
- {
-  "cat": "Veg",
-  "name": "Peppers (6)"
+  "name": "Mixed peppers (6)"
  },
  {
   "cat": "Veg",
@@ -25,7 +13,7 @@
  },
  {
   "cat": "Veg",
-  "name": "Potatoes, for mash (4 servings)"
+  "name": "Leek (1)"
  },
  {
   "cat": "Veg",
@@ -37,27 +25,15 @@
  },
  {
   "cat": "Veg",
-  "name": "Cherry tomatoes (250g)"
+  "name": "Lemon (1)"
  },
  {
   "cat": "Veg",
-  "name": "Fresh parsley (small bunch)"
- },
- {
-  "cat": "Fish/meat",
-  "name": "Breaded fish fillets (4)"
- },
- {
-  "cat": "Fish/meat",
-  "name": "Chicken thighs, boneless (6)"
+  "name": "Fresh parsley or dill (optional)"
  },
  {
   "cat": "Fish/meat",
   "name": "Salmon fillets (4)"
- },
- {
-  "cat": "Fish/meat",
-  "name": "Cod fillets (4)"
  },
  {
   "cat": "Dairy",
@@ -72,56 +48,28 @@
   "name": "Soured cream"
  },
  {
-  "cat": "Dairy",
-  "name": "Butter"
- },
- {
-  "cat": "Cupboard",
-  "name": "Tinned chopped tomatoes (1)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Tomato purée"
- },
- {
-  "cat": "Cupboard",
-  "name": "Cornflour"
- },
- {
   "cat": "Cupboard",
   "name": "Tinned black beans (2)"
  },
  {
   "cat": "Cupboard",
-  "name": "Tortillas, large pack (for 3 nights)"
+  "name": "Tinned sweetcorn (2)"
  },
  {
   "cat": "Cupboard",
-  "name": "Pasta (400g)"
+  "name": "Tortillas, large packs (18–24 for 3 nights)"
  },
  {
   "cat": "Cupboard",
-  "name": "Couscous (200g)"
+  "name": "Pasta, penne or fusilli (400g)"
  },
  {
   "cat": "Cupboard",
-  "name": "Black olives, small jar"
- },
- {
-  "cat": "Cupboard",
-  "name": "Tinned sweetcorn (running low — restock)"
- },
- {
-  "cat": "Other",
-  "name": "Crusty bread"
+  "name": "Fajita seasoning (if you're out)"
  },
  {
   "cat": "Other",
   "name": "Salsa"
- },
- {
-  "cat": "Other",
-  "name": "Lemons (2)"
  },
  {
   "cat": "Veg",
@@ -180,6 +128,10 @@
   "name": "Crisps (1 pack of fancy ones, for us)"
  },
  {
+  "cat": "Cupboard",
+  "name": "Light soy sauce"
+ },
+ {
   "cat": "Other",
   "name": "Bread for the kids"
  },
@@ -222,9 +174,5 @@
  {
   "cat": "Household",
   "name": "Toothpaste"
- },
- {
-  "cat": "Cupboard",
-  "name": "Light soy sauce"
  }
 ]

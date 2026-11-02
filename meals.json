@@ -1,7 +1,7 @@
 {
- "2026-11-01": {
+ "2026-11-02": {
   "meal": "Veggie fajitas",
-  "note": "Mathilda's Halloween disco 2-3pm at Allegro. Alex away at the Arsenal Ladies match today — keep a labelled portion aside for him to reheat when he's back. A free evening otherwise, so a good day to batch: extra for Tuesday (fridge) and Wednesday (freezer).",
+  "note": "Moved from Sunday (not made). Free evening, so it's the batch night: extra for Tuesday and Wednesday, both kept in the fridge.",
   "kind": "veg",
   "method": "batch",
   "time": "20 min prep · 20 min cook",
@@ -18,21 +18,67 @@
     "300g grated cheddar",
     "To serve: salsa, soured cream, lettuce, avocado"
    ],
-   "serves": "4 tonight + 4 for Tuesday (fridge) + 4 for Wednesday (freezer)",
+   "serves": "4 tonight + 4 for Tuesday + 4 for Wednesday (all fridge)",
    "steps": [
     "Fry the onions and peppers in the oil in your largest pan (or two pans) for 8-10 minutes until soft, then add the garlic for 1 minute.",
     "Stir in the beans, sweetcorn and a splash of water. Take out Mathilda's portion now, keeping it plain.",
     "Split what's left into three roughly equal portions: tonight's, Tuesday's and Wednesday's. Stir the fajita seasoning through tonight's portion and simmer for 5 minutes.",
     "Cool the Tuesday and Wednesday portions within an hour, without adding seasoning to them yet.",
-    "Cover and fridge Tuesday's portion. Portion, label and freeze Wednesday's.",
+    "Cover both extra portions and keep them in the fridge (no need to freeze, they'll be eaten by Wednesday).",
     "Warm tortillas in a dry pan or the microwave. Fill with tonight's filling, cheese and toppings, fold and serve."
    ],
-   "tip": "Mathilda: keep hers mild with no seasoning. Move Wednesday's portion from the freezer to the fridge on Monday night to defrost. Keep a labelled portion of tonight's filling in the fridge for Alex to reheat when he's home from the match."
+   "tip": "Mathilda: keep hers mild with no seasoning. The extra portions keep in the fridge up to 3 days, so Wednesday's is fine."
   }
  },
- "2026-11-02": {
+ "2026-11-03": {
+  "meal": "Reheat: Monday's fajita filling",
+  "note": "Hull hockey training 6-7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest.",
+  "kind": "veg",
+  "method": "reheat",
+  "time": "5 min prep · 10 min",
+  "recipe": {
+   "ingredients": [
+    "Monday's fridge portion of fajita filling",
+    "6-8 tortillas",
+    "100g grated cheddar",
+    "To serve: salsa, soured cream, lettuce"
+   ],
+   "serves": "4",
+   "steps": [
+    "Tip the filling into a pan with a splash of water.",
+    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8 minutes). Or microwave in a covered bowl for 4-5 minutes, stirring halfway.",
+    "Warm the tortillas in a dry pan or the microwave.",
+    "Fill with the filling, cheese and toppings, fold and serve."
+   ],
+   "tip": "Only reheat it once, and check it's piping hot all the way through. Anyone back late from hockey can have theirs microwaved separately."
+  }
+ },
+ "2026-11-04": {
+  "meal": "Reheat: Monday's fajita filling",
+  "note": "Hockey Academy Night 6:15-7:45pm (The Lindum) — reheat gets tea done fast either side of the run.",
+  "kind": "veg",
+  "method": "reheat",
+  "time": "5 min prep · 10-12 min",
+  "recipe": {
+   "ingredients": [
+    "Monday's second fridge portion of fajita filling",
+    "6-8 tortillas",
+    "100g grated cheddar",
+    "To serve: salsa, soured cream, lettuce"
+   ],
+   "serves": "4",
+   "steps": [
+    "Tip the filling into a pan with a splash of water.",
+    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8 minutes). Or microwave in a covered bowl for 4-5 minutes, stirring halfway.",
+    "Warm the tortillas in a dry pan or the microwave.",
+    "Fill with the filling, cheese and toppings, fold and serve."
+   ],
+   "tip": "Only reheat it once, and check it's piping hot all the way through. Anyone back late from the run can have theirs microwaved separately."
+  }
+ },
+ "2026-11-05": {
   "meal": "Creamy salmon & pea pasta",
-  "note": "Free evening, nothing on for tea tonight — a new one to try.",
+  "note": "Moved from Monday. Free evening, nothing on for tea.",
   "kind": "fish",
   "method": "hob",
   "time": "10 min prep · 15 min cook",
@@ -58,81 +104,6 @@
     "Toss the pasta through the rest with the lemon zest and herbs, loosening with a splash of the pasta water. Season and serve."
    ],
    "tip": "Mathilda: flake her salmon finely and check carefully for bones. Keep her portion plain without the lemon zest."
-  }
- },
- "2026-11-03": {
-  "meal": "Reheat: Sunday's fajita filling",
-  "note": "Hull hockey training 6-7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest.",
-  "kind": "veg",
-  "method": "reheat",
-  "time": "5 min prep · 10 min",
-  "recipe": {
-   "ingredients": [
-    "Sunday's fridge portion of fajita filling",
-    "6-8 tortillas",
-    "100g grated cheddar",
-    "To serve: salsa, soured cream, lettuce"
-   ],
-   "serves": "4",
-   "steps": [
-    "Tip the filling into a pan with a splash of water.",
-    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8 minutes). Or microwave in a covered bowl for 4-5 minutes, stirring halfway.",
-    "Warm the tortillas in a dry pan or the microwave.",
-    "Fill with the filling, cheese and toppings, fold and serve."
-   ],
-   "tip": "Only reheat it once, and check it's piping hot all the way through. Anyone back late from hockey can have theirs microwaved separately."
-  }
- },
- "2026-11-04": {
-  "meal": "Reheat: Sunday's frozen fajita filling",
-  "note": "Hockey Academy Night 6:15-7:45pm (The Lindum) — reheat gets tea done fast either side of the run. Filling was moved to the fridge on Monday night to defrost.",
-  "kind": "veg",
-  "method": "reheat",
-  "time": "5 min prep · 10-12 min",
-  "recipe": {
-   "ingredients": [
-    "Sunday's frozen (now defrosted) portion of fajita filling",
-    "6-8 tortillas",
-    "100g grated cheddar",
-    "To serve: salsa, soured cream, lettuce"
-   ],
-   "serves": "4",
-   "steps": [
-    "Tip the filling into a pan with a splash of water.",
-    "Heat gently, stirring, until bubbling and piping hot all the way through (about 10 minutes, a little longer than a fridge portion). Or microwave in a covered bowl for 5-6 minutes, stirring halfway.",
-    "Warm the tortillas in a dry pan or the microwave.",
-    "Fill with the filling, cheese and toppings, fold and serve."
-   ],
-   "tip": "Only reheat it once, and check it's piping hot all the way through, especially since this portion was frozen. Anyone back late from the run can have theirs microwaved separately."
-  }
- },
- "2026-11-05": {
-  "meal": "Mediterranean baked cod with cherry tomatoes, olives & couscous",
-  "note": "Free evening, nothing on for tea tonight — a new one to try.",
-  "kind": "fish",
-  "method": "oven",
-  "time": "10 min prep · 20 min cook",
-  "recipe": {
-   "ingredients": [
-    "4 cod fillets",
-    "250g cherry tomatoes, halved",
-    "50g black olives, pitted and halved",
-    "1 tbsp olive oil",
-    "1 garlic clove, crushed",
-    "Pinch dried oregano",
-    "200g couscous",
-    "300ml hot vegetable stock",
-    "Squeeze of lemon"
-   ],
-   "serves": "4 (2 adults, 2 kids)",
-   "steps": [
-    "Heat the oven to 200°C (180°C fan). Put the cod in an ovenproof dish and scatter the cherry tomatoes, garlic and oregano around it. Drizzle with the oil.",
-    "Bake for 15-18 minutes, until the fish flakes easily and the tomatoes have softened.",
-    "Stir the olives through the tomatoes for the last 5 minutes, for the grown-ups only.",
-    "Put the couscous in a bowl, cover with the hot stock, cover with a plate and leave for 5 minutes, then fluff with a fork.",
-    "Serve the fish and tomatoes over the couscous with a squeeze of lemon."
-   ],
-   "tip": "Mathilda: leave the olives out of her portion and check carefully for bones."
   }
  }
 }
