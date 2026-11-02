@@ -1,109 +1,117 @@
 {
  "2026-11-02": {
-  "meal": "Veggie fajitas",
-  "note": "Moved from Sunday (not made). Free evening, so it's the batch night: extra for Tuesday and Wednesday, both kept in the fridge.",
+  "meal": "Veggie fajitas (plus a fajita bowl for Jess's lunch tomorrow)",
+  "note": "Moved from Sunday. Make one extra portion for Jess's work lunch on Tuesday as a fajita bowl.",
   "kind": "veg",
-  "method": "batch",
-  "time": "20 min prep · 20 min cook",
+  "method": "hob",
+  "time": "15 min prep · 15 min cook",
   "recipe": {
    "ingredients": [
-    "3 tbsp olive oil",
-    "3 onions, sliced",
-    "6 mixed peppers, sliced",
-    "3 garlic cloves, crushed",
-    "2 x 400g tins black beans, drained",
-    "2 x 400g tins sweetcorn, drained",
-    "3 tbsp fajita seasoning",
-    "18-24 tortillas (enough for tonight, Tuesday and Wednesday)",
-    "300g grated cheddar",
+    "2 tbsp olive oil",
+    "2 onions, sliced",
+    "3 mixed peppers, sliced",
+    "2 garlic cloves, crushed",
+    "400g tin black beans, drained",
+    "198g tin sweetcorn, drained",
+    "1½ tbsp fajita seasoning",
+    "8 tortillas",
+    "150g grated cheddar",
+    "1 microwave rice pouch (for the lunch bowl)",
     "To serve: salsa, soured cream, lettuce, avocado"
    ],
-   "serves": "4 tonight + 4 for Tuesday + 4 for Wednesday (all fridge)",
+   "serves": "4 tonight + 1 lunch bowl",
    "steps": [
-    "Fry the onions and peppers in the oil in your largest pan (or two pans) for 8-10 minutes until soft, then add the garlic for 1 minute.",
+    "Fry the onions and peppers in the oil for 8–10 minutes until soft, then add the garlic for 1 minute.",
     "Stir in the beans, sweetcorn and a splash of water. Take out Mathilda's portion now, keeping it plain.",
-    "Split what's left into three roughly equal portions: tonight's, Tuesday's and Wednesday's. Stir the fajita seasoning through tonight's portion and simmer for 5 minutes.",
-    "Cool the Tuesday and Wednesday portions within an hour, without adding seasoning to them yet.",
-    "Cover both extra portions and keep them in the fridge (no need to freeze, they'll be eaten by Wednesday).",
-    "Warm tortillas in a dry pan or the microwave. Fill with tonight's filling, cheese and toppings, fold and serve."
+    "Stir the fajita seasoning through the rest and simmer for 5 minutes.",
+    "Spoon one portion into a lunch box for tomorrow and let it cool.",
+    "Warm the tortillas in a dry pan or the microwave. Fill with the filling, cheese and toppings, fold and serve.",
+    "For the lunch bowl: once cool, put the rice pouch (unopened) and the filling in the fridge. At work, microwave the filling until piping hot, heat the rice, and top with cheese, lettuce, salsa and a dollop of soured cream (pack the cold toppings in a separate pot)."
    ],
-   "tip": "Mathilda: keep hers mild with no seasoning. The extra portions keep in the fridge up to 3 days, so Wednesday's is fine."
+   "tip": "Mathilda: keep hers mild with no seasoning. Cool the lunch portion within an hour and keep it in the fridge overnight."
   }
  },
  "2026-11-03": {
-  "meal": "Reheat: Monday's fajita filling",
-  "note": "Hull hockey training 6-7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest.",
-  "kind": "veg",
-  "method": "reheat",
-  "time": "5 min prep · 10 min",
+  "meal": "Slow-cooker sausage & bean casserole with mash",
+  "note": "This week's one meat night. Hull hockey training 6–7pm (Hymers College) plus travel. Slow cooker on by 11am, so tea's ready for whoever's not driving and stays warm for the rest.",
+  "kind": "meat",
+  "method": "slow-cooker",
+  "time": "15 min prep · 6–7 hr low",
   "recipe": {
    "ingredients": [
-    "Monday's fridge portion of fajita filling",
-    "6-8 tortillas",
-    "100g grated cheddar",
-    "To serve: salsa, soured cream, lettuce"
-   ],
-   "serves": "4",
-   "steps": [
-    "Tip the filling into a pan with a splash of water.",
-    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8 minutes). Or microwave in a covered bowl for 4-5 minutes, stirring halfway.",
-    "Warm the tortillas in a dry pan or the microwave.",
-    "Fill with the filling, cheese and toppings, fold and serve."
-   ],
-   "tip": "Only reheat it once, and check it's piping hot all the way through. Anyone back late from hockey can have theirs microwaved separately."
-  }
- },
- "2026-11-04": {
-  "meal": "Reheat: Monday's fajita filling",
-  "note": "Hockey Academy Night 6:15-7:45pm (The Lindum) — reheat gets tea done fast either side of the run.",
-  "kind": "veg",
-  "method": "reheat",
-  "time": "5 min prep · 10-12 min",
-  "recipe": {
-   "ingredients": [
-    "Monday's second fridge portion of fajita filling",
-    "6-8 tortillas",
-    "100g grated cheddar",
-    "To serve: salsa, soured cream, lettuce"
-   ],
-   "serves": "4",
-   "steps": [
-    "Tip the filling into a pan with a splash of water.",
-    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8 minutes). Or microwave in a covered bowl for 4-5 minutes, stirring halfway.",
-    "Warm the tortillas in a dry pan or the microwave.",
-    "Fill with the filling, cheese and toppings, fold and serve."
-   ],
-   "tip": "Only reheat it once, and check it's piping hot all the way through. Anyone back late from the run can have theirs microwaved separately."
-  }
- },
- "2026-11-05": {
-  "meal": "Creamy salmon & pea pasta",
-  "note": "Moved from Monday. Free evening, nothing on for tea.",
-  "kind": "fish",
-  "method": "hob",
-  "time": "10 min prep · 15 min cook",
-  "recipe": {
-   "ingredients": [
-    "400g pasta (penne or fusilli)",
-    "2 tbsp olive oil",
-    "1 leek, sliced",
+    "8 pork sausages",
+    "1 tbsp olive oil",
+    "1 onion, sliced",
+    "2 carrots, sliced",
     "2 garlic cloves, crushed",
-    "4 salmon fillets, skinned and cut into chunks",
-    "200ml crème fraîche",
-    "150g frozen peas",
-    "Zest of 1 lemon",
-    "Small handful fresh parsley or dill, chopped (optional)"
+    "1 tsp smoked paprika",
+    "400g tin chopped tomatoes",
+    "400g tin cannellini or butter beans, drained",
+    "1 tbsp tomato purée",
+    "300ml chicken or veg stock",
+    "Mash (fresh potatoes or microwave pouches) or crusty bread, to serve"
    ],
    "serves": "4 (2 adults, 2 kids)",
    "steps": [
-    "Cook the pasta according to the pack instructions. Save a mugful of the cooking water, then drain.",
-    "While the pasta cooks, soften the leek in the oil for 5 minutes, then add the garlic for 1 minute.",
-    "Add the salmon chunks and cook gently for 4-5 minutes, turning carefully, until just cooked through.",
-    "Stir in the peas and crème fraîche and simmer for 2-3 minutes.",
-    "Take out Mathilda's portion now, keeping it plain.",
-    "Toss the pasta through the rest with the lemon zest and herbs, loosening with a splash of the pasta water. Season and serve."
+    "Brown the sausages in the oil in a frying pan for 5 minutes, then put them in the slow cooker.",
+    "Soften the onion in the same pan for 5 minutes, add the garlic and paprika for 1 minute, then tip into the slow cooker.",
+    "Add the carrots, tomatoes, beans, purée and stock. Stir and season.",
+    "Cover and cook on low for 6–7 hours (or high for 3–4), until the sausages are cooked through and the sauce has thickened.",
+    "Make the mash (or heat the pouches) when you're ready to eat.",
+    "Serve the casserole over the mash, or with crusty bread."
    ],
-   "tip": "Mathilda: flake her salmon finely and check carefully for bones. Keep her portion plain without the lemon zest."
+   "tip": "Turn the slow cooker to 'keep warm' once it's done so it's ready for whoever's back late. Mathilda: slice her sausages into coins and check they're cooked through."
+  }
+ },
+ "2026-11-04": {
+  "meal": "Air-fryer crispy gnocchi with roasted tomatoes, courgette & pesto",
+  "note": "Hockey Academy night 6:15–7:45pm (The Lindum). Ready in 20 minutes either side of the run.",
+  "kind": "veg",
+  "method": "air-fryer",
+  "time": "5 min prep · 15 min cook",
+  "recipe": {
+   "ingredients": [
+    "2 x 500g packs fresh gnocchi",
+    "300g cherry tomatoes",
+    "1 courgette, cut into chunks",
+    "1½ tbsp olive oil",
+    "3 tbsp green pesto",
+    "Grated parmesan or vegetarian hard cheese, or torn mozzarella, to serve",
+    "Handful of rocket or spinach (optional)"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Heat the air fryer to 200°C.",
+    "Toss the gnocchi, courgette and cherry tomatoes in the oil with a pinch of salt.",
+    "Air fry for 12–15 minutes, shaking the basket every 5 minutes, until the gnocchi is golden and crisp and the tomatoes have burst. (Do it in two batches if your basket is small.)",
+    "Tip into a big bowl and toss with the pesto, and the rocket or spinach if using.",
+    "Serve with cheese on top."
+   ],
+   "tip": "Mathilda: give her some plain crispy gnocchi and tomatoes before the pesto goes in, with a little cheese. Check the pesto label if anyone's avoiding nuts."
+  }
+ },
+ "2026-11-05": {
+  "meal": "Tomato soup & cheese toasties (plus a flask for the fireworks)",
+  "note": "Bonfire night, out to watch the fireworks. Super quick and warming, with a flask of soup to take with you.",
+  "kind": "veg",
+  "method": "hob",
+  "time": "5 min prep · 10 min",
+  "recipe": {
+   "ingredients": [
+    "2 x 600g cartons fresh tomato soup (or 4 tins)",
+    "8 slices bread (the kids' bread or the sourdough)",
+    "150g cheddar, grated",
+    "Butter or spread, for the bread"
+   ],
+   "serves": "4 (2 adults, 2 kids), plus a flask",
+   "steps": [
+    "Heat the soup in a pan, stirring, until it's piping hot (about 5 minutes).",
+    "While it heats, butter the outsides of the bread and make 4 cheese sandwiches.",
+    "Cook the toasties in a dry frying pan for 2–3 minutes a side until golden and melted, or air fry at 190°C for 6–8 minutes, turning halfway.",
+    "Cut the toasties into soldiers for dunking and serve with mugs of soup.",
+    "Fill a flask with the leftover hot soup to take to the fireworks (warm the flask with boiling water first so it stays hot)."
+   ],
+   "tip": "Mathilda: cut her toastie into small fingers and let the soup cool a little before she has it. Pack a few mugs or cups for the flask."
   }
  }
 }

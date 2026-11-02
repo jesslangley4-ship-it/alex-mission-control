@@ -5,7 +5,7 @@
  },
  {
   "cat": "Veg",
-  "name": "Mixed peppers (6)"
+  "name": "Mixed peppers (3)"
  },
  {
   "cat": "Veg",
@@ -13,7 +13,19 @@
  },
  {
   "cat": "Veg",
-  "name": "Leek (1)"
+  "name": "Carrots (2, if you're out)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Cherry tomatoes (300g)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Courgette (1)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Potatoes for mash, or 2 microwave mash pouches"
  },
  {
   "cat": "Veg",
@@ -21,47 +33,55 @@
  },
  {
   "cat": "Veg",
-  "name": "Avocados (3)"
- },
- {
-  "cat": "Veg",
-  "name": "Lemon (1)"
- },
- {
-  "cat": "Veg",
-  "name": "Fresh parsley or dill (optional)"
+  "name": "Avocados (2)"
  },
  {
   "cat": "Fish/meat",
-  "name": "Salmon fillets (4)"
+  "name": "Pork sausages (8)"
  },
  {
   "cat": "Dairy",
-  "name": "Cheddar, block (500g)"
- },
- {
-  "cat": "Dairy",
-  "name": "Crème fraîche (200ml)"
+  "name": "Cheddar, block (350g)"
  },
  {
   "cat": "Dairy",
   "name": "Soured cream"
  },
  {
-  "cat": "Cupboard",
-  "name": "Tinned black beans (2)"
+  "cat": "Dairy",
+  "name": "Fresh gnocchi (2 x 500g)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Fresh tomato soup (2 x 600g cartons)"
  },
  {
   "cat": "Cupboard",
-  "name": "Tinned sweetcorn (2)"
+  "name": "Tinned black beans (1)"
  },
  {
   "cat": "Cupboard",
-  "name": "Tortillas, large packs (18–24 for 3 nights)"
+  "name": "Tinned sweetcorn (1)"
  },
  {
   "cat": "Cupboard",
-  "name": "Pasta, penne or fusilli (400g)"
+  "name": "Tinned cannellini or butter beans (1)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tinned chopped tomatoes (1)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tortillas (pack of 8)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Microwave rice pouch (1, for the lunch bowl)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Green pesto (jar)"
  },
  {
   "cat": "Cupboard",
