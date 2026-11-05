@@ -1,6 +1,114 @@
 [
  {
+  "cat": "Veg",
+  "name": "Onions (4)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Garlic (6 cloves, about 1 bulb)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Fresh ginger (small piece)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Lemons (2)"
+ },
+ {
+  "cat": "Veg",
+  "name": "New potatoes (500g)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Potatoes, for mash (1kg)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Butternut squash (1, about 1kg)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Spinach (2 bags, 400g)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Sweet potatoes (2)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Leek (1)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Fresh parsley (1 bunch)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Frozen peas (full bag — restocking)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Haddock fillets (4)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Gammon joint, unsmoked (1kg)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Salmon fillets (2)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Butter"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Milk (300ml, or use what's in)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Crème fraîche (150ml/small tub)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Parmesan or vegetarian hard cheese (full pack — restocking)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Chickpeas (2 x 400g tins)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Chopped tomatoes (1 x 400g tin)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Coconut milk (1 x 400ml tin)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Light coconut milk (1 x 400ml tin)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Dried red split lentils (300g)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Basmati rice (1.2kg total, for 4 meals this week)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Pasta — penne or fusilli (350g)"
+ },
+ {
   "cat": "Other",
   "name": "Fruit (double up on bananas)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Sweet chilli sauce"
  }
 ]

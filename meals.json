@@ -1,24 +1,4 @@
 {
- "2026-11-03": {
-  "meal": "Leftover curry from the freezer, with rice",
-  "note": "Using up the frozen curry. Move it from the freezer to the fridge tonight so it's defrosted by teatime. Hull hockey training 6–7pm (Hymers College).",
-  "kind": "easy",
-  "method": "reheat",
-  "time": "10 min reheat",
-  "recipe": {
-   "ingredients": [
-    "Frozen leftover curry",
-    "Rice (microwave pouches or a pan of rice), or naan"
-   ],
-   "serves": "Whatever's in the tub",
-   "steps": [
-    "Tonight: move the curry from the freezer to the fridge to defrost.",
-    "Tomorrow, tip it into a pan with a splash of water and heat gently for 8–10 minutes, stirring, until it's piping hot all the way through. Or microwave in a covered bowl for 4–5 minutes, stirring halfway.",
-    "Heat the rice or naan while it warms, and serve."
-   ],
-   "tip": "If you forget to defrost it, microwave it from frozen on the defrost setting first. Only reheat it once."
-  }
- },
  "2026-11-04": {
   "meal": "Creamy prawn & tomato orzo",
   "note": "Hockey Academy night 6:15–7:45pm (The Lindum). One pan, about 20 minutes.",
@@ -56,5 +36,203 @@
   "kind": "out",
   "method": "no-cook",
   "time": "No cooking"
+ },
+ "2026-11-06": {
+  "meal": "Garlic butter baked haddock with crushed new potatoes & peas",
+  "note": "Normal evening — gymnastics & swimming done earlier today, nothing on for tea",
+  "kind": "fish",
+  "method": "oven",
+  "time": "10 min prep · 20 min cook",
+  "recipe": {
+   "ingredients": [
+    "4 haddock fillets",
+    "25g butter, melted",
+    "1 garlic clove, crushed",
+    "1 lemon",
+    "500g new potatoes",
+    "200g frozen peas",
+    "Small handful fresh parsley, chopped (optional)"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Boil the new potatoes for 15–18 minutes until tender.",
+    "Mix the melted butter with the garlic and a squeeze of lemon. Put the haddock on a lined tray and brush over the butter.",
+    "Bake for 12–15 minutes, until the fish flakes easily.",
+    "Cook the peas for the last 4 minutes of the potatoes.",
+    "Drain and lightly crush the potatoes with a fork, stir through the parsley and a knob of butter.",
+    "Serve the fish with the crushed potatoes, peas and lemon wedges."
+   ],
+   "tip": "Mathilda: leave the garlic butter off her portion and check carefully for bones."
+  }
+ },
+ "2026-11-07": {
+  "meal": "Butternut squash, chickpea & spinach curry (double batch)",
+  "note": "Free evening after this morning's hockey match & Jess's me-time — good day to batch-cook extra for Wednesday's Hockey Academy Night",
+  "kind": "veg",
+  "method": "batch",
+  "time": "15 min prep · 25 min cook",
+  "recipe": {
+   "ingredients": [
+    "1 tbsp vegetable oil",
+    "2 onions, chopped",
+    "3 garlic cloves, crushed",
+    "1 tsp fresh ginger, grated",
+    "2 tsp mild curry powder",
+    "1 tsp ground cumin",
+    "1 tsp ground turmeric",
+    "1 large butternut squash (about 1kg), peeled and diced",
+    "2 x 400g tins chickpeas, drained",
+    "400g tin chopped tomatoes",
+    "400ml tin coconut milk",
+    "200g spinach",
+    "Basmati rice, to serve"
+   ],
+   "serves": "4 tonight + 4 portions for the freezer",
+   "steps": [
+    "Soften the onions in the oil for 8 minutes. Add the garlic, ginger, curry powder, cumin and turmeric and cook for 1 minute.",
+    "Add the squash, chickpeas, chopped tomatoes and coconut milk. Bring to a simmer, cover and cook for 20–25 minutes, until the squash is tender.",
+    "Take out Mathilda's portion and the 4 portions to freeze, keeping both mild.",
+    "Stir the spinach through the rest and cook for 3–4 minutes until wilted. Season.",
+    "Cook the rice and serve with the curry.",
+    "Cool the 4 extra portions within an hour, then portion into labelled containers (contents + today's date) and freeze flat for the meal drawer."
+   ],
+   "tip": "Mathilda: keep hers plain with no extra pepper, and mash the squash a little finer. On Monday evening, move the frozen portions to the fridge so they're defrosted in time for Wednesday's reheat."
+  }
+ },
+ "2026-11-08": {
+  "meal": "Slow-cooker gammon with parsley sauce, mash & peas",
+  "note": "This week's one meat night. Francis's away hockey fixture today — time still TBC, so slow cooker on before you set off and tea's ready whenever you're back. Alex's last day before CYCLONE starts tomorrow.",
+  "kind": "meat",
+  "method": "slow-cooker",
+  "time": "10 min prep · 5–6 hr low",
+  "recipe": {
+   "ingredients": [
+    "1kg unsmoked gammon joint",
+    "1 onion, halved",
+    "2 bay leaves",
+    "500ml water or weak chicken stock",
+    "25g butter",
+    "25g plain flour",
+    "300ml milk",
+    "2 tbsp fresh parsley, chopped (or 1 tbsp dried)",
+    "Potatoes, for mash",
+    "300g frozen peas"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Put the gammon, onion and bay leaves in the slow cooker and pour over the water or stock.",
+    "Cover and cook on low for 5–6 hours, until the gammon is tender and shreds easily.",
+    "Lift out the gammon, rest for 5 minutes, then slice or shred, discarding any string and excess fat.",
+    "For the sauce, melt the butter in a pan, stir in the flour for 1 minute, then gradually whisk in the milk. Simmer for 3–4 minutes until thickened, then stir in the parsley.",
+    "Boil and mash the potatoes. Cook the peas for 4–5 minutes.",
+    "Serve the gammon with mash, peas and parsley sauce."
+   ],
+   "tip": "Mathilda: rinse her portion briefly if the gammon's salty, and go light on the sauce. On by 9am so it's ready whenever you're back from the fixture."
+  }
+ },
+ "2026-11-09": {
+  "meal": "Sweet potato & spinach dhal with rice (double batch)",
+  "note": "Mathilda's hospital eye test this morning (off nursery) — a quiet one at home for the rest of the day, so a good evening to batch-cook extra for tomorrow's Hull hockey training. Alex now away for CYCLONE.",
+  "kind": "veg",
+  "method": "hob",
+  "time": "10 min prep · 30 min cook",
+  "recipe": {
+   "ingredients": [
+    "1 tbsp vegetable oil",
+    "1 onion, chopped",
+    "2 garlic cloves, crushed",
+    "1 tsp grated fresh ginger",
+    "1 tsp ground turmeric",
+    "1 tsp ground cumin",
+    "2 sweet potatoes, peeled and diced",
+    "300g dried red split lentils, rinsed",
+    "800ml vegetable stock",
+    "200g spinach",
+    "400ml tin light coconut milk",
+    "Basmati rice, to serve"
+   ],
+   "serves": "4 tonight + 4 portions for Tuesday",
+   "steps": [
+    "Soften the onion in the oil for 5 minutes. Add the garlic, ginger, turmeric and cumin and cook for 1 minute.",
+    "Add the sweet potato, lentils and stock. Bring to the boil, then simmer for 20 minutes, stirring now and then, until the lentils and sweet potato are soft.",
+    "Stir in the coconut milk and spinach and cook for 3–4 minutes until the spinach wilts.",
+    "Take out Mathilda's portion and 4 portions to cool for Tuesday before seasoning the rest.",
+    "Cook the rice and serve with the dhal.",
+    "Cool the 4 extra portions within an hour, cover and keep in the fridge for Tuesday (no need to freeze)."
+   ],
+   "tip": "Mathilda: keep hers plain and mash the sweet potato a little finer."
+  }
+ },
+ "2026-11-10": {
+  "meal": "Reheat: Monday's sweet potato & spinach dhal with rice",
+  "note": "Hull hockey training 6–7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest",
+  "kind": "veg",
+  "method": "reheat",
+  "time": "5 min prep · 10 min",
+  "recipe": {
+   "ingredients": [
+    "4 portions of Monday's dhal (from the fridge)",
+    "Basmati rice, to serve"
+   ],
+   "serves": "4",
+   "steps": [
+    "Tip the dhal into a pan with a splash of water.",
+    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8–10 minutes). Or microwave in a covered bowl for 4–5 minutes, stirring halfway.",
+    "Cook the rice while the dhal heats.",
+    "Serve straightaway."
+   ],
+   "tip": "Only reheat it once, and check it's piping hot all the way through before serving. Anyone back late from training can have theirs microwaved separately."
+  }
+ },
+ "2026-11-11": {
+  "meal": "Reheat: Saturday's butternut squash curry (from the freezer)",
+  "note": "Hockey Academy Night 6:15–7:45pm (The Lindum) — Saturday's frozen curry portions, moved to the fridge on Monday night, make a quick reheat either side of the run",
+  "kind": "veg",
+  "method": "reheat",
+  "time": "5 min prep · 10 min",
+  "recipe": {
+   "ingredients": [
+    "4 portions of Saturday's butternut squash curry (defrosted in the fridge since Monday)",
+    "Basmati rice, to serve"
+   ],
+   "serves": "4",
+   "steps": [
+    "Tip the curry into a pan with a splash of water.",
+    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8–10 minutes). Or microwave in a covered bowl for 5–6 minutes, stirring halfway.",
+    "Cook the rice while the curry heats.",
+    "Serve straightaway."
+   ],
+   "tip": "It's been frozen, so check extra carefully that it's piping hot all the way through, and only reheat it once."
+  }
+ },
+ "2026-11-12": {
+  "meal": "Creamy salmon & pea pasta",
+  "note": "Mathilda's Scotter Primary open day this morning — evening's free, nothing on for tea",
+  "kind": "fish",
+  "method": "hob",
+  "time": "10 min prep · 15 min cook",
+  "recipe": {
+   "ingredients": [
+    "350g pasta (penne or fusilli)",
+    "2 salmon fillets, skin removed",
+    "1 tbsp olive oil",
+    "1 leek, sliced",
+    "200g frozen peas",
+    "150ml crème fraîche",
+    "Zest of 1 lemon, plus a squeeze of juice",
+    "Parmesan or vegetarian hard cheese, to serve"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Cook the pasta according to the pack instructions, then drain, saving a mugful of the water.",
+    "Season the salmon and pan-fry for 3–4 minutes each side until just cooked through, then flake into chunks.",
+    "In a separate pan, soften the leek in the oil for 5 minutes.",
+    "Add the peas and a splash of the pasta water, and cook for 2–3 minutes.",
+    "Stir in the crème fraîche and lemon zest, and warm through. Take out Mathilda's portion of sauce now if she's sensitive to lemon.",
+    "Add a squeeze of lemon juice to the rest, then toss the pasta through the sauce with the flaked salmon.",
+    "Serve with a sprinkle of cheese."
+   ],
+   "tip": "Mathilda: flake her salmon extra small and check carefully for bones."
+  }
  }
 }
