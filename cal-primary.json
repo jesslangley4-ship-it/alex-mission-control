@@ -40,6 +40,33 @@
    },
    "status": "confirmed",
    "eventType": "DEFAULT"
+  },
+  {
+   "summary": "Francis: Lindum Hockey vs Rotherham (Home)",
+   "start": {
+    "dateTime": "2026-11-07T10:30:00Z",
+    "timeZone": "Europe/London"
+   },
+   "end": {
+    "dateTime": "2026-11-07T11:30:00Z",
+    "timeZone": "Europe/London"
+   },
+   "status": "confirmed",
+   "location": "Yarborough Leisure Centre, LN1 3SP",
+   "eventType": "DEFAULT"
+  },
+  {
+   "summary": "Jessica: Me-time",
+   "start": {
+    "dateTime": "2026-11-07T12:00:00Z",
+    "timeZone": "Europe/London"
+   },
+   "end": {
+    "dateTime": "2026-11-07T15:00:00Z",
+    "timeZone": "Europe/London"
+   },
+   "status": "confirmed",
+   "eventType": "DEFAULT"
   }
  ]
 }
