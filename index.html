@@ -783,7 +783,7 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-11-06T06:07:21.693Z",
+    "updatedISO": "2026-11-06T15:04:47.390Z",
     "forDate": "2026-11-06",
     "alexStatus": "normal",
     "alexToday": [],
@@ -835,31 +835,36 @@ var RecipeKit = (function(){
       "time": "No cooking"
     },
     "2026-11-06": {
-      "meal": "Garlic butter baked haddock with crushed new potatoes & peas",
-      "note": "Normal evening — gymnastics & swimming done earlier today, nothing on for tea",
-      "kind": "fish",
-      "method": "oven",
-      "time": "10 min prep · 20 min cook",
+      "meal": "Halloumi kebab flatbreads with garlic yoghurt, slaw & sweet potato wedges",
+      "note": "Fakeaway Friday: kebab-shop feel, but air-fried with lots of salad. Gymnastics & swimming done earlier, nothing on for tea.",
+      "kind": "veg",
+      "method": "air-fryer",
+      "time": "15 min prep · 25 min cook",
       "recipe": {
         "ingredients": [
-          "4 haddock fillets",
-          "25g butter, melted",
-          "1 garlic clove, crushed",
-          "1 lemon",
-          "500g new potatoes",
-          "200g frozen peas",
-          "Small handful fresh parsley, chopped (optional)"
+          "2 x 225g blocks halloumi, cut into thick fingers",
+          "2 sweet potatoes, cut into wedges",
+          "1½ tbsp olive oil",
+          "1 tsp smoked paprika",
+          "1 tsp dried oregano or mixed herbs",
+          "4 large flatbreads or pittas",
+          "¼ red cabbage and 1 carrot, finely shredded",
+          "½ cucumber and 2 tomatoes, chopped",
+          "150g Greek yoghurt",
+          "1 small garlic clove, crushed",
+          "Squeeze of lemon",
+          "Sweet chilli sauce and pickled chillies, to serve (optional)"
         ],
         "serves": "4 (2 adults, 2 kids)",
         "steps": [
-          "Heat the oven to 200°C (180°C fan). Boil the new potatoes for 15–18 minutes until tender.",
-          "Mix the melted butter with the garlic and a squeeze of lemon. Put the haddock on a lined tray and brush over the butter.",
-          "Bake for 12–15 minutes, until the fish flakes easily.",
-          "Cook the peas for the last 4 minutes of the potatoes.",
-          "Drain and lightly crush the potatoes with a fork, stir through the parsley and a knob of butter.",
-          "Serve the fish with the crushed potatoes, peas and lemon wedges."
+          "Heat the air fryer to 200°C. Toss the sweet potato wedges in 1 tbsp oil, the paprika and a pinch of salt.",
+          "Air fry the wedges for 20 minutes, shaking halfway, until crisp at the edges.",
+          "Meanwhile, mix the yoghurt, garlic, lemon and a pinch of salt for the garlic sauce. Toss the cabbage and carrot with a squeeze of lemon for the slaw.",
+          "Toss the halloumi in the rest of the oil and the oregano. When the wedges have 8 minutes left, add the halloumi (or cook it after, for 8 minutes) until golden.",
+          "Warm the flatbreads in the air fryer for 1 minute.",
+          "Fill the flatbreads with slaw, cucumber, tomato and halloumi, then add garlic sauce and sweet chilli. Serve the wedges on the side."
         ],
-        "tip": "Mathilda: leave the garlic butter off her portion and check carefully for bones."
+        "tip": "Mathilda: give her plain halloumi fingers, wedges and cucumber to dip in the yoghurt, no garlic. Halloumi is salty, so go easy on salt elsewhere."
       }
     },
     "2026-11-07": {
@@ -1046,11 +1051,11 @@ var RecipeKit = (function(){
   var SHOPPING_LIST_OVERRIDE = [
     {
       "cat": "Veg",
-      "name": "Onions (4)"
+      "name": "Onions (2, if you're out)"
     },
     {
       "cat": "Veg",
-      "name": "Garlic (6 cloves, about 1 bulb)"
+      "name": "Garlic (1 bulb, if you're out)"
     },
     {
       "cat": "Veg",
@@ -1062,23 +1067,39 @@ var RecipeKit = (function(){
     },
     {
       "cat": "Veg",
-      "name": "New potatoes (500g)"
+      "name": "Spinach (1 bag, 200g)"
     },
     {
       "cat": "Veg",
-      "name": "Potatoes, for mash (1kg)"
+      "name": "Sweet potatoes (4: 2 for tonight's wedges, 2 for Monday's dhal)"
     },
     {
       "cat": "Veg",
-      "name": "Butternut squash (1, about 1kg)"
+      "name": "Red cabbage (small, or a bag of slaw mix)"
     },
     {
       "cat": "Veg",
-      "name": "Spinach (2 bags, 400g)"
+      "name": "Cucumbers (2)"
     },
     {
       "cat": "Veg",
-      "name": "Sweet potatoes (2)"
+      "name": "Tomatoes (2)"
+    },
+    {
+      "cat": "Veg",
+      "name": "Carrots (4)"
+    },
+    {
+      "cat": "Veg",
+      "name": "Mixed peppers (2)"
+    },
+    {
+      "cat": "Veg",
+      "name": "Cherry tomatoes (2 packs)"
+    },
+    {
+      "cat": "Veg",
+      "name": "Courgette (1)"
     },
     {
       "cat": "Veg",
@@ -1086,19 +1107,7 @@ var RecipeKit = (function(){
     },
     {
       "cat": "Veg",
-      "name": "Fresh parsley (1 bunch)"
-    },
-    {
-      "cat": "Veg",
       "name": "Frozen peas (full bag — restocking)"
-    },
-    {
-      "cat": "Fish/meat",
-      "name": "Haddock fillets (4)"
-    },
-    {
-      "cat": "Fish/meat",
-      "name": "Gammon joint, unsmoked (1kg)"
     },
     {
       "cat": "Fish/meat",
@@ -1106,11 +1115,23 @@ var RecipeKit = (function(){
     },
     {
       "cat": "Dairy",
-      "name": "Butter"
+      "name": "Halloumi (2 x 225g)"
     },
     {
       "cat": "Dairy",
-      "name": "Milk (300ml, or use what's in)"
+      "name": "Greek yoghurt (small pot)"
+    },
+    {
+      "cat": "Dairy",
+      "name": "Hummus (1–2 tubs)"
+    },
+    {
+      "cat": "Dairy",
+      "name": "Cheddar (small block, if you're out)"
+    },
+    {
+      "cat": "Dairy",
+      "name": "Fresh gnocchi (2 x 500g)"
     },
     {
       "cat": "Dairy",
@@ -1122,18 +1143,6 @@ var RecipeKit = (function(){
     },
     {
       "cat": "Cupboard",
-      "name": "Chickpeas (2 x 400g tins)"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Chopped tomatoes (1 x 400g tin)"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Coconut milk (1 x 400ml tin)"
-    },
-    {
-      "cat": "Cupboard",
       "name": "Light coconut milk (1 x 400ml tin)"
     },
     {
@@ -1142,19 +1151,27 @@ var RecipeKit = (function(){
     },
     {
       "cat": "Cupboard",
-      "name": "Basmati rice (1.2kg total, for 4 meals this week)"
+      "name": "Basmati rice (if you're low, for Mon & Tue)"
     },
     {
       "cat": "Cupboard",
       "name": "Pasta — penne or fusilli (350g)"
     },
     {
-      "cat": "Other",
-      "name": "Fruit (double up on bananas)"
+      "cat": "Cupboard",
+      "name": "Flatbreads or pittas (8: tonight + Sunday)"
+    },
+    {
+      "cat": "Cupboard",
+      "name": "Green pesto (jar)"
     },
     {
       "cat": "Cupboard",
       "name": "Sweet chilli sauce"
+    },
+    {
+      "cat": "Other",
+      "name": "Fruit (double up on bananas)"
     }
   ];
 

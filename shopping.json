@@ -1,11 +1,11 @@
 [
  {
   "cat": "Veg",
-  "name": "Onions (4)"
+  "name": "Onions (2, if you're out)"
  },
  {
   "cat": "Veg",
-  "name": "Garlic (6 cloves, about 1 bulb)"
+  "name": "Garlic (1 bulb, if you're out)"
  },
  {
   "cat": "Veg",
@@ -17,23 +17,39 @@
  },
  {
   "cat": "Veg",
-  "name": "New potatoes (500g)"
+  "name": "Spinach (1 bag, 200g)"
  },
  {
   "cat": "Veg",
-  "name": "Potatoes, for mash (1kg)"
+  "name": "Sweet potatoes (4: 2 for tonight's wedges, 2 for Monday's dhal)"
  },
  {
   "cat": "Veg",
-  "name": "Butternut squash (1, about 1kg)"
+  "name": "Red cabbage (small, or a bag of slaw mix)"
  },
  {
   "cat": "Veg",
-  "name": "Spinach (2 bags, 400g)"
+  "name": "Cucumbers (2)"
  },
  {
   "cat": "Veg",
-  "name": "Sweet potatoes (2)"
+  "name": "Tomatoes (2)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Carrots (4)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Mixed peppers (2)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Cherry tomatoes (2 packs)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Courgette (1)"
  },
  {
   "cat": "Veg",
@@ -41,19 +57,7 @@
  },
  {
   "cat": "Veg",
-  "name": "Fresh parsley (1 bunch)"
- },
- {
-  "cat": "Veg",
   "name": "Frozen peas (full bag — restocking)"
- },
- {
-  "cat": "Fish/meat",
-  "name": "Haddock fillets (4)"
- },
- {
-  "cat": "Fish/meat",
-  "name": "Gammon joint, unsmoked (1kg)"
  },
  {
   "cat": "Fish/meat",
@@ -61,11 +65,23 @@
  },
  {
   "cat": "Dairy",
-  "name": "Butter"
+  "name": "Halloumi (2 x 225g)"
  },
  {
   "cat": "Dairy",
-  "name": "Milk (300ml, or use what's in)"
+  "name": "Greek yoghurt (small pot)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Hummus (1–2 tubs)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Cheddar (small block, if you're out)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Fresh gnocchi (2 x 500g)"
  },
  {
   "cat": "Dairy",
@@ -77,18 +93,6 @@
  },
  {
   "cat": "Cupboard",
-  "name": "Chickpeas (2 x 400g tins)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Chopped tomatoes (1 x 400g tin)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Coconut milk (1 x 400ml tin)"
- },
- {
-  "cat": "Cupboard",
   "name": "Light coconut milk (1 x 400ml tin)"
  },
  {
@@ -97,18 +101,26 @@
  },
  {
   "cat": "Cupboard",
-  "name": "Basmati rice (1.2kg total, for 4 meals this week)"
+  "name": "Basmati rice (if you're low, for Mon & Tue)"
  },
  {
   "cat": "Cupboard",
   "name": "Pasta — penne or fusilli (350g)"
  },
  {
-  "cat": "Other",
-  "name": "Fruit (double up on bananas)"
+  "cat": "Cupboard",
+  "name": "Flatbreads or pittas (8: tonight + Sunday)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Green pesto (jar)"
  },
  {
   "cat": "Cupboard",
   "name": "Sweet chilli sauce"
+ },
+ {
+  "cat": "Other",
+  "name": "Fruit (double up on bananas)"
  }
 ]
