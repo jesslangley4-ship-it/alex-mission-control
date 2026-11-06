@@ -5,27 +5,11 @@
  },
  {
   "cat": "Veg",
-  "name": "Garlic (1 bulb, if you're out)"
- },
- {
-  "cat": "Veg",
-  "name": "Fresh ginger (small piece)"
- },
- {
-  "cat": "Veg",
-  "name": "Lemons (2)"
- },
- {
-  "cat": "Veg",
   "name": "Spinach (1 bag, 200g)"
  },
  {
   "cat": "Veg",
   "name": "Sweet potatoes (4: 2 for tonight's wedges, 2 for Monday's dhal)"
- },
- {
-  "cat": "Veg",
-  "name": "Red cabbage (small, or a bag of slaw mix)"
  },
  {
   "cat": "Veg",
@@ -101,14 +85,6 @@
  },
  {
   "cat": "Cupboard",
-  "name": "Basmati rice (if you're low, for Mon & Tue)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Pasta — penne or fusilli (350g)"
- },
- {
-  "cat": "Cupboard",
   "name": "Flatbreads or pittas (8: tonight + Sunday)"
  },
  {
@@ -116,8 +92,28 @@
   "name": "Green pesto (jar)"
  },
  {
+  "cat": "Dairy",
+  "name": "Oat milk (at least 4)"
+ },
+ {
   "cat": "Cupboard",
-  "name": "Sweet chilli sauce"
+  "name": "Dinosaur cereal"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Shredded Wheat"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Crunchy Nut"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Crisps (1 pack of fancy ones, for us)"
+ },
+ {
+  "cat": "Other",
+  "name": "Sourdough (for us)"
  },
  {
   "cat": "Other",
