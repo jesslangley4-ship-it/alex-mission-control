@@ -783,11 +783,10 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-11-06T15:08:55.750Z",
-    "forDate": "2026-11-06",
-    "alexStatus": "normal",
-    "alexToday": [],
-    "alexTomorrow": [
+    "updatedISO": "2026-11-07T06:07:25.717Z",
+    "forDate": "2026-11-07",
+    "alexStatus": "leave",
+    "alexToday": [
         {
             "time": "10:00",
             "title": "Major Service",
@@ -795,9 +794,9 @@ var RecipeKit = (function(){
             "allDay": false
         }
     ],
+    "alexTomorrow": [],
     "mumUnusual": null,
-    "francisToday": [],
-    "francisTomorrow": [
+    "francisToday": [
         {
             "time": "10:30",
             "title": "Francis: Lindum Hockey vs Rotherham (Home)",
@@ -805,20 +804,15 @@ var RecipeKit = (function(){
             "allDay": false
         }
     ],
-    "mathildaToday": [
+    "francisTomorrow": [
         {
-            "time": "09:30",
-            "title": "Gymnastics",
-            "loc": "Allegro Gymnastics Academy",
-            "allDay": false
-        },
-        {
-            "time": "13:30",
-            "title": "Swimming",
-            "loc": "Emmerson Pool Hire",
-            "allDay": false
+            "time": null,
+            "title": "Francis - U12 Boys Hockey Fixture (Time TBC)",
+            "loc": "",
+            "allDay": true
         }
     ],
+    "mathildaToday": [],
     "mathildaTomorrow": []
 };
 
@@ -827,13 +821,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-11-05": {
-      "meal": "Fish & chips (or another takeaway treat)",
-      "note": "Bonfire night, out to watch the fireworks. A chippy tea as a treat, no cooking.",
-      "kind": "out",
-      "method": "no-cook",
-      "time": "No cooking"
-    },
     "2026-11-06": {
       "meal": "Chicken gyros with tzatziki, slaw & sweet potato wedges",
       "note": "Fakeaway Friday and this week's one meat night: kebab-shop feel, but air-fried with lots of salad. Gymnastics & swimming done earlier, nothing on for tea.",
@@ -1023,128 +1010,7 @@ var RecipeKit = (function(){
      name) when present, otherwise its name is matched against a small
      keyword dictionary — an approximation, so check it against the fridge
      before you go. ---- */
-  var SHOPPING_LIST_OVERRIDE = [
-    {
-      "cat": "Veg",
-      "name": "Onions (2, if you're out)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Spinach (1 bag, 200g)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Sweet potatoes (4: 2 for tonight's wedges, 2 for Monday's dhal)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Cucumbers (2)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Tomatoes (2)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Carrots (4)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Mixed peppers (2)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Cherry tomatoes (2 packs)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Courgette (1)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Leek (1)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Frozen peas (full bag — restocking)"
-    },
-    {
-      "cat": "Fish/meat",
-      "name": "Chicken thighs, boneless & skinless (600g)"
-    },
-    {
-      "cat": "Fish/meat",
-      "name": "Salmon fillets (2)"
-    },
-    {
-      "cat": "Dairy",
-      "name": "Greek yoghurt (500g pot)"
-    },
-    {
-      "cat": "Dairy",
-      "name": "Hummus (1–2 tubs)"
-    },
-    {
-      "cat": "Dairy",
-      "name": "Cheddar (small block, if you're out)"
-    },
-    {
-      "cat": "Dairy",
-      "name": "Fresh gnocchi (2 x 500g)"
-    },
-    {
-      "cat": "Dairy",
-      "name": "Crème fraîche (150ml/small tub)"
-    },
-    {
-      "cat": "Dairy",
-      "name": "Parmesan or vegetarian hard cheese (full pack — restocking)"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Light coconut milk (1 x 400ml tin)"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Dried red split lentils (300g)"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Flatbreads or pittas (8: tonight + Sunday)"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Green pesto (jar)"
-    },
-    {
-      "cat": "Dairy",
-      "name": "Oat milk (at least 4)"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Dinosaur cereal"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Shredded Wheat"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Crunchy Nut"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Crisps (1 pack of fancy ones, for us)"
-    },
-    {
-      "cat": "Other",
-      "name": "Sourdough (for us)"
-    },
-    {
-      "cat": "Other",
-      "name": "Fruit (double up on bananas)"
-    }
-  ];
+  var SHOPPING_LIST_OVERRIDE = [];
 
   var MEAL_INGREDIENTS = [
     { test:/salmon/i, items:[
