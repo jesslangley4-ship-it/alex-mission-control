@@ -13,17 +13,16 @@
    "eventType": "DEFAULT"
   },
   {
-   "summary": "Major Service",
+   "summary": "CYCLONE",
    "start": {
-    "dateTime": "2026-11-07T10:00:00Z",
-    "timeZone": "Europe/London"
+    "date": "2026-11-09"
    },
    "end": {
-    "dateTime": "2026-11-07T12:00:00Z",
-    "timeZone": "Europe/London"
+    "date": "2026-11-28"
    },
    "status": "confirmed",
-   "location": "Horton Škoda",
+   "colorId": "11",
+   "location": "Salisbury",
    "eventType": "DEFAULT"
   }
  ]
