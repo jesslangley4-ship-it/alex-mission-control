@@ -783,10 +783,17 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-11-08T06:07:00.652Z",
-    "forDate": "2026-11-08",
-    "alexStatus": "leave",
-    "alexToday": [],
+    "updatedISO": "2026-11-09T06:12:18.056Z",
+    "forDate": "2026-11-09",
+    "alexStatus": "normal",
+    "alexToday": [
+        {
+            "time": null,
+            "title": "CYCLONE",
+            "loc": "Salisbury",
+            "allDay": true
+        }
+    ],
     "alexTomorrow": [
         {
             "time": null,
@@ -796,24 +803,24 @@ var RecipeKit = (function(){
         }
     ],
     "mumUnusual": null,
-    "francisToday": [
+    "francisToday": [],
+    "francisTomorrow": [
         {
-            "time": null,
-            "title": "Francis - U12 Boys Hockey Fixture (Time TBC)",
-            "loc": "",
-            "allDay": true
+            "time": "18:00",
+            "title": "Francis - Hull Hockey Training",
+            "loc": "Hymers College, Hymers Avenue, Hull HU3 1LW",
+            "allDay": false
         }
     ],
-    "francisTomorrow": [],
-    "mathildaToday": [],
-    "mathildaTomorrow": [
+    "mathildaToday": [
         {
             "time": "09:30",
             "title": "Mathilda: Hospital eye test appointment (off nursery)",
             "loc": "",
             "allDay": false
         }
-    ]
+    ],
+    "mathildaTomorrow": []
 };
 
   /* ---- Meal plan — mirror of the Tea Planner (the family's source of truth).
@@ -821,13 +828,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-11-07": {
-      "meal": "Eating out",
-      "note": "Tea out tonight, no cooking.",
-      "kind": "out",
-      "method": "no-cook",
-      "time": "No cooking"
-    },
     "2026-11-08": {
       "meal": "Picky tea: crudités, dips & warm flatbreads",
       "note": "Out for Sunday dinner, so just a light picky tea in the evening. Francis's away hockey fixture today.",
