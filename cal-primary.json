@@ -1,32 +1,6 @@
 {
  "events": [
   {
-   "summary": "Water the plants",
-   "start": {
-    "dateTime": "2026-11-09T08:00:00Z",
-    "timeZone": "Europe/London"
-   },
-   "end": {
-    "dateTime": "2026-11-09T08:00:00Z",
-    "timeZone": "Europe/London"
-   },
-   "status": "confirmed",
-   "eventType": "DEFAULT"
-  },
-  {
-   "summary": "Mathilda: Hospital eye test appointment (off nursery)",
-   "start": {
-    "dateTime": "2026-11-09T09:30:00Z",
-    "timeZone": "Europe/London"
-   },
-   "end": {
-    "dateTime": "2026-11-09T10:30:00Z",
-    "timeZone": "Europe/London"
-   },
-   "status": "confirmed",
-   "eventType": "DEFAULT"
-  },
-  {
    "summary": "Francis - Hull Hockey Training",
    "start": {
     "dateTime": "2026-11-10T18:00:00Z",
@@ -38,6 +12,20 @@
    },
    "status": "confirmed",
    "location": "Hymers College, Hymers Avenue, Hull HU3 1LW",
+   "eventType": "DEFAULT"
+  },
+  {
+   "summary": "Francis - Hockey Academy Night (U10/U12)",
+   "start": {
+    "dateTime": "2026-11-11T18:15:00Z",
+    "timeZone": "Europe/London"
+   },
+   "end": {
+    "dateTime": "2026-11-11T19:45:00Z",
+    "timeZone": "Europe/London"
+   },
+   "status": "confirmed",
+   "location": "The Lindum",
    "eventType": "DEFAULT"
   }
  ]
