@@ -1,25 +1,4 @@
 {
- "2026-11-10": {
-  "meal": "Reheat: Monday's sweet potato & spinach dhal with rice",
-  "note": "Hull hockey training 6–7pm (Hymers College) plus travel — tea ready for whoever's not driving, kept warm for the rest",
-  "kind": "veg",
-  "method": "reheat",
-  "time": "5 min prep · 10 min",
-  "recipe": {
-   "ingredients": [
-    "4 portions of Monday's dhal (from the fridge)",
-    "Basmati rice, to serve"
-   ],
-   "serves": "4",
-   "steps": [
-    "Tip the dhal into a pan with a splash of water.",
-    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8–10 minutes). Or microwave in a covered bowl for 4–5 minutes, stirring halfway.",
-    "Cook the rice while the dhal heats.",
-    "Serve straightaway."
-   ],
-   "tip": "Only reheat it once, and check it's piping hot all the way through before serving. Anyone back late from training can have theirs microwaved separately."
-  }
- },
  "2026-11-11": {
   "meal": "Air-fryer crispy gnocchi with roasted tomatoes, courgette & pesto",
   "note": "Hockey Academy Night 6:15–7:45pm (The Lindum). Ready in 20 minutes either side of the run. (Swapped in because there's no Saturday curry in the freezer now.)",
@@ -75,6 +54,207 @@
     "Serve with a sprinkle of cheese."
    ],
    "tip": "Mathilda: flake her salmon extra small and check carefully for bones."
+  }
+ },
+ "2026-11-13": {
+  "meal": "Butternut squash, chickpea & spinach curry",
+  "note": "Children in Need day at nursery, gymnastics & swimming done earlier — evening's free. Good day to batch-cook extra for tomorrow (busy with hockey, Franco's party and girls day).",
+  "kind": "veg",
+  "method": "batch",
+  "time": "15 min prep · 25 min cook",
+  "recipe": {
+   "ingredients": [
+    "1 tbsp vegetable oil",
+    "1 onion, chopped",
+    "2 garlic cloves, crushed",
+    "1 tsp grated fresh ginger",
+    "2 tsp mild curry powder",
+    "1 tsp ground cumin",
+    "1 butternut squash (about 900g), peeled and diced",
+    "2 x 400g tins chickpeas, drained",
+    "400g tin chopped tomatoes",
+    "400ml tin coconut milk",
+    "200g spinach",
+    "300g basmati rice, to serve"
+   ],
+   "serves": "4 tonight + 4 portions for Saturday",
+   "steps": [
+    "Soften the onion in the oil for 5 minutes. Add the garlic, ginger, curry powder and cumin and cook for 1 minute.",
+    "Add the squash, chickpeas, chopped tomatoes and coconut milk. Bring to a simmer, cover and cook for 20-25 minutes, stirring now and then, until the squash is tender.",
+    "Take out Mathilda's portion and 4 portions to cool for Saturday before stirring the spinach into the remainder.",
+    "Cook for 3-4 minutes more until the spinach wilts.",
+    "Cook the rice and serve with the curry.",
+    "Cool the 4 extra portions within an hour, cover and keep in the fridge for Saturday (no need to freeze)."
+   ],
+   "tip": "Mathilda: keep hers mild and mash the squash a little finer if she's fussy about texture."
+  }
+ },
+ "2026-11-14": {
+  "meal": "Reheat: Friday's butternut squash, chickpea & spinach curry",
+  "note": "Hockey open session this morning, girls day and Francis's party (3-5pm) today — quick reheat gets tea ready whenever everyone's trickled home.",
+  "kind": "veg",
+  "method": "reheat",
+  "time": "5 min prep · 10 min",
+  "recipe": {
+   "ingredients": [
+    "Friday's curry portions (from the fridge)",
+    "300g basmati rice"
+   ],
+   "serves": "4",
+   "steps": [
+    "Tip the curry into a pan with a splash of water.",
+    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8-10 minutes). Or microwave in a covered bowl for 4-5 minutes, stirring halfway.",
+    "Cook the rice while the curry heats.",
+    "Serve straightaway."
+   ],
+   "tip": "Only reheat it once, and check it's piping hot all the way through before serving."
+  }
+ },
+ "2026-11-15": {
+  "meal": "Bolognese (meal-drawer batch)",
+  "note": "This week's one meat night. Back from Francis's Wakefield hockey session by early afternoon — a good free evening to restock the freezer meal drawer, since both the frozen bolognese and curry have been used up recently. Alex away in Salisbury all week.",
+  "kind": "meat",
+  "method": "batch",
+  "time": "20 min prep · 45 min simmer",
+  "recipe": {
+   "ingredients": [
+    "2 tbsp olive oil",
+    "2 onions, finely chopped",
+    "3 garlic cloves, crushed",
+    "2 carrots, finely diced",
+    "2 celery sticks, finely diced",
+    "1kg beef mince",
+    "3 x 400g tins chopped tomatoes",
+    "2 tbsp tomato purée",
+    "1 beef stock cube, dissolved in 200ml hot water",
+    "1 tbsp dried mixed herbs",
+    "800g spaghetti",
+    "Parmesan or vegetarian hard cheese, to serve"
+   ],
+   "serves": "4 tonight + 6 portions for the freezer",
+   "steps": [
+    "Soften the onions, garlic, carrots and celery in the oil in a large pan for 8 minutes.",
+    "Add the mince and brown for 8-10 minutes, breaking it up, until no pink remains.",
+    "Stir in the tomatoes, purée, stock and herbs. Season, cover and simmer for 40-45 minutes, stirring now and then.",
+    "Take out Mathilda's portion, then cook the spaghetti for 10-12 minutes while the sauce finishes.",
+    "Serve tonight's portion over spaghetti with cheese.",
+    "Cool the rest completely within an hour (spreading it out in a shallow dish speeds this up), then portion into 6 containers, label with the contents and date, and freeze for the meal drawer."
+   ],
+   "tip": "Mathilda: cut her spaghetti short and check the sauce isn't too chunky. Never freeze it while it's still warm — make sure it's fully cooled first."
+  }
+ },
+ "2026-11-16": {
+  "meal": "Garlic butter baked haddock with crushed new potatoes & peas",
+  "note": "Mathilda's allergy appointment this morning, evening's free — nothing on for tea.",
+  "kind": "fish",
+  "method": "oven",
+  "time": "10 min prep · 20 min cook",
+  "recipe": {
+   "ingredients": [
+    "4 haddock fillets",
+    "25g butter, melted",
+    "1 garlic clove, crushed",
+    "1 lemon",
+    "500g new potatoes",
+    "200g frozen peas",
+    "Small handful fresh parsley, chopped (optional)"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Boil the new potatoes for 15-18 minutes until tender.",
+    "Mix the melted butter with the garlic and a squeeze of lemon. Put the haddock on a lined tray and brush over the butter.",
+    "Bake for 12-15 minutes, until the fish flakes easily.",
+    "Cook the peas for the last 4 minutes of the potatoes.",
+    "Drain and lightly crush the potatoes with a fork, stir through the parsley and a knob of butter.",
+    "Serve the fish with the crushed potatoes, peas and lemon wedges."
+   ],
+   "tip": "Mathilda: leave the garlic butter off her portion and check carefully for bones."
+  }
+ },
+ "2026-11-17": {
+  "meal": "Slow-cooker Mediterranean vegetable stew with butter beans & feta",
+  "note": "Hull hockey training 6-7pm (Hymers College) plus travel — slow cooker on by 9am so tea's ready for whoever's not driving, kept warm for the rest. Alex still away.",
+  "kind": "veg",
+  "method": "slow-cooker",
+  "time": "15 min prep · 6-7 hr low",
+  "recipe": {
+   "ingredients": [
+    "1 tbsp olive oil",
+    "1 onion, chopped",
+    "2 garlic cloves, crushed",
+    "1 courgette, chunked",
+    "1 aubergine, chunked",
+    "2 mixed peppers, chunked",
+    "2 x 400g tins butter beans, drained",
+    "400g tin chopped tomatoes",
+    "1 tbsp tomato purée",
+    "1 tsp dried oregano",
+    "100g feta, crumbled",
+    "Crusty bread, to serve"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Put the onion, garlic, courgette, aubergine and peppers into the slow cooker.",
+    "Add the butter beans, chopped tomatoes, tomato purée and oregano. Stir well and season.",
+    "Cover and cook on low for 6-7 hours (or high for 3-4), until the veg is tender.",
+    "Take out Mathilda's portion and set aside before crumbling the feta over the rest.",
+    "Serve with crusty bread."
+   ],
+   "tip": "On by 9am before the school run. Mathilda: keep hers plain without the feta, and mash a few of the veg chunks if she's fussy about texture."
+  }
+ },
+ "2026-11-18": {
+  "meal": "Air-fryer peri-peri cod with sweet potato wedges & corn",
+  "note": "Dentist appointment for all three of you 4-5pm, then straight into Hockey Academy Night 6:15-7:45pm — air fryer gets tea done fast in the gap between.",
+  "kind": "fish",
+  "method": "air-fryer",
+  "time": "5 min prep · 20 min cook",
+  "recipe": {
+   "ingredients": [
+    "4 cod fillets",
+    "1 tbsp olive oil",
+    "1-2 tsp peri-peri seasoning (to taste, for the grown-ups' portions)",
+    "2 sweet potatoes, cut into wedges",
+    "198g tin or frozen sweetcorn"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Heat the air fryer to 200°C. Toss the sweet potato wedges in half the oil and a pinch of salt, and air fry for 12 minutes.",
+    "Meanwhile rub the cod with the rest of the oil. Keep 1-2 fillets completely plain for the kids, and rub peri-peri seasoning onto the grown-ups' fillets only.",
+    "Add the cod to the air fryer basket alongside the wedges and cook for a further 8-10 minutes, until the fish is opaque and flakes easily and the wedges are crisp.",
+    "Heat the sweetcorn in a small pan or the microwave for 3-4 minutes.",
+    "Serve the cod and wedges with the sweetcorn."
+   ],
+   "tip": "Mathilda: keep her cod and wedges completely plain, no peri-peri. Ready in 20 minutes either side of the dentist/hockey run."
+  }
+ },
+ "2026-11-19": {
+  "meal": "Fish pie with mashed potato topping",
+  "note": "Free evening, nothing on for tea — a cosy one to round off the week.",
+  "kind": "fish",
+  "method": "oven",
+  "time": "25 min prep · 30 min bake",
+  "recipe": {
+   "ingredients": [
+    "600g mixed fish (e.g. salmon, smoked haddock & raw king prawns), cut into chunks",
+    "25g butter, plus extra for the mash",
+    "25g plain flour",
+    "450ml milk",
+    "1 tbsp fresh parsley, chopped (or 1 tsp dried)",
+    "100g frozen peas",
+    "900g potatoes, peeled and chopped",
+    "50g grated cheddar (optional, for the topping)"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Boil the potatoes for 15-18 minutes until tender, then drain and mash with butter and a splash of milk.",
+    "Heat the oven to 200°C (180°C fan).",
+    "Melt the 25g butter in a pan, stir in the flour for 1 minute, then gradually whisk in the milk. Simmer for 3-4 minutes, stirring, until thickened.",
+    "Stir the fish, peas and parsley into the sauce. Take out Mathilda's portion into a small ovenproof dish now.",
+    "Pour the rest into a large ovenproof dish, top with the mash, and scatter over the cheese if using.",
+    "Bake for 25-30 minutes (20 minutes for Mathilda's smaller dish), until golden on top and piping hot all the way through — check the fish is cooked and opaque before serving."
+   ],
+   "tip": "Mathilda: check carefully for bones and let her portion cool a little before serving, as it comes out hotter than it looks."
   }
  }
 }

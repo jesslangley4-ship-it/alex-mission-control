@@ -1,1 +1,146 @@
-[]
+[
+ {
+  "cat": "Veg",
+  "name": "Onions (4)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Garlic (1-2 bulbs, about 8 cloves)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Fresh ginger (small piece)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Butternut squash (1, about 900g)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Spinach (1 bag, 200g)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Carrots (2)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Celery (2 sticks)"
+ },
+ {
+  "cat": "Veg",
+  "name": "New potatoes (500g)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Potatoes (900g, for mash)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Courgette (1)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Aubergine (1)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Mixed peppers (2)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Sweet potatoes (2)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Lemon (1)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Fresh parsley (1 pack)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Frozen peas (300g)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Haddock fillets (4)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Beef mince (1kg)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Cod fillets (4)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Mixed fish for the pie — salmon, smoked haddock & raw king prawns (600g total)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Butter (block, if low)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Milk (for the fish pie, if low)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Feta (100g)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Cheddar (small block, if low)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Parmesan or vegetarian hard cheese (if low)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Chickpeas (2 x 400g tins)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Chopped tomatoes (5 x 400g tins)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Coconut milk (1 x 400ml tin)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Basmati rice (600g)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Spaghetti (800g)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tomato purée (small tube, if low)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Butter beans (2 x 400g tins)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Sweetcorn (198g tin, or frozen)"
+ },
+ {
+  "cat": "Other",
+  "name": "Crusty bread (1 loaf)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Mayonnaise"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Tinned sweetcorn"
+ }
+]
