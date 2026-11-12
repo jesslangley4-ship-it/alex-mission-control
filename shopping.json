@@ -9,18 +9,6 @@
  },
  {
   "cat": "Veg",
-  "name": "Fresh ginger (small piece)"
- },
- {
-  "cat": "Veg",
-  "name": "Butternut squash (1, about 900g)"
- },
- {
-  "cat": "Veg",
-  "name": "Spinach (1 bag, 200g)"
- },
- {
-  "cat": "Veg",
   "name": "Carrots (2)"
  },
  {
@@ -45,7 +33,19 @@
  },
  {
   "cat": "Veg",
-  "name": "Mixed peppers (2)"
+  "name": "Mixed peppers (3)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Cherry tomatoes (1 pack)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Bag of salad"
+ },
+ {
+  "cat": "Veg",
+  "name": "Cucumber"
  },
  {
   "cat": "Veg",
@@ -89,11 +89,15 @@
  },
  {
   "cat": "Dairy",
-  "name": "Feta (100g)"
+  "name": "Mozzarella (250g grated, or 2 balls)"
  },
  {
   "cat": "Dairy",
-  "name": "Cheddar (small block, if low)"
+  "name": "Cheddar (300g block)"
+ },
+ {
+  "cat": "Dairy",
+  "name": "Feta (100g)"
  },
  {
   "cat": "Dairy",
@@ -101,19 +105,27 @@
  },
  {
   "cat": "Cupboard",
-  "name": "Chickpeas (2 x 400g tins)"
+  "name": "Pizza bases (4), or large naan"
  },
  {
   "cat": "Cupboard",
-  "name": "Chopped tomatoes (5 x 400g tins)"
+  "name": "Passata or pizza sauce (small carton or jar)"
  },
  {
   "cat": "Cupboard",
-  "name": "Coconut milk (1 x 400ml tin)"
+  "name": "Tortilla wraps (pack of 8)"
  },
  {
   "cat": "Cupboard",
-  "name": "Basmati rice (600g)"
+  "name": "Black beans (1 x 400g tin)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Salsa (jar)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Chopped tomatoes (4 x 400g tins)"
  },
  {
   "cat": "Cupboard",
@@ -129,7 +141,7 @@
  },
  {
   "cat": "Cupboard",
-  "name": "Sweetcorn (198g tin, or frozen)"
+  "name": "Sweetcorn (2 tins, or a bag of frozen)"
  },
  {
   "cat": "Other",

@@ -57,57 +57,56 @@
   }
  },
  "2026-11-13": {
-  "meal": "Butternut squash, chickpea & spinach curry",
-  "note": "Children in Need day at nursery, gymnastics & swimming done earlier — evening's free. Good day to batch-cook extra for tomorrow (busy with hockey, Franco's party and girls day).",
+  "meal": "Creamy mushroom stroganoff with rice (double batch)",
+  "note": "Children in Need day at nursery, gymnastics & swimming done earlier — evening's free. Make double so tomorrow (hockey, Franco's party and girls day) is just a reheat.",
   "kind": "veg",
   "method": "batch",
-  "time": "15 min prep · 25 min cook",
+  "time": "10 min prep · 25 min cook",
   "recipe": {
    "ingredients": [
-    "1 tbsp vegetable oil",
-    "1 onion, chopped",
-    "2 garlic cloves, crushed",
-    "1 tsp grated fresh ginger",
-    "2 tsp mild curry powder",
-    "1 tsp ground cumin",
-    "1 butternut squash (about 900g), peeled and diced",
-    "2 x 400g tins chickpeas, drained",
-    "400g tin chopped tomatoes",
-    "400ml tin coconut milk",
-    "200g spinach",
-    "300g basmati rice, to serve"
+    "750g chestnut mushrooms, sliced",
+    "2 tbsp olive oil",
+    "Knob of butter",
+    "2 onions, finely sliced",
+    "3 garlic cloves, crushed",
+    "2 tsp smoked paprika (or sweet paprika for milder)",
+    "1 tbsp plain flour",
+    "400ml hot veg stock",
+    "1 tsp Dijon mustard (optional)",
+    "400ml crème fraîche (2 x 200ml tubs)",
+    "Small handful fresh parsley, chopped",
+    "600g basmati rice, to serve"
    ],
-   "serves": "4 tonight + 4 portions for Saturday",
+   "serves": "8 (4 tonight, 4 for Saturday)",
    "steps": [
-    "Soften the onion in the oil for 5 minutes. Add the garlic, ginger, curry powder and cumin and cook for 1 minute.",
-    "Add the squash, chickpeas, chopped tomatoes and coconut milk. Bring to a simmer, cover and cook for 20-25 minutes, stirring now and then, until the squash is tender.",
-    "Take out Mathilda's portion and 4 portions to cool for Saturday before stirring the spinach into the remainder.",
-    "Cook for 3-4 minutes more until the spinach wilts.",
-    "Cook the rice and serve with the curry.",
-    "Cool the 4 extra portions within an hour, cover and keep in the fridge for Saturday (no need to freeze)."
+    "Heat half the oil and the butter in a big pan and fry the mushrooms in two batches over a high heat for 6–8 minutes each, until golden and any liquid has gone. Tip them onto a plate.",
+    "Add the rest of the oil and soften the onions for 8 minutes, then add the garlic and paprika for 1 minute.",
+    "Stir in the flour, then slowly add the stock, stirring, and simmer for 5 minutes until it thickens.",
+    "Put the mushrooms back in, stir in the mustard and crème fraîche, and simmer gently for 2–3 minutes. Season and add the parsley.",
+    "Meanwhile, cook the rice (300g tonight, 300g fresh tomorrow).",
+    "Serve half. Cool the rest for up to an hour, then put it in a covered tub in the fridge for Saturday."
    ],
-   "tip": "Mathilda: keep hers mild and mash the squash a little finer if she's fussy about texture."
+   "tip": "Mathilda: chop her mushrooms small and use sweet paprika so it's mild. Don't let it boil hard once the crème fraîche is in, or it can split."
   }
  },
  "2026-11-14": {
-  "meal": "Reheat: Friday's butternut squash, chickpea & spinach curry",
-  "note": "Hockey open session this morning, girls day and Francis's party (3-5pm) today — quick reheat gets tea ready whenever everyone's trickled home.",
+  "meal": "Reheat: Friday's mushroom stroganoff with rice",
+  "note": "Hockey open session this morning, girls day and Francis's party (3–5pm) today — quick reheat gets tea ready whenever everyone's trickled home.",
   "kind": "veg",
   "method": "reheat",
-  "time": "5 min prep · 10 min",
+  "time": "10 min",
   "recipe": {
    "ingredients": [
-    "Friday's curry portions (from the fridge)",
+    "Friday's stroganoff (from the fridge)",
     "300g basmati rice"
    ],
-   "serves": "4",
+   "serves": "4 (2 adults, 2 kids)",
    "steps": [
-    "Tip the curry into a pan with a splash of water.",
-    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8-10 minutes). Or microwave in a covered bowl for 4-5 minutes, stirring halfway.",
-    "Cook the rice while the curry heats.",
-    "Serve straightaway."
+    "Cook the rice (about 10–12 minutes), or heat 2 microwave rice pouches.",
+    "Warm the stroganoff gently in a pan with a splash of water or stock for 6–8 minutes, stirring, until piping hot all the way through. Don't let it boil hard.",
+    "Serve over the rice."
    ],
-   "tip": "Only reheat it once, and check it's piping hot all the way through before serving."
+   "tip": "Only reheat it once. A spoonful of extra crème fraîche brings it back if it's thickened in the fridge."
   }
  },
  "2026-11-15": {
