@@ -57,56 +57,54 @@
   }
  },
  "2026-11-13": {
-  "meal": "Creamy mushroom stroganoff with rice (double batch)",
-  "note": "Children in Need day at nursery, gymnastics & swimming done earlier — evening's free. Make double so tomorrow (hockey, Franco's party and girls day) is just a reheat.",
+  "meal": "Fakeaway pizza night: build-your-own pizzas with salad",
+  "note": "Children in Need day at nursery, gymnastics & swimming done earlier — Friday treat, everyone tops their own.",
   "kind": "veg",
-  "method": "batch",
-  "time": "10 min prep · 25 min cook",
+  "method": "oven",
+  "time": "10 min prep · 10–12 min cook",
   "recipe": {
    "ingredients": [
-    "750g chestnut mushrooms, sliced",
-    "2 tbsp olive oil",
-    "Knob of butter",
-    "2 onions, finely sliced",
-    "3 garlic cloves, crushed",
-    "2 tsp smoked paprika (or sweet paprika for milder)",
-    "1 tbsp plain flour",
-    "400ml hot veg stock",
-    "1 tsp Dijon mustard (optional)",
-    "400ml crème fraîche (2 x 200ml tubs)",
-    "Small handful fresh parsley, chopped",
-    "600g basmati rice, to serve"
-   ],
-   "serves": "8 (4 tonight, 4 for Saturday)",
-   "steps": [
-    "Heat half the oil and the butter in a big pan and fry the mushrooms in two batches over a high heat for 6–8 minutes each, until golden and any liquid has gone. Tip them onto a plate.",
-    "Add the rest of the oil and soften the onions for 8 minutes, then add the garlic and paprika for 1 minute.",
-    "Stir in the flour, then slowly add the stock, stirring, and simmer for 5 minutes until it thickens.",
-    "Put the mushrooms back in, stir in the mustard and crème fraîche, and simmer gently for 2–3 minutes. Season and add the parsley.",
-    "Meanwhile, cook the rice (300g tonight, 300g fresh tomorrow).",
-    "Serve half. Cool the rest for up to an hour, then put it in a covered tub in the fridge for Saturday."
-   ],
-   "tip": "Mathilda: chop her mushrooms small and use sweet paprika so it's mild. Don't let it boil hard once the crème fraîche is in, or it can split."
-  }
- },
- "2026-11-14": {
-  "meal": "Reheat: Friday's mushroom stroganoff with rice",
-  "note": "Hockey open session this morning, girls day and Francis's party (3–5pm) today — quick reheat gets tea ready whenever everyone's trickled home.",
-  "kind": "veg",
-  "method": "reheat",
-  "time": "10 min",
-  "recipe": {
-   "ingredients": [
-    "Friday's stroganoff (from the fridge)",
-    "300g basmati rice"
+    "4 ready-made pizza bases (or 4 large naan or flatbreads)",
+    "6 tbsp passata or tomato pizza sauce (or 3 tbsp tomato purée loosened with water)",
+    "1 tsp dried oregano",
+    "250g mozzarella (grated, or 2 balls torn)",
+    "Toppings: 1 pepper sliced, a handful of sweetcorn, cherry tomatoes halved, olives (for the grown-ups)",
+    "Bag of salad and cucumber, to serve"
    ],
    "serves": "4 (2 adults, 2 kids)",
    "steps": [
-    "Cook the rice (about 10–12 minutes), or heat 2 microwave rice pouches.",
-    "Warm the stroganoff gently in a pan with a splash of water or stock for 6–8 minutes, stirring, until piping hot all the way through. Don't let it boil hard.",
-    "Serve over the rice."
+    "Heat the oven to 220°C (200°C fan) with baking trays inside.",
+    "Spread the sauce thinly over the bases and sprinkle with oregano.",
+    "Let everyone add cheese and their own toppings.",
+    "Slide onto the hot trays and bake for 10–12 minutes until the cheese is bubbling and the edges are crisp. (Small bases or naan also work in the air fryer at 190°C for 5–6 minutes, one at a time.)",
+    "Cut into slices and serve with salad and cucumber."
    ],
-   "tip": "Only reheat it once. A spoonful of extra crème fraîche brings it back if it's thickened in the fridge."
+   "tip": "Mathilda: give her a small base with just sauce, cheese and sweetcorn, and cut it into fingers once it's cooled a little."
+  }
+ },
+ "2026-11-14": {
+  "meal": "Air-fryer cheesy bean quesadillas with salsa",
+  "note": "Hockey open session this morning, girls day and Francis's party (3–5pm) today. Jess is out for pizza with friends in the evening — quesadillas take 10 minutes for whoever's at home.",
+  "kind": "veg",
+  "method": "air-fryer",
+  "time": "5 min prep · 8 min cook",
+  "recipe": {
+   "ingredients": [
+    "8 tortilla wraps",
+    "400g tin black beans, drained and lightly mashed",
+    "Small tin sweetcorn, drained",
+    "200g cheddar, grated",
+    "1 tsp smoked paprika or mild fajita seasoning (optional)",
+    "Salsa, and cucumber sticks, to serve"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Mix the mashed beans, sweetcorn and paprika.",
+    "Spread the bean mix over 4 tortillas, top with the cheese and put the other 4 tortillas on top.",
+    "Air fry one at a time at 190°C for 4 minutes, flip and cook for 3–4 minutes more until golden and melted (pop a metal rack or a toothpick on top so the lid doesn't blow off). Or dry-fry in a pan for 2–3 minutes a side.",
+    "Cut into wedges and serve with salsa and cucumber sticks."
+   ],
+   "tip": "Mathilda: leave the paprika out of hers and cut it into small triangles. You can fill them in the morning and keep them in the fridge, so it's just cooking when you're back."
   }
  },
  "2026-11-15": {
