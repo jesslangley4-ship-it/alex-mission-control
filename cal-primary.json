@@ -1,20 +1,6 @@
 {
  "events": [
   {
-   "summary": "Mathilda: Scotter Primary Open Day (morning session)",
-   "start": {
-    "dateTime": "2026-11-12T09:30:00Z",
-    "timeZone": "Europe/London"
-   },
-   "end": {
-    "dateTime": "2026-11-12T11:30:00Z",
-    "timeZone": "Europe/London"
-   },
-   "status": "confirmed",
-   "location": "Scotter Primary School, High Street, Scotter, Gainsborough DN21 3RY",
-   "eventType": "DEFAULT"
-  },
-  {
    "summary": "Children in Need Day – nursery party celebration",
    "start": {
     "date": "2026-11-13"
@@ -51,6 +37,44 @@
    },
    "status": "confirmed",
    "location": "Emmerson Pool Hire",
+   "eventType": "DEFAULT"
+  },
+  {
+   "summary": "Girls day",
+   "start": {
+    "date": "2026-11-14"
+   },
+   "end": {
+    "date": "2026-11-15"
+   },
+   "status": "confirmed",
+   "eventType": "DEFAULT"
+  },
+  {
+   "summary": "Francis - Hockey U10/U12 Open Session",
+   "start": {
+    "dateTime": "2026-11-14T09:15:00Z",
+    "timeZone": "Europe/London"
+   },
+   "end": {
+    "dateTime": "2026-11-14T10:15:00Z",
+    "timeZone": "Europe/London"
+   },
+   "status": "confirmed",
+   "location": "The Lindum",
+   "eventType": "DEFAULT"
+  },
+  {
+   "summary": "Franco 4",
+   "start": {
+    "dateTime": "2026-11-14T15:00:00Z",
+    "timeZone": "Europe/London"
+   },
+   "end": {
+    "dateTime": "2026-11-14T17:00:00Z",
+    "timeZone": "Europe/London"
+   },
+   "status": "confirmed",
    "eventType": "DEFAULT"
   }
  ]

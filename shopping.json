@@ -93,7 +93,7 @@
  },
  {
   "cat": "Dairy",
-  "name": "Cheddar (300g block)"
+  "name": "Cheddar (small block, if low)"
  },
  {
   "cat": "Dairy",
@@ -113,18 +113,6 @@
  },
  {
   "cat": "Cupboard",
-  "name": "Tortilla wraps (pack of 8)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Black beans (1 x 400g tin)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Salsa (jar)"
- },
- {
-  "cat": "Cupboard",
   "name": "Chopped tomatoes (4 x 400g tins)"
  },
  {
@@ -141,7 +129,7 @@
  },
  {
   "cat": "Cupboard",
-  "name": "Sweetcorn (2 tins, or a bag of frozen)"
+  "name": "Sweetcorn (1 tin, or a bag of frozen)"
  },
  {
   "cat": "Other",

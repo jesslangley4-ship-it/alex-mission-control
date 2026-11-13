@@ -783,8 +783,8 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-11-12T20:16:28.440Z",
-    "forDate": "2026-11-12",
+    "updatedISO": "2026-11-13T06:08:04.782Z",
+    "forDate": "2026-11-13",
     "alexStatus": "normal",
     "alexToday": [
         {
@@ -804,9 +804,15 @@ var RecipeKit = (function(){
     ],
     "mumUnusual": null,
     "francisToday": [],
-    "francisTomorrow": [],
-    "mathildaToday": [],
-    "mathildaTomorrow": [
+    "francisTomorrow": [
+        {
+            "time": "09:15",
+            "title": "Francis - Hockey U10/U12 Open Session",
+            "loc": "The Lindum",
+            "allDay": false
+        }
+    ],
+    "mathildaToday": [
         {
             "time": null,
             "title": "Children in Need Day – nursery party celebration",
@@ -825,7 +831,8 @@ var RecipeKit = (function(){
             "loc": "Emmerson Pool Hire",
             "allDay": false
         }
-    ]
+    ],
+    "mathildaTomorrow": []
 };
 
   /* ---- Meal plan — mirror of the Tea Planner (the family's source of truth).
@@ -833,33 +840,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-11-11": {
-      "meal": "Air-fryer crispy gnocchi with roasted tomatoes, courgette & pesto",
-      "note": "Hockey Academy Night 6:15–7:45pm (The Lindum). Ready in 20 minutes either side of the run. (Swapped in because there's no Saturday curry in the freezer now.)",
-      "kind": "veg",
-      "method": "air-fryer",
-      "time": "5 min prep · 15 min cook",
-      "recipe": {
-        "ingredients": [
-          "2 x 500g packs fresh gnocchi",
-          "300g cherry tomatoes",
-          "1 courgette, cut into chunks",
-          "1½ tbsp olive oil",
-          "3 tbsp green pesto",
-          "Grated parmesan or vegetarian hard cheese, to serve",
-          "Handful of spinach (optional)"
-        ],
-        "serves": "4 (2 adults, 2 kids)",
-        "steps": [
-          "Heat the air fryer to 200°C.",
-          "Toss the gnocchi, courgette and cherry tomatoes in the oil with a pinch of salt.",
-          "Air fry for 12–15 minutes, shaking the basket every 5 minutes, until the gnocchi is golden and crisp and the tomatoes have burst. (Do it in two batches if your basket is small.)",
-          "Tip into a big bowl and toss with the pesto, and the spinach if using.",
-          "Serve with cheese on top."
-        ],
-        "tip": "Mathilda: give her some plain crispy gnocchi and tomatoes before the pesto goes in, with a little cheese."
-      }
-    },
     "2026-11-12": {
       "meal": "Creamy salmon & pea pasta",
       "note": "Mathilda's Scotter Primary open day this morning — evening's free, nothing on for tea",
@@ -917,29 +897,11 @@ var RecipeKit = (function(){
       }
     },
     "2026-11-14": {
-      "meal": "Air-fryer cheesy bean quesadillas with salsa",
-      "note": "Hockey open session this morning, girls day and Francis's party (3–5pm) today. Jess is out for pizza with friends in the evening — quesadillas take 10 minutes for whoever's at home.",
-      "kind": "veg",
-      "method": "air-fryer",
-      "time": "5 min prep · 8 min cook",
-      "recipe": {
-        "ingredients": [
-          "8 tortilla wraps",
-          "400g tin black beans, drained and lightly mashed",
-          "Small tin sweetcorn, drained",
-          "200g cheddar, grated",
-          "1 tsp smoked paprika or mild fajita seasoning (optional)",
-          "Salsa, and cucumber sticks, to serve"
-        ],
-        "serves": "4 (2 adults, 2 kids)",
-        "steps": [
-          "Mix the mashed beans, sweetcorn and paprika.",
-          "Spread the bean mix over 4 tortillas, top with the cheese and put the other 4 tortillas on top.",
-          "Air fry one at a time at 190°C for 4 minutes, flip and cook for 3–4 minutes more until golden and melted (pop a metal rack or a toothpick on top so the lid doesn't blow off). Or dry-fry in a pan for 2–3 minutes a side.",
-          "Cut into wedges and serve with salsa and cucumber sticks."
-        ],
-        "tip": "Mathilda: leave the paprika out of hers and cut it into small triangles. You can fill them in the morning and keep them in the fridge, so it's just cooking when you're back."
-      }
+      "meal": "No tea needed — everyone's out",
+      "note": "Jess out for pizza with friends, Alex working away, kids at their grandparents'.",
+      "kind": "out",
+      "method": "no-cook",
+      "time": "No cooking"
     },
     "2026-11-15": {
       "meal": "Bolognese (meal-drawer batch)",
@@ -1194,7 +1156,7 @@ var RecipeKit = (function(){
     },
     {
       "cat": "Dairy",
-      "name": "Cheddar (300g block)"
+      "name": "Cheddar (small block, if low)"
     },
     {
       "cat": "Dairy",
@@ -1214,18 +1176,6 @@ var RecipeKit = (function(){
     },
     {
       "cat": "Cupboard",
-      "name": "Tortilla wraps (pack of 8)"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Black beans (1 x 400g tin)"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Salsa (jar)"
-    },
-    {
-      "cat": "Cupboard",
       "name": "Chopped tomatoes (4 x 400g tins)"
     },
     {
@@ -1242,7 +1192,7 @@ var RecipeKit = (function(){
     },
     {
       "cat": "Cupboard",
-      "name": "Sweetcorn (2 tins, or a bag of frozen)"
+      "name": "Sweetcorn (1 tin, or a bag of frozen)"
     },
     {
       "cat": "Other",
