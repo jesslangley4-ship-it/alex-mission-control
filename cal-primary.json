@@ -1,20 +1,6 @@
 {
  "events": [
   {
-   "summary": "Francis - Hull Hockey Training",
-   "start": {
-    "dateTime": "2026-11-17T18:00:00Z",
-    "timeZone": "Europe/London"
-   },
-   "end": {
-    "dateTime": "2026-11-17T19:00:00Z",
-    "timeZone": "Europe/London"
-   },
-   "status": "confirmed",
-   "location": "Hymers College, Hymers Avenue, Hull HU3 1LW",
-   "eventType": "DEFAULT"
-  },
-  {
    "summary": "Asthma nurse",
    "start": {
     "dateTime": "2026-11-18T09:30:00Z",
@@ -53,6 +39,20 @@
    },
    "status": "confirmed",
    "location": "The Lindum",
+   "eventType": "DEFAULT"
+  },
+  {
+   "summary": "Industry Insider Event: Cyber Careers Uncovered",
+   "start": {
+    "dateTime": "2026-11-19T12:00:00Z",
+    "timeZone": "Europe/Lisbon"
+   },
+   "end": {
+    "dateTime": "2026-11-19T13:00:00Z",
+    "timeZone": "Europe/Lisbon"
+   },
+   "status": "confirmed",
+   "location": "Microsoft Teams Meeting",
    "eventType": "DEFAULT"
   }
  ]
