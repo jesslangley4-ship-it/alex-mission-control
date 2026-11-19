@@ -1,11 +1,11 @@
 [
  {
   "cat": "Veg",
-  "name": "Onions (4)"
+  "name": "Onions (3)"
  },
  {
   "cat": "Veg",
-  "name": "Garlic (1-2 bulbs, about 8 cloves)"
+  "name": "Garlic (4 cloves)"
  },
  {
   "cat": "Veg",
@@ -17,39 +17,19 @@
  },
  {
   "cat": "Veg",
+  "name": "Leeks (2)"
+ },
+ {
+  "cat": "Veg",
   "name": "New potatoes (500g)"
  },
  {
   "cat": "Veg",
-  "name": "Potatoes (900g, for mash)"
+  "name": "Potatoes, for mash (900g)"
  },
  {
   "cat": "Veg",
-  "name": "Courgette (1)"
- },
- {
-  "cat": "Veg",
-  "name": "Aubergine (1)"
- },
- {
-  "cat": "Veg",
-  "name": "Mixed peppers (3)"
- },
- {
-  "cat": "Veg",
-  "name": "Cherry tomatoes (1 pack)"
- },
- {
-  "cat": "Veg",
-  "name": "Bag of salad"
- },
- {
-  "cat": "Veg",
-  "name": "Cucumber"
- },
- {
-  "cat": "Veg",
-  "name": "Sweet potatoes (2)"
+  "name": "Green beans (200g)"
  },
  {
   "cat": "Veg",
@@ -61,15 +41,23 @@
  },
  {
   "cat": "Veg",
-  "name": "Frozen peas (300g)"
+  "name": "Broccoli (1 head)"
  },
  {
-  "cat": "Fish/meat",
-  "name": "Haddock fillets (4)"
+  "cat": "Veg",
+  "name": "Fresh ginger (1 knob)"
  },
  {
-  "cat": "Fish/meat",
-  "name": "Beef mince (1kg)"
+  "cat": "Veg",
+  "name": "Frozen peas (200g)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Spinach (200g)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Mushrooms (300g)"
  },
  {
   "cat": "Fish/meat",
@@ -77,7 +65,15 @@
  },
  {
   "cat": "Fish/meat",
-  "name": "Mixed fish for the pie — salmon, smoked haddock & raw king prawns (600g total)"
+  "name": "Chicken thighs, boneless (6)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Salmon fillets (2)"
+ },
+ {
+  "cat": "Fish/meat",
+  "name": "Breaded fish fillets (4)"
  },
  {
   "cat": "Dairy",
@@ -85,39 +81,27 @@
  },
  {
   "cat": "Dairy",
-  "name": "Milk (for the fish pie, if low)"
+  "name": "Milk (for the pasta bake & mash, if low)"
  },
  {
   "cat": "Dairy",
-  "name": "Mozzarella (250g grated, or 2 balls)"
+  "name": "Cheddar (150g)"
  },
  {
   "cat": "Dairy",
-  "name": "Cheddar (small block, if low)"
- },
- {
-  "cat": "Dairy",
-  "name": "Feta (100g)"
- },
- {
-  "cat": "Dairy",
-  "name": "Parmesan or vegetarian hard cheese (if low)"
+  "name": "Crème fraîche (150ml)"
  },
  {
   "cat": "Cupboard",
-  "name": "Pizza bases (4), or large naan"
+  "name": "Breadcrumbs (50g, panko or blitzed stale bread)"
  },
  {
   "cat": "Cupboard",
-  "name": "Passata or pizza sauce (small carton or jar)"
+  "name": "Chickpeas (2 x 400g tins)"
  },
  {
   "cat": "Cupboard",
-  "name": "Chopped tomatoes (4 x 400g tins)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Spaghetti (800g)"
+  "name": "Chopped tomatoes (2 x 400g tins)"
  },
  {
   "cat": "Cupboard",
@@ -125,15 +109,23 @@
  },
  {
   "cat": "Cupboard",
+  "name": "Cornflour (small, if low)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Rice (900g)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Pasta (350g, penne or fusilli)"
+ },
+ {
+  "cat": "Cupboard",
   "name": "Butter beans (2 x 400g tins)"
  },
  {
   "cat": "Cupboard",
-  "name": "Sweetcorn (1 tin, or a bag of frozen)"
- },
- {
-  "cat": "Other",
-  "name": "Crusty bread (1 loaf)"
+  "name": "Dijon mustard (small jar, if low)"
  },
  {
   "cat": "Cupboard",
@@ -142,5 +134,9 @@
  {
   "cat": "Cupboard",
   "name": "Tinned sweetcorn"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Ketchup or tartare sauce"
  }
 ]

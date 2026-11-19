@@ -1,36 +1,4 @@
 {
- "2026-11-17": {
-  "meal": "Slow-cooker Mediterranean vegetable stew with butter beans & feta",
-  "note": "Hull hockey training 6-7pm (Hymers College) plus travel — slow cooker on by 9am so tea's ready for whoever's not driving, kept warm for the rest. Alex still away.",
-  "kind": "veg",
-  "method": "slow-cooker",
-  "time": "15 min prep · 6-7 hr low",
-  "recipe": {
-   "ingredients": [
-    "1 tbsp olive oil",
-    "1 onion, chopped",
-    "2 garlic cloves, crushed",
-    "1 courgette, chunked",
-    "1 aubergine, chunked",
-    "2 mixed peppers, chunked",
-    "2 x 400g tins butter beans, drained",
-    "400g tin chopped tomatoes",
-    "1 tbsp tomato purée",
-    "1 tsp dried oregano",
-    "100g feta, crumbled",
-    "Crusty bread, to serve"
-   ],
-   "serves": "4 (2 adults, 2 kids)",
-   "steps": [
-    "Put the onion, garlic, courgette, aubergine and peppers into the slow cooker.",
-    "Add the butter beans, chopped tomatoes, tomato purée and oregano. Stir well and season.",
-    "Cover and cook on low for 6-7 hours (or high for 3-4), until the veg is tender.",
-    "Take out Mathilda's portion and set aside before crumbling the feta over the rest.",
-    "Serve with crusty bread."
-   ],
-   "tip": "On by 9am before the school run. Mathilda: keep hers plain without the feta, and mash a few of the veg chunks if she's fussy about texture."
-  }
- },
  "2026-11-18": {
   "meal": "Air-fryer peri-peri cod with sweet potato wedges & corn",
   "note": "Dentist appointment for all three of you 4-5pm, then straight into Hockey Academy Night 6:15-7:45pm — air fryer gets tea done fast in the gap between.",
@@ -83,6 +51,201 @@
     "Bake for 25-30 minutes (20 minutes for Mathilda's smaller dish), until golden on top and piping hot all the way through — check the fish is cooked and opaque before serving."
    ],
    "tip": "Mathilda: check carefully for bones and let her portion cool a little before serving, as it comes out hotter than it looks."
+  }
+ },
+ "2026-11-20": {
+  "meal": "Baked cod with lemon & herb crumb, new potatoes & green beans",
+  "note": "Gymnastics 9:30am, swimming 1:30pm, and the Pink Pig this morning — evening's free, a family favourite to finish the day.",
+  "kind": "fish",
+  "method": "oven",
+  "time": "10 min prep · 25 min cook",
+  "recipe": {
+   "ingredients": [
+    "4 cod fillets",
+    "50g breadcrumbs (panko or blitzed stale bread)",
+    "Zest of 1 lemon, plus wedges",
+    "Small handful fresh parsley, chopped (or 1 tsp dried)",
+    "25g butter, melted",
+    "500g new potatoes, halved",
+    "200g green beans"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Boil the new potatoes for 15 minutes until tender.",
+    "Mix the breadcrumbs, lemon zest, parsley, melted butter and a pinch of salt.",
+    "Put the cod on a lined tray and press the crumb on top.",
+    "Bake for 12–15 minutes, until the crumb is golden and the fish flakes.",
+    "Cook the beans for the last 4 minutes of the potatoes. Serve with lemon wedges."
+   ],
+   "tip": "Air fryer instead: 180°C for 10–12 minutes. Flake Mathilda's portion and check carefully for bones."
+  }
+ },
+ "2026-11-21": {
+  "meal": "Slow-cooker chicken casserole",
+  "note": "This week's one meat night. Hockey open session 9:15am then the away match at Chesterfield (KO 10am) — long round trip, so the slow cooker's on by 9am and tea's ready whenever you're back.",
+  "kind": "meat",
+  "method": "slow-cooker",
+  "time": "15 min prep · 6–7 hr low",
+  "recipe": {
+   "ingredients": [
+    "6 boneless chicken thighs",
+    "1 onion, chopped",
+    "2 carrots, sliced",
+    "2 celery sticks, sliced",
+    "2 leeks, sliced",
+    "400g tin chopped tomatoes",
+    "500ml chicken stock",
+    "1 tbsp tomato purée",
+    "1 tsp dried thyme",
+    "1 tbsp cornflour, mixed with a splash of water",
+    "Crusty bread or mash, to serve"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Put the onion, carrots, celery and leeks into the slow cooker.",
+    "Add the chicken thighs on top, then the tomatoes, stock, tomato purée and thyme. Season.",
+    "Cover and cook on low for 6–7 hours (or high for 3–4) until the chicken is tender and falling apart.",
+    "About 20 minutes before serving, stir in the cornflour slurry to thicken, and shred the chicken through the sauce.",
+    "Serve with crusty bread or mash."
+   ],
+   "tip": "On by 9am before you head off. Mathilda: mash her portion with a fork and check for bones. Freeze any leftovers fully cooled, portioned and labelled for the meal drawer."
+  }
+ },
+ "2026-11-22": {
+  "meal": "Veggie chickpea & spinach curry with rice",
+  "note": "Free day — a good one to batch-cook extra for Wednesday's Hockey Academy Night.",
+  "kind": "veg",
+  "method": "hob",
+  "time": "10 min prep · 25 min cook",
+  "recipe": {
+   "ingredients": [
+    "1 tbsp vegetable oil",
+    "1 onion, chopped",
+    "2 garlic cloves, crushed",
+    "1 tsp fresh ginger, grated",
+    "2 tsp curry powder (mild)",
+    "1 tsp ground cumin",
+    "2 x 400g tins chickpeas, drained",
+    "400g tin chopped tomatoes",
+    "200ml vegetable stock",
+    "200g spinach",
+    "300g basmati rice, to serve"
+   ],
+   "serves": "4 tonight + 4 portions for Wednesday",
+   "steps": [
+    "Soften the onion in the oil for 5 minutes. Add the garlic, ginger, curry powder and cumin and cook for 1 minute.",
+    "Add the chickpeas, chopped tomatoes and stock. Simmer for 15 minutes, stirring now and then.",
+    "Take out Mathilda's portion and 4 portions to cool for Wednesday before seasoning the rest.",
+    "Stir the spinach into the remainder and cook for 3–4 minutes until wilted.",
+    "Cook the rice and serve with the curry.",
+    "Cool Wednesday's 4 portions within an hour, cover and keep in the fridge."
+   ],
+   "tip": "Mathilda: keep hers mild — no curry powder in her portion, just the chickpeas and veg."
+  }
+ },
+ "2026-11-23": {
+  "meal": "Salmon & broccoli pasta bake",
+  "note": "Nursery photo day for Mathilda this morning — evening's free, a new one to try.",
+  "kind": "fish",
+  "method": "oven",
+  "time": "15 min prep · 20 min bake",
+  "recipe": {
+   "ingredients": [
+    "350g pasta (penne or fusilli)",
+    "2 salmon fillets, skin removed",
+    "1 head broccoli, cut into small florets",
+    "25g butter",
+    "25g plain flour",
+    "450ml milk",
+    "100g grated cheddar, plus extra for the topping",
+    "1 tsp Dijon mustard (optional)"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Cook the pasta 2 minutes less than the pack says, then drain.",
+    "Steam or boil the broccoli for 3–4 minutes until just tender, then drain.",
+    "Put the salmon in a pan, cover with the milk and poach gently for 6–8 minutes until just cooked. Lift out the salmon and flake it, keeping the milk.",
+    "Melt the butter in a pan, stir in the flour for 1 minute, then gradually whisk in the reserved milk. Simmer for 3–4 minutes until thickened, then stir in most of the cheese and the mustard.",
+    "Mix the pasta, broccoli and flaked salmon into the sauce. Take out Mathilda's portion now, checking carefully for stray bones.",
+    "Tip into an ovenproof dish, scatter over the rest of the cheese, and bake for 15–20 minutes until bubbling and golden."
+   ],
+   "tip": "Mathilda: flake her salmon extra small and double-check for bones before mixing it through her portion."
+  }
+ },
+ "2026-11-24": {
+  "meal": "Air-fryer breaded fish fillets with mash, peas & sweetcorn",
+  "note": "Hull hockey training 6–7pm (Hymers College) plus travel — air fryer gets tea done fast either side.",
+  "kind": "fish",
+  "method": "air-fryer",
+  "time": "5 min prep · 15 min cook",
+  "recipe": {
+   "ingredients": [
+    "4 breaded fish fillets",
+    "4 servings mash (fresh potatoes, or microwave pouches for speed)",
+    "200g frozen peas",
+    "198g tin or frozen sweetcorn",
+    "Butter & milk, for the mash (if making fresh)"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Air fry the fish fillets at 190°C for 12–14 minutes, turning halfway, until golden and piping hot.",
+    "If making fresh mash, boil chunked potatoes for 15 minutes, drain, then mash with butter and a splash of milk.",
+    "Cook the peas and sweetcorn in a pan of boiling water for 4–5 minutes, or microwave.",
+    "Drain and serve everything together."
+   ],
+   "tip": "Mathilda: cut her fillet into pieces and check it's not too hot. Microwave mash pouches work well if it's been a long day."
+  }
+ },
+ "2026-11-25": {
+  "meal": "Reheat: Sunday's chickpea & spinach curry with rice",
+  "note": "Hockey Academy Night 6:15–7:45pm (The Lindum) — quick reheat gets tea done either side of the run.",
+  "kind": "veg",
+  "method": "reheat",
+  "time": "5 min prep · 10 min",
+  "recipe": {
+   "ingredients": [
+    "4 portions of Sunday's chickpea & spinach curry (from the fridge)",
+    "300g rice"
+   ],
+   "serves": "4",
+   "steps": [
+    "Tip the curry into a pan with a splash of water.",
+    "Heat gently, stirring, until bubbling and piping hot all the way through (about 8–10 minutes). Or microwave in a covered bowl for 4–5 minutes, stirring halfway.",
+    "Cook the rice while the curry heats.",
+    "Serve straightaway."
+   ],
+   "tip": "Only reheat it once, and check it's piping hot all the way through before serving. Anyone back late from Academy Night can have theirs microwaved separately."
+  }
+ },
+ "2026-11-26": {
+  "meal": "Creamy mushroom & butter bean stroganoff with rice",
+  "note": "Free evening, nothing on for tea — a new one to try to round off the week.",
+  "kind": "veg",
+  "method": "hob",
+  "time": "10 min prep · 20 min cook",
+  "recipe": {
+   "ingredients": [
+    "1 tbsp olive oil, plus a knob of butter",
+    "1 onion, chopped",
+    "300g mushrooms, sliced",
+    "2 garlic cloves, crushed",
+    "1 tsp paprika",
+    "2 x 400g tins butter beans, drained",
+    "200ml vegetable stock",
+    "150ml crème fraîche",
+    "300g rice, to serve",
+    "Small handful fresh parsley, chopped (optional)"
+   ],
+   "serves": "4 (2 adults, 2 kids)",
+   "steps": [
+    "Soften the onion in the oil and butter for 5 minutes. Add the mushrooms and cook for 5–6 minutes until golden.",
+    "Add the garlic and paprika and cook for 1 minute.",
+    "Stir in the butter beans and stock and simmer for 8–10 minutes until slightly thickened.",
+    "Take out Mathilda's portion now, keeping hers plain.",
+    "Stir the crème fraîche through the rest and warm gently for 2–3 minutes — don't let it boil hard or it can split.",
+    "Cook the rice while the sauce finishes. Serve the stroganoff over rice, scattered with parsley."
+   ],
+   "tip": "Mathilda: keep hers without the paprika, and mash a few of the butter beans if she's fussy about texture."
   }
  }
 }
