@@ -783,8 +783,8 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-11-19T06:07:50.597Z",
-    "forDate": "2026-11-19",
+    "updatedISO": "2026-11-20T06:07:56.969Z",
+    "forDate": "2026-11-20",
     "alexStatus": "normal",
     "alexToday": [
         {
@@ -804,9 +804,21 @@ var RecipeKit = (function(){
     ],
     "mumUnusual": null,
     "francisToday": [],
-    "francisTomorrow": [],
-    "mathildaToday": [],
-    "mathildaTomorrow": [
+    "francisTomorrow": [
+        {
+            "time": "09:15",
+            "title": "Francis - Hockey U10/U12 Open Session",
+            "loc": "The Lindum",
+            "allDay": false
+        },
+        {
+            "time": "10:00",
+            "title": "Francis: Lindum Hockey vs Chesterfield (Away)",
+            "loc": "St Mary's RC High School, S41 8AG",
+            "allDay": false
+        }
+    ],
+    "mathildaToday": [
         {
             "time": "09:30",
             "title": "Gymnastics",
@@ -819,7 +831,8 @@ var RecipeKit = (function(){
             "loc": "Emmerson Pool Hire",
             "allDay": false
         }
-    ]
+    ],
+    "mathildaTomorrow": []
 };
 
   /* ---- Meal plan — mirror of the Tea Planner (the family's source of truth).
@@ -827,31 +840,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-11-18": {
-      "meal": "Air-fryer peri-peri cod with sweet potato wedges & corn",
-      "note": "Dentist appointment for all three of you 4-5pm, then straight into Hockey Academy Night 6:15-7:45pm — air fryer gets tea done fast in the gap between.",
-      "kind": "fish",
-      "method": "air-fryer",
-      "time": "5 min prep · 20 min cook",
-      "recipe": {
-        "ingredients": [
-          "4 cod fillets",
-          "1 tbsp olive oil",
-          "1-2 tsp peri-peri seasoning (to taste, for the grown-ups' portions)",
-          "2 sweet potatoes, cut into wedges",
-          "198g tin or frozen sweetcorn"
-        ],
-        "serves": "4 (2 adults, 2 kids)",
-        "steps": [
-          "Heat the air fryer to 200°C. Toss the sweet potato wedges in half the oil and a pinch of salt, and air fry for 12 minutes.",
-          "Meanwhile rub the cod with the rest of the oil. Keep 1-2 fillets completely plain for the kids, and rub peri-peri seasoning onto the grown-ups' fillets only.",
-          "Add the cod to the air fryer basket alongside the wedges and cook for a further 8-10 minutes, until the fish is opaque and flakes easily and the wedges are crisp.",
-          "Heat the sweetcorn in a small pan or the microwave for 3-4 minutes.",
-          "Serve the cod and wedges with the sweetcorn."
-        ],
-        "tip": "Mathilda: keep her cod and wedges completely plain, no peri-peri. Ready in 20 minutes either side of the dentist/hockey run."
-      }
-    },
     "2026-11-19": {
       "meal": "Fish pie with mashed potato topping",
       "note": "Free evening, nothing on for tea — a cosy one to round off the week.",
