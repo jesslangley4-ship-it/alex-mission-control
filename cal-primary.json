@@ -1,31 +1,27 @@
 {
  "events": [
   {
-   "summary": "Francis - Hockey U10/U12 Open Session",
+   "summary": "Nursery Photo Day (Eddie Nolan photographer)",
    "start": {
-    "dateTime": "2026-11-21T09:15:00Z",
-    "timeZone": "Europe/London"
+    "date": "2026-11-23"
    },
    "end": {
-    "dateTime": "2026-11-21T10:15:00Z",
-    "timeZone": "Europe/London"
+    "date": "2026-11-24"
    },
    "status": "confirmed",
-   "location": "The Lindum",
    "eventType": "DEFAULT"
   },
   {
-   "summary": "Francis: Lindum Hockey vs Chesterfield (Away)",
+   "summary": "Water the plants",
    "start": {
-    "dateTime": "2026-11-21T10:00:00Z",
+    "dateTime": "2026-11-23T08:00:00Z",
     "timeZone": "Europe/London"
    },
    "end": {
-    "dateTime": "2026-11-21T11:00:00Z",
+    "dateTime": "2026-11-23T08:00:00Z",
     "timeZone": "Europe/London"
    },
    "status": "confirmed",
-   "location": "St Mary's RC High School, S41 8AG",
    "eventType": "DEFAULT"
   }
  ]
