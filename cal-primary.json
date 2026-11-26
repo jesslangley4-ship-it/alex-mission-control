@@ -1,55 +1,31 @@
 {
  "events": [
   {
-   "summary": "Mathilda: off nursery (unwell)",
+   "summary": "Gymnastics",
    "start": {
-    "date": "2026-11-25"
+    "dateTime": "2026-11-27T09:30:00Z",
+    "timeZone": "Europe/London"
    },
    "end": {
-    "date": "2026-11-26"
+    "dateTime": "2026-11-27T10:30:00Z",
+    "timeZone": "Europe/London"
    },
    "status": "confirmed",
+   "location": "Allegro Gymnastics Academy",
    "eventType": "DEFAULT"
   },
   {
-   "summary": "Francis: Lunchtime detention (room 33)",
+   "summary": "Swimming",
    "start": {
-    "dateTime": "2026-11-25T12:50:00Z",
+    "dateTime": "2026-11-27T13:30:00Z",
     "timeZone": "Europe/London"
    },
    "end": {
-    "dateTime": "2026-11-25T13:20:00Z",
+    "dateTime": "2026-11-27T14:30:00Z",
     "timeZone": "Europe/London"
    },
    "status": "confirmed",
-   "eventType": "DEFAULT"
-  },
-  {
-   "summary": "Francis - Hockey Academy Night (U10/U12)",
-   "start": {
-    "dateTime": "2026-11-25T18:15:00Z",
-    "timeZone": "Europe/London"
-   },
-   "end": {
-    "dateTime": "2026-11-25T19:45:00Z",
-    "timeZone": "Europe/London"
-   },
-   "status": "confirmed",
-   "location": "The Lindum",
-   "eventType": "DEFAULT"
-  },
-  {
-   "summary": "Francis: YPH Nutrition Education session (online, players &amp; parents)",
-   "start": {
-    "dateTime": "2026-11-25T19:00:00Z",
-    "timeZone": "Europe/London"
-   },
-   "end": {
-    "dateTime": "2026-11-25T20:00:00Z",
-    "timeZone": "Europe/London"
-   },
-   "status": "confirmed",
-   "location": "Online — Microsoft Teams",
+   "location": "Emmerson Pool Hire",
    "eventType": "DEFAULT"
   }
  ]

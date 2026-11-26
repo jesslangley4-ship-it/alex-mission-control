@@ -783,8 +783,8 @@ var RecipeKit = (function(){
      so this is filled in by whoever refreshes the snapshot each night —
      null/empty means "nothing unusual, ordinary day". ---- */
   var SNAPSHOT = {
-    "updatedISO": "2026-11-25T06:06:59.714Z",
-    "forDate": "2026-11-25",
+    "updatedISO": "2026-11-26T06:06:59.020Z",
+    "forDate": "2026-11-26",
     "alexStatus": "normal",
     "alexToday": [
         {
@@ -803,24 +803,23 @@ var RecipeKit = (function(){
         }
     ],
     "mumUnusual": null,
-    "francisToday": [
+    "francisToday": [],
+    "francisTomorrow": [],
+    "mathildaToday": [],
+    "mathildaTomorrow": [
         {
-            "time": "18:15",
-            "title": "Francis - Hockey Academy Night (U10/U12)",
-            "loc": "The Lindum",
+            "time": "09:30",
+            "title": "Gymnastics",
+            "loc": "Allegro Gymnastics Academy",
+            "allDay": false
+        },
+        {
+            "time": "13:30",
+            "title": "Swimming",
+            "loc": "Emmerson Pool Hire",
             "allDay": false
         }
-    ],
-    "francisTomorrow": [],
-    "mathildaToday": [
-        {
-            "time": null,
-            "title": "Mathilda: off nursery (unwell)",
-            "loc": "",
-            "allDay": true
-        }
-    ],
-    "mathildaTomorrow": []
+    ]
 };
 
   /* ---- Meal plan — mirror of the Tea Planner (the family's source of truth).
@@ -828,30 +827,6 @@ var RecipeKit = (function(){
          writes from the planner, recipes included.
          Any date not in this map shows "Nothing planned yet". ---- */
   var WEEK_MEAL_PLAN = {
-    "2026-11-24": {
-      "meal": "Air-fryer breaded fish fillets with mash, peas & sweetcorn",
-      "note": "Hull hockey training 6–7pm (Hymers College) plus travel — air fryer gets tea done fast either side.",
-      "kind": "fish",
-      "method": "air-fryer",
-      "time": "5 min prep · 15 min cook",
-      "recipe": {
-        "ingredients": [
-          "4 breaded fish fillets",
-          "4 servings mash (fresh potatoes, or microwave pouches for speed)",
-          "200g frozen peas",
-          "198g tin or frozen sweetcorn",
-          "Butter & milk, for the mash (if making fresh)"
-        ],
-        "serves": "4 (2 adults, 2 kids)",
-        "steps": [
-          "Air fry the fish fillets at 190°C for 12–14 minutes, turning halfway, until golden and piping hot.",
-          "If making fresh mash, boil chunked potatoes for 15 minutes, drain, then mash with butter and a splash of milk.",
-          "Cook the peas and sweetcorn in a pan of boiling water for 4–5 minutes, or microwave.",
-          "Drain and serve everything together."
-        ],
-        "tip": "Mathilda: cut her fillet into pieces and check it's not too hot. Microwave mash pouches work well if it's been a long day."
-      }
-    },
     "2026-11-25": {
       "meal": "Reheat: Sunday's chickpea & spinach curry with rice",
       "note": "Hockey Academy Night 6:15–7:45pm (The Lindum) — quick reheat gets tea done either side of the run.",
@@ -903,6 +878,184 @@ var RecipeKit = (function(){
         ],
         "tip": "Mathilda: keep hers without the paprika, and mash a few of the butter beans if she's fussy about texture."
       }
+    },
+    "2026-11-27": {
+      "meal": "Veggie bean chilli (double batch)",
+      "note": "Gymnastics 9:30am & swimming 1:30pm today, evening's free — good day to batch-cook extra for Monday's parents' evening",
+      "kind": "veg",
+      "method": "hob",
+      "time": "15 min prep · 30 min simmer",
+      "recipe": {
+        "ingredients": [
+          "2 tbsp olive oil",
+          "2 onions, chopped",
+          "3 garlic cloves, crushed",
+          "2 red peppers, sliced",
+          "2 tsp ground cumin",
+          "1 tsp smoked paprika",
+          "1/2–1 tsp chilli flakes (to taste)",
+          "4 x 400g tins kidney beans, drained",
+          "2 x 400g tins black beans, drained",
+          "4 x 400g tins chopped tomatoes",
+          "2 tbsp tomato purée",
+          "300g rice, to serve",
+          "Grated cheese & soured cream, to serve (optional)"
+        ],
+        "serves": "4 tonight + 4 portions for Monday",
+        "steps": [
+          "Soften the onions and peppers in the oil in a large pan for 8 minutes.",
+          "Add the garlic, cumin and paprika and cook for 1 minute.",
+          "Stir in the beans, chopped tomatoes and tomato purée. Season, cover and simmer for 25-30 minutes, stirring now and then, until thick.",
+          "Take out Mathilda's portion, plus 4 portions to cool for Monday, before stirring the chilli flakes through the rest.",
+          "Cook the rice for 15 minutes before serving. Serve tonight's chilli over rice with cheese and soured cream if using.",
+          "Cool Monday's 4 portions within an hour, then cover and keep in the fridge (no need to freeze for just 3 days)."
+        ],
+        "tip": "Mathilda: take hers out before the chilli flakes go in and keep it mild. These fridge portions make Monday's parents'-evening tea a no-cook reheat."
+      }
+    },
+    "2026-11-28": {
+      "meal": "Eating out",
+      "note": "Sarah's engagement party 6-7pm — tea out tonight, no cooking. Alex back from CYCLONE and onto Christmas leave.",
+      "kind": "out",
+      "method": "no-cook",
+      "time": "No cooking"
+    },
+    "2026-11-29": {
+      "meal": "Slow-cooker gammon with parsley sauce, mash & peas",
+      "note": "This week's one meat night. Francis's hockey fixture today (time still TBC) — slow cooker on by 9am so tea's ready whenever you're back",
+      "kind": "meat",
+      "method": "slow-cooker",
+      "time": "10 min prep · 5-6 hr low",
+      "recipe": {
+        "ingredients": [
+          "1kg unsmoked gammon joint",
+          "1 onion, halved",
+          "2 bay leaves",
+          "500ml water or weak chicken stock",
+          "25g butter",
+          "25g plain flour",
+          "300ml milk",
+          "2 tbsp fresh parsley, chopped (or 1 tbsp dried)",
+          "Potatoes, for mash",
+          "300g frozen peas"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Put the gammon, onion and bay leaves in the slow cooker and pour over the water or stock.",
+          "Cover and cook on low for 5-6 hours, until the gammon is tender and shreds easily.",
+          "Lift out the gammon, rest for 5 minutes, then slice or shred, discarding any string and excess fat.",
+          "For the sauce, melt the butter in a pan, stir in the flour for 1 minute, then gradually whisk in the milk. Simmer for 3-4 minutes until thickened, then stir in the parsley.",
+          "Boil and mash the potatoes. Cook the peas for 4-5 minutes.",
+          "Serve the gammon with mash, peas and parsley sauce."
+        ],
+        "tip": "Mathilda: rinse her portion briefly if the gammon's salty, and go light on the sauce."
+      }
+    },
+    "2026-11-30": {
+      "meal": "Reheat: Friday's veggie bean chilli with rice",
+      "note": "Preschool Parents' Evening 6-7:30pm — quick reheat gets tea done before you head out",
+      "kind": "veg",
+      "method": "reheat",
+      "time": "5 min prep · 10 min",
+      "recipe": {
+        "ingredients": [
+          "4 portions of Friday's veggie bean chilli (from the fridge)",
+          "300g rice"
+        ],
+        "serves": "4",
+        "steps": [
+          "Tip the chilli into a pan with a splash of water.",
+          "Heat gently, stirring, until bubbling and piping hot all the way through (about 8-10 minutes). Or microwave in a covered bowl for 4-5 minutes, stirring halfway.",
+          "Cook the rice while the chilli heats.",
+          "Serve straightaway, with cheese or soured cream if there's any left."
+        ],
+        "tip": "Only reheat it once, and check it's piping hot all the way through before you head out the door."
+      }
+    },
+    "2026-12-01": {
+      "meal": "Air-fryer frozen fishcakes with mash & peas",
+      "note": "Hull hockey training 6-7pm (Hymers College) plus travel — air fryer gets tea done fast either side",
+      "kind": "fish",
+      "method": "air-fryer",
+      "time": "5 min prep · 15 min cook",
+      "recipe": {
+        "ingredients": [
+          "8 frozen fishcakes",
+          "4 servings mash (fresh potatoes, or microwave pouches for speed)",
+          "200g frozen peas",
+          "Butter & milk, for the mash (if making fresh)"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Air fry the fishcakes at 190°C for 12-15 minutes, turning halfway, until golden and piping hot all the way through (check the pack for exact timing).",
+          "If making fresh mash, boil chunked potatoes for 15 minutes, drain, then mash with butter and a splash of milk.",
+          "Cook the peas in a pan of boiling water for 4-5 minutes, or microwave.",
+          "Drain and serve everything together."
+        ],
+        "tip": "Mathilda: cut hers into pieces and check it's piping hot through the middle before serving. Microwave mash pouches work well on a short turnaround."
+      }
+    },
+    "2026-12-02": {
+      "meal": "Air-fryer halloumi, pepper & courgette wraps with tzatziki",
+      "note": "Hockey Academy Night 6:15-7:45pm (The Lindum) — a new one to try, ready in 20 minutes either side of the run",
+      "kind": "veg",
+      "method": "air-fryer",
+      "time": "10 min prep · 15 min cook",
+      "recipe": {
+        "ingredients": [
+          "2 x 225g blocks halloumi, cut into thick strips",
+          "2 peppers, sliced",
+          "1 courgette, sliced",
+          "1 tbsp olive oil",
+          "1 tsp dried oregano",
+          "4 large flatbreads or wraps",
+          "150g Greek yoghurt",
+          "1/4 cucumber, grated and squeezed dry",
+          "1 garlic clove, crushed",
+          "Squeeze of lemon",
+          "Handful salad leaves"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Heat the air fryer to 200°C. Toss the peppers and courgette in half the oil with the oregano.",
+          "Air fry the veg for 8 minutes, then add the halloumi strips brushed with the rest of the oil. Cook for a further 6-8 minutes, turning halfway, until the veg is tender and the halloumi is golden.",
+          "Meanwhile mix the yoghurt, cucumber, garlic and a squeeze of lemon for the tzatziki. Season.",
+          "Warm the flatbreads in the air fryer for the last minute, or in a dry pan.",
+          "Fill each wrap with salad leaves, the veg and halloumi, then spoon over the tzatziki."
+        ],
+        "tip": "Mathilda: give her plain halloumi and veg with a wrap and a little plain yoghurt on the side, no garlic."
+      }
+    },
+    "2026-12-03": {
+      "meal": "Mediterranean baked cod with cherry tomatoes, olives & couscous",
+      "note": "Free evening — a new one to try to round off the week",
+      "kind": "fish",
+      "method": "oven",
+      "time": "10 min prep · 20 min cook",
+      "recipe": {
+        "ingredients": [
+          "4 cod fillets",
+          "300g cherry tomatoes, halved",
+          "Handful pitted black olives (for the grown-ups)",
+          "2 tbsp olive oil",
+          "2 garlic cloves, crushed",
+          "1 tsp dried oregano",
+          "250g couscous",
+          "300ml hot vegetable stock",
+          "Squeeze of lemon",
+          "Small handful fresh parsley, chopped (optional)"
+        ],
+        "serves": "4 (2 adults, 2 kids)",
+        "steps": [
+          "Heat the oven to 200°C (180°C fan). Put the cherry tomatoes in an ovenproof dish with 1 tbsp of the oil, the garlic and oregano.",
+          "Nestle the cod fillets among the tomatoes and drizzle with the rest of the oil. Season.",
+          "Bake for 15-18 minutes, until the fish flakes easily and the tomatoes have softened. Scatter the olives over the grown-ups' side for the last 5 minutes.",
+          "Put the couscous in a bowl, pour over the hot stock, cover and leave for 5 minutes until absorbed, then fluff with a fork.",
+          "Stir a squeeze of lemon and the parsley through the couscous.",
+          "Serve the cod and tomatoes on the couscous."
+        ],
+        "tip": "Mathilda: keep her portion olive-free and check carefully for bones before serving."
+      }
     }
   };
 
@@ -922,23 +1075,27 @@ var RecipeKit = (function(){
     },
     {
       "cat": "Veg",
-      "name": "Garlic (4 cloves)"
+      "name": "Garlic (6 cloves)"
     },
     {
       "cat": "Veg",
-      "name": "Carrots (2)"
+      "name": "Red peppers (4)"
     },
     {
       "cat": "Veg",
-      "name": "Celery (2 sticks)"
+      "name": "Courgette (1)"
     },
     {
       "cat": "Veg",
-      "name": "Leeks (2)"
+      "name": "Cucumber (1)"
     },
     {
       "cat": "Veg",
-      "name": "New potatoes (500g)"
+      "name": "Cherry tomatoes (300g)"
+    },
+    {
+      "cat": "Veg",
+      "name": "Salad leaves (1 bag)"
     },
     {
       "cat": "Veg",
@@ -946,51 +1103,23 @@ var RecipeKit = (function(){
     },
     {
       "cat": "Veg",
-      "name": "Green beans (200g)"
+      "name": "Fresh parsley (1 pack)"
     },
     {
       "cat": "Veg",
       "name": "Lemon (1)"
     },
     {
-      "cat": "Veg",
-      "name": "Fresh parsley (1 pack)"
+      "cat": "Fish/meat",
+      "name": "Gammon joint, unsmoked (1kg)"
     },
     {
-      "cat": "Veg",
-      "name": "Broccoli (1 head)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Fresh ginger (1 knob)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Frozen peas (200g)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Spinach (200g)"
-    },
-    {
-      "cat": "Veg",
-      "name": "Mushrooms (300g)"
+      "cat": "Fish/meat",
+      "name": "Frozen fishcakes (8)"
     },
     {
       "cat": "Fish/meat",
       "name": "Cod fillets (4)"
-    },
-    {
-      "cat": "Fish/meat",
-      "name": "Chicken thighs, boneless (6)"
-    },
-    {
-      "cat": "Fish/meat",
-      "name": "Salmon fillets (2)"
-    },
-    {
-      "cat": "Fish/meat",
-      "name": "Breaded fish fillets (4)"
     },
     {
       "cat": "Dairy",
@@ -998,27 +1127,35 @@ var RecipeKit = (function(){
     },
     {
       "cat": "Dairy",
-      "name": "Milk (for the pasta bake & mash, if low)"
+      "name": "Milk (300ml, if low)"
+    },
+    {
+      "cat": "Dairy",
+      "name": "Halloumi (2 x 225g blocks)"
+    },
+    {
+      "cat": "Dairy",
+      "name": "Greek yoghurt (150g)"
+    },
+    {
+      "cat": "Dairy",
+      "name": "Soured cream (small tub)"
     },
     {
       "cat": "Dairy",
       "name": "Cheddar (150g)"
     },
     {
-      "cat": "Dairy",
-      "name": "Crème fraîche (150ml)"
+      "cat": "Cupboard",
+      "name": "Kidney beans (4 x 400g tins)"
     },
     {
       "cat": "Cupboard",
-      "name": "Breadcrumbs (50g, panko or blitzed stale bread)"
+      "name": "Black beans (2 x 400g tins)"
     },
     {
       "cat": "Cupboard",
-      "name": "Chickpeas (2 x 400g tins)"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Chopped tomatoes (2 x 400g tins)"
+      "name": "Chopped tomatoes (4 x 400g tins)"
     },
     {
       "cat": "Cupboard",
@@ -1026,23 +1163,19 @@ var RecipeKit = (function(){
     },
     {
       "cat": "Cupboard",
-      "name": "Cornflour (small, if low)"
+      "name": "Rice (600g)"
     },
     {
       "cat": "Cupboard",
-      "name": "Rice (900g)"
+      "name": "Couscous (250g)"
     },
     {
       "cat": "Cupboard",
-      "name": "Pasta (350g, penne or fusilli)"
+      "name": "Black olives (small jar/pack)"
     },
     {
-      "cat": "Cupboard",
-      "name": "Butter beans (2 x 400g tins)"
-    },
-    {
-      "cat": "Cupboard",
-      "name": "Dijon mustard (small jar, if low)"
+      "cat": "Other",
+      "name": "Flatbreads or wraps (4)"
     },
     {
       "cat": "Cupboard",
@@ -1055,6 +1188,14 @@ var RecipeKit = (function(){
     {
       "cat": "Cupboard",
       "name": "Ketchup or tartare sauce"
+    },
+    {
+      "cat": "Other",
+      "name": "Frozen peas"
+    },
+    {
+      "cat": "Dairy",
+      "name": "Parmesan or vegetarian hard cheese"
     }
   ];
 
