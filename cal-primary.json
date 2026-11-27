@@ -27,6 +27,19 @@
    "status": "confirmed",
    "location": "Emmerson Pool Hire",
    "eventType": "DEFAULT"
+  },
+  {
+   "summary": "Sarah engagement party",
+   "start": {
+    "dateTime": "2026-11-28T18:00:00Z",
+    "timeZone": "Europe/London"
+   },
+   "end": {
+    "dateTime": "2026-11-28T19:00:00Z",
+    "timeZone": "Europe/London"
+   },
+   "status": "confirmed",
+   "eventType": "DEFAULT"
   }
  ]
 }

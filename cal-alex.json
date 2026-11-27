@@ -12,6 +12,18 @@
    "colorId": "11",
    "location": "Salisbury",
    "eventType": "DEFAULT"
+  },
+  {
+   "summary": "Christmas Leave",
+   "start": {
+    "date": "2026-11-28"
+   },
+   "end": {
+    "date": "2027-01-04"
+   },
+   "status": "confirmed",
+   "colorId": "5",
+   "eventType": "DEFAULT"
   }
  ]
 }

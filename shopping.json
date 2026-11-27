@@ -1,15 +1,35 @@
 [
  {
   "cat": "Veg",
-  "name": "Onions (3)"
+  "name": "Onions (4)"
  },
  {
   "cat": "Veg",
-  "name": "Garlic (6 cloves)"
+  "name": "Garlic (8 cloves)"
  },
  {
   "cat": "Veg",
   "name": "Red peppers (4)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Sweet potatoes (4)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Carrots (4)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Swede (1)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Celery (2 sticks)"
+ },
+ {
+  "cat": "Veg",
+  "name": "Savoy cabbage or greens (1)"
  },
  {
   "cat": "Veg",
@@ -29,7 +49,7 @@
  },
  {
   "cat": "Veg",
-  "name": "Potatoes, for mash (900g)"
+  "name": "Potatoes, for mash (2.1kg)"
  },
  {
   "cat": "Veg",
@@ -41,15 +61,15 @@
  },
  {
   "cat": "Fish/meat",
-  "name": "Gammon joint, unsmoked (1kg)"
+  "name": "Lean diced braising beef (800g)"
  },
  {
   "cat": "Fish/meat",
-  "name": "Frozen fishcakes (8)"
+  "name": "Frozen fishcakes (10)"
  },
  {
   "cat": "Fish/meat",
-  "name": "Cod fillets (4)"
+  "name": "Large cod fillets (4)"
  },
  {
   "cat": "Dairy",
@@ -57,7 +77,7 @@
  },
  {
   "cat": "Dairy",
-  "name": "Milk (300ml, if low)"
+  "name": "Milk (if low)"
  },
  {
   "cat": "Dairy",
@@ -65,7 +85,7 @@
  },
  {
   "cat": "Dairy",
-  "name": "Greek yoghurt (150g)"
+  "name": "Greek yoghurt (250g)"
  },
  {
   "cat": "Dairy",
@@ -85,19 +105,27 @@
  },
  {
   "cat": "Cupboard",
+  "name": "Chickpeas (2 x 400g tins)"
+ },
+ {
+  "cat": "Cupboard",
   "name": "Chopped tomatoes (4 x 400g tins)"
  },
  {
   "cat": "Cupboard",
-  "name": "Tomato purée (small tube, if low)"
+  "name": "Tomato purée (tube, if low)"
  },
  {
   "cat": "Cupboard",
-  "name": "Rice (600g)"
+  "name": "Worcestershire sauce (if low)"
  },
  {
   "cat": "Cupboard",
-  "name": "Couscous (250g)"
+  "name": "Rice (900g)"
+ },
+ {
+  "cat": "Cupboard",
+  "name": "Couscous (350g)"
  },
  {
   "cat": "Cupboard",
@@ -105,7 +133,7 @@
  },
  {
   "cat": "Other",
-  "name": "Flatbreads or wraps (4)"
+  "name": "Flatbreads or wraps (6)"
  },
  {
   "cat": "Cupboard",
