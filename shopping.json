@@ -1,75 +1,7 @@
 [
  {
   "cat": "Veg",
-  "name": "Onions (4)"
- },
- {
-  "cat": "Veg",
-  "name": "Garlic (8 cloves)"
- },
- {
-  "cat": "Veg",
-  "name": "Red peppers (4)"
- },
- {
-  "cat": "Veg",
-  "name": "Sweet potatoes (4)"
- },
- {
-  "cat": "Veg",
-  "name": "Carrots (4)"
- },
- {
-  "cat": "Veg",
-  "name": "Swede (1)"
- },
- {
-  "cat": "Veg",
-  "name": "Celery (2 sticks)"
- },
- {
-  "cat": "Veg",
-  "name": "Savoy cabbage or greens (1)"
- },
- {
-  "cat": "Veg",
-  "name": "Courgette (1)"
- },
- {
-  "cat": "Veg",
-  "name": "Cucumber (1)"
- },
- {
-  "cat": "Veg",
-  "name": "Cherry tomatoes (300g)"
- },
- {
-  "cat": "Veg",
-  "name": "Salad leaves (1 bag)"
- },
- {
-  "cat": "Veg",
-  "name": "Potatoes, for mash (2.1kg)"
- },
- {
-  "cat": "Veg",
-  "name": "Fresh parsley (1 pack)"
- },
- {
-  "cat": "Veg",
   "name": "Lemon (1)"
- },
- {
-  "cat": "Fish/meat",
-  "name": "Lean diced braising beef (800g)"
- },
- {
-  "cat": "Fish/meat",
-  "name": "Frozen fishcakes (10)"
- },
- {
-  "cat": "Fish/meat",
-  "name": "Large cod fillets (4)"
  },
  {
   "cat": "Dairy",
@@ -77,63 +9,27 @@
  },
  {
   "cat": "Dairy",
-  "name": "Milk (if low)"
+  "name": "Oat milk"
  },
  {
   "cat": "Dairy",
   "name": "Halloumi (2 x 225g blocks)"
  },
  {
-  "cat": "Dairy",
-  "name": "Greek yoghurt (250g)"
- },
- {
-  "cat": "Dairy",
-  "name": "Soured cream (small tub)"
- },
- {
-  "cat": "Dairy",
-  "name": "Cheddar (150g)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Kidney beans (4 x 400g tins)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Black beans (2 x 400g tins)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Chickpeas (2 x 400g tins)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Chopped tomatoes (4 x 400g tins)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Tomato purée (tube, if low)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Worcestershire sauce (if low)"
- },
- {
-  "cat": "Cupboard",
-  "name": "Rice (900g)"
- },
- {
   "cat": "Cupboard",
   "name": "Couscous (350g)"
  },
  {
-  "cat": "Cupboard",
-  "name": "Black olives (small jar/pack)"
+  "cat": "Other",
+  "name": "Bread"
  },
  {
   "cat": "Other",
-  "name": "Flatbreads or wraps (6)"
+  "name": "Nice bread rolls"
+ },
+ {
+  "cat": "Other",
+  "name": "Wine"
  },
  {
   "cat": "Cupboard",
@@ -142,10 +38,6 @@
  {
   "cat": "Cupboard",
   "name": "Tinned sweetcorn"
- },
- {
-  "cat": "Cupboard",
-  "name": "Ketchup or tartare sauce"
  },
  {
   "cat": "Other",
